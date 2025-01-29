@@ -1,0 +1,1 @@
+- [Herausforderungen](Terminologie/Terminologie.md#herausforderungen-für-terminologien)
