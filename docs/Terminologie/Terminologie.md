@@ -35,7 +35,7 @@ Eine wissenschaftliche Beschäftigung mit der eigenen Terminologieist eine wicht
 Auch durch die Beschaffenheit der Terminologie wird die Präzision, Eindeutigkeit, und Neutralität der Fachkommuniktion bedingt.
 <!-- >TODO Weitere optimale Eigenschaften der Fachkommunikation nennen?<-->
 
-![Grafik zur Visualisierung des Spannungsfeldes, in dem sich die wissenschaftliche Terminologie befindet](../images/terminology-spannungsfeld.png)
+![Grafik zur Visualisierung des Spannungsfeldes, in dem sich die wissenschaftliche Terminologie befindet](./images/terminology-spannungsfeld.png)
 
 ## Terminologiepflege als Teil der wissenschaftlichen Arbeit
 
