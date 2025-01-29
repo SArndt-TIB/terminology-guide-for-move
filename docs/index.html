@@ -1,81 +1,109 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <title>Fachterminologie FAIRöffentlichen - eine Orientierungshilfe für VerkehrswissenschaftlerInnen</title>
-  <meta name="author" content="Susanne Arndt">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <meta charset="UTF-8">
-  <meta name="referrer" content="no-referrer">
-  <meta name="description" content="Fachterminologie FAIRöffentlichen - eine Orientierungshilfe für VerkehrswissenschaftlerInnen">
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css"> -->
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" /> -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css" />
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" /> -->
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css" /> -->
-</head>
-<body>
-  <div id="app"></div>
-  <style>
-    .content {
-    overflow: auto;
-  }
-  </style>
-  <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+  <head>
+    <title>Fachterminologie FAIRöffentlichen - eine Orientierungshilfe für VerkehrswissenschaftlerInnen</title>
+    <meta name="author" content="Susanne Arndt">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="Fachterminologie FAIRöffentlichen - eine Orientierungshilfe für VerkehrswissenschaftlerInnen">
+
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" /> -->
+    <!-- nice -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css" /> -->
+    <!-- okayish -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" /> -->
+    <!-- terrible -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css" />  -->
+    <!-- terrible! -->
+
+    <!-- Edit on GitHub plugin, ohne defer, has to stay in head -->
+    <script src="//unpkg.com/docsify-edit-on-github@1/index.js"></script>
+    
+  </head>
+  
+  <body>
+    <div id="app"></div>
+    <style>
+      .content {
+        
+        overflow: auto;
+    }
+    /* Fix issue on mobile devices where a custom cover image goes off the screen. */
+    section.cover.show {
+      height: 100%;
+    }
+    </style>
+  
+  <!-- <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script> -->
   <script>
+    var repoUrl = "https://github.com/SArndt-TIB/terminology-guide-for-move"; // TODO: Update.
+    var editPath = repoUrl + "/blob/develop/docs/"; // works, change to master one it is there
+    var editMsg = "📝 Edit on GitHub";
+    
     window.$docsify = {
-      name: "Fachterminologie FAIRöffentlichen",
-      repo: '' ,
-      subMaxLevel: 1 ,
-      coverpage: true,
-      search: 'auto',
-      // loadSidebar: 'SUMMARY.md',
-      loadSidebar: true, // use only if to be loaded from _sidebar.md
-      alias: {
-      '/.*/_sidebar.md': '/_sidebar.md'
-      },
-      // auto2top: true,
-      executeScript: true,
-      // loadSidebar: true ,
+      name: "Fachterminologie FAIRöffentlichen", //works
+      repo: 'SArndt-TIB/terminology-guide-for-move' , // works
+      subMaxLevel: 1 , //works
+      coverpage: true, //works
+      themeColor: "#c60804", // works
+      search: 'auto', // works, more configuration posible! see https://docsify.js.org/#/plugins?id=full-text-search
+      loadSidebar: true, // is loaded, but cannot jump to destinations unless it is a whole file, use only if to be loaded from _sidebar.md, otherwise specify path to file in ''
+      routerMode: 'hash', // default hash, alternative: history
       // alias: {
-      //   '/.*/_sidebar.md': '/_sidebar.md'
-      // },
-      // pagination: {
-      //   previousText: 'ZURÜCK',
-      //   nextText: 'VOR',
-      //   crossChapter: true
-      //   },
-      copyCode: {
+        // '/.*/_sidebar.md': '/_sidebar.md'
+        // },
+        auto2top: true,
+        executeScript: true,
+        pagination: { // does not work
+        previousText: 'ZURÜCK',
+        nextText: 'VOR',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      plugins: [
+        EditOnGithubPlugin.create(editPath, null, editMsg)
+      ],
+      copyCode: { // works
         buttonText : 'In die Zwischenablage',
         errorText  : 'Fehler',
         successText: 'Kopiert!'
       }
-      // plugins: [
-        // EditOnGithubPlugin.create("https://github.com/SArndt-TIB/terminology-guide-for-move", null, "bearbeiten")
-      // ]
     }
-  </script>
+    </script>
 
-  <!-- have sidebar -->
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <!-- Docsify v4 -->
+    <!-- <script defer src="//cdn.jsdelivr.net/npm/docsify@4"></script> -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <!-- <script src="//unpkg.com/docsify@4/lib/docsify.min.js"></script> -->
+    
+    <!-- search -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/search.min.js"></script> -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/search.min.js"></script> -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 
-  <!-- navbar -->
-  <!-- <nav>
-    <a href="#/en">en</a>
-    <a href="#/de/">de</a>
-  </nav> -->
+    <!-- copy code -->
+    <!-- Latest v2.x.x, source https://github.com/jperasmus/docsify-copy-code/blob/master/README.md -->
+    <script defer src="https://unpkg.com/docsify-copy-code@2"></script>
+    <!-- <script defer src="//cdn.jsdelivr.net/npm/docsify/lib/docsify-copy-code.min.js"></script> -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script> -->
 
 
-<!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/search.min.js"></script> -->
-<script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/search.min.js"></script>
-<!-- <script src="docsify/docsify.min.js"></script> -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify-copy-code.min.js"></script>
-<!-- <script src="docsify/docsify-pagination.min.js"></script> -->
-<!-- <script src="docsify/prism-turtle.min.js"></script> -->
-<!-- <script src="docsify/prism-yaml.min.js"></script> -->
-<!-- <script src="docsify/zoom-image.min.js"></script> -->
-<!-- <script src="docsify/docsify-edit-on-github.min.js"></script> -->
-</body>
-</html>
+    <!-- Syntax highlighting.-->
+    <!-- TODO: Add prism-bash, prism-python, prism-javascript etc. as separate items so you can load syntax highlighting for that language. -->
+    <!-- with defer -->
+    <script defer src="//unpkg.com/prismjs@1/components/prism-markdown.min.js"></script>
+    <script defer src="//unpkg.com/prismjs@1/components/prism-bash.min.js"></script>
+    <script defer src="//unpkg.com/prismjs@1/components/prism-yaml.min.js"></script>
+    <script defer src="//unpkg.com/prismjs@1/components/prism-turtle.min.js"></script>
+
+    <!-- paginaton  plug-in, works  -->
+    <script defer src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+
+  </body>
+  </html>

@@ -1,8 +1,6 @@
 - [Home](/)
 - Terminologie
   - [Was ist Terminologie?](Terminologie/Terminologie.md)
-    - [Herausforderungen](Terminologie/Terminologie.md#herausforderungen-für-terminologien)
-    - [Terminologie in der Wissenschaft](Terminologie/Terminologie.md#terminologiepflege-als-teil-der-wissenschaftlichen-arbeit)
 - [Wofür Vokabulare? - Einsatzszenarien außerhalb der Fachkommunikation](Wofür-Vokabulare.md)
 - [Elemente eines Vokabulars](Elemente.md)
 - [Aufgaben der Terminologiearbeit](Aufgaben.md)
