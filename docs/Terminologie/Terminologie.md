@@ -1,8 +1,10 @@
 # Was ist Terminologie?
 
 <!-- ## Terminologie als Resultat und Werkzeug des wissenschaftlichen Arbeitens -->
-Unter *Terminologie* versteht der Duden "\[die\] Gesamtheit der in einem Fachgebiet üblichen Fachwörter und -ausdrücke" [[1](de/Literatur.md#source1)].
-Die Definition der DIN 2342:2022-07 erweitert die Definition des Dudens, indem sie *Terminologie* als "\[den\] Gesamtbestand der Begriffe und ihrer Bezeichnungen in einem Fachgebiet" versteht [[2](de/Literatur.md#source2)].
+Unter *Terminologie* versteht der Duden "\[die\] Gesamtheit der in einem Fachgebiet üblichen Fachwörter und -ausdrücke" 
+<!-- [[1](de/Literatur.md#source1)]. -->
+Die Definition der DIN 2342:2022-07 erweitert die Definition des Dudens, indem sie *Terminologie* als "\[den\] Gesamtbestand der Begriffe und ihrer Bezeichnungen in einem Fachgebiet" versteht 
+<!-- [[2](de/Literatur.md#source2)]. -->
 Mit dieser Definition wird anders als in der Definition des Dudens auf das Wissenssystem eines Fachgebiets verwiesen, das sich in dessen *Begriffen* manifestiert.
 Ein zulässiges Synonym für *Terminologie* ist in beiden Fällen der Ausdruck *Fachwortschatz*.
 
