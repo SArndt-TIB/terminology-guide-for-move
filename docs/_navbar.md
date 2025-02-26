@@ -2,5 +2,5 @@
 
 - Translations
 
-  - [:de:](/de/README.md)
-  - [:uk:](/en/README)
+  - [Deutsch :de:](/)
+  - [English :uk:](/en/)

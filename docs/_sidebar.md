@@ -1,1 +1,0 @@
-* [Home](_coverpage.md)

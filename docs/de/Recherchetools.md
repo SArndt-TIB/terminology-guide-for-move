@@ -36,5 +36,3 @@ Die verschiedenen Normungsorgaisationen sammeln diese terminologischen Festlegun
 ### CSV2RDF
 
 ### SKOS Play
-
-### ???

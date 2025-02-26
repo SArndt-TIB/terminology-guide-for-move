@@ -1,28 +1,19 @@
 ![icon](images/FID-move-Logo.png)
 
-# Fachterminologie FAIRöffentlichen
-## Eine Orientierungshilfe für VerkehrswissenschaftlerInnen
-<!-- <h1 id="cover-heading">
-  Fachterminologie FAIRöffentlichen
-</h1>
-
-<h2 id="cover-heading-2">
-  Eine Orientierungshilfe für VerkehrswissenschaftlerInnen
-</h2> -->
-
-<!-- TODO: Replace with your description -->
+# FAIR publication of terminology
+## A guide for experts in traffic and transportation science
 
 [![GitHub tags](https://img.shields.io/github/v/tag/SArndt-TIB/terminology-guide-for-move)](https://github.com/SArndt-TIB/terminology-guide-for-move/tags)
 <!-- TODO: Update username and repo name -->
 
-> :construction: ACHTUNG! Diese Seite befindet sich noch im Aufbau! :construction_worker:
+> :construction: ATTENTION! This page is still under construction! :construction_worker:
 
 <!-- TODO: Update to match your project's benefits/features. Git emojis work great here. -->
 
-- :books: Lernen Sie mehr über Terminologie und ihre Grundlagen.
-- :computer: Lernen Sie, wie Sie Ihre Terminologie mit SKOS dokumentieren.
-- :unlock: Lernen Sie, wie sie Ihre Terminologie FAIRöffentlichen.
-- :loudspeaker: Geben Sie uns Feedback: besuchen Sie unseren [Issue-Tracker](https://github.com/SArndt-TIB/terminology-guide-for-move/issues).
+- :books: Learn the basics of terminology and terminology work.
+- :computer: Learn to document terminology with SKOS.
+- :unlock: Learn to publish your terminology following the FAIR principles.
+- :loudspeaker: Give us some feedback: visit our issue tracker [Issue-Tracker](https://github.com/SArndt-TIB/terminology-guide-for-move/issues).
 
 
 <!-- from docsify coverpage template -->

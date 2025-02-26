@@ -1,4 +1,4 @@
-# Literatur
+## Literaturverzeichnis
 
 1. <a name="source1"></a>"Terminologie" auf Duden online. URL: <https://www.duden.de/node/181187/revision/1417877> (Abrufdatum: 13.01.2025).
 
@@ -28,3 +28,55 @@ der TU Braunschweig. Studiengänge. Allgemeine Begriffe aus Wissenschaft und Hoc
 13. <a name="source13"></a>Technische Hochschule Köln (2024): Glossar des Projekts Co-Kreation in der Region – Systemisch und innovativ Transfer entwickeln. URL: <https://tibhannover.github.io/co-site-glossar/> (Abrufdatum: 16.01.2025).
 
 14. <a name="source14"></a>FGSV (2020): BBSV - Begriffsbestimmungen für das Straßen- und Verkehrswesen. FGSV-Nr.: 005/1. URL: <https://www.fgsv-verlag.de/bbsv-digital> (Abrufdatum: 22.01.2025).
+
+15. <a name="source15"></a>DIN 2330:2022-07 Terminologiearbeit– Grundsätze und Methoden.
+
+16. <a name="source16"></a>Müller, Jörg R. (2015): Die Formalisierte Terminologie der Verlässlichkeit Technischer Systeme. Berlin, Heidelberg: Springer Vieweg. <https://doi.org/10.1007/978-3-662-46922-4>
+
+17. <a name="source17"></a>Schnieder, Eckehard & Lars Schnieder (2013): Verkehrssicherheit: Maße und Modelle, Methoden und Maßnahmen für den Straßen- und Schienenverkehr. Berlin, Heidelberg: Springer Vieweg. <https://doi.org/10.1007/978-3-540-71033-2>
+
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+<!-- xx. <a name="sourcexx"></a> -->
+
+## Bildnachweise
+
+### Icons
+
+* [graduate.png](https://www.flaticon.com/free-icon/graduate_17364841?term=graduate&page=7&position=4&origin=search&related_id=17364841) created by [Fathema Khanom](https://www.flaticon.com/authors/fathema-khanom) - [Flaticon](https://www.flaticon.com/)
+* [monument.png](https://www.flaticon.com/free-icon/monument_14221132?term=babel&page=1&position=39&origin=search&related_id=14221132) created by [edt.im](https://www.flaticon.com/authors/edtim) - [Flaticon](https://www.flaticon.com/)

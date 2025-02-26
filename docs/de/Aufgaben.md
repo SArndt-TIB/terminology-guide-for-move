@@ -1,4 +1,4 @@
-# 9 Vocabulary tasks
+# Vocabulary tasks
 
 - collecting terms
 - defining terms

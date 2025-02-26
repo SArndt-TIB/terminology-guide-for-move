@@ -10,12 +10,12 @@
 
 <!-- ## Einleitung -->
 
-Terminologie ist ein wesentlicher Bestandteil jeder wissenschaftlichen Tätigkeit. In einigen Disziplinen - zum Beispiel in den Biowissenschaften - ist der Umgang mit Terminologie bereits sehr starkt reflektiert und mündet in elaborierten terminologischen Produkten.
-In anderen Disziplinen - wie der Verkehrs- und Mobilitätswissenschaft - werden zwar oft bereits terminologiebedingte Hürden und Probleme im fachlichen Diskurs erkannt, jedoch eher selten bereits fortgeschrittene, den FAIR-Prinzipien genügende Terminologieprodukte erstellt.
+Terminologie ist ein wesentlicher Bestandteil jeder wissenschaftlichen Tätigkeit. In einigen Disziplinen - zum Beispiel in den Biowissenschaften - ist der Umgang mit Terminologie bereits sehr stark reflektiert und mündet in elaborierten terminologischen Produkten.
+In anderen Disziplinen - wie den Verkehrs- und Mobilitätswissenschaften - werden zwar oft schon terminologiebedingte Hürden und Probleme im fachlichen Diskurs erkannt, aber dieser Erkenntnis entstehen bislang eher selten den FAIR-Prinzipien genügende Terminologieprodukte.
 
-Die Beschäftigung mit Terminologie - insbesondere ihre Dokumentation - erfordert meist jedoch spezielle Kenntnisse oder eine Kooperation zwischen FachwissenschaftlerInnen aus der jeweiligen Domäne und SpezialistInnen aus IT, Informationswissenschaften, Sprachwissenschaften, Terminologiewissenschaften oder Übersetzungswesen.
+Die Beschäftigung mit Terminologie - insbesondere ihre Dokumentation - erfordert zudem spezielle Kenntnisse oder ist auf eine Kooperation zwischen FachwissenschaftlerInnen der jeweiligen Domäne auf der einen Seite und SpezialistInnen aus IT, Informationswissenschaften, Sprachwissenschaften, Terminologiewissenschaften oder Übersetzungswesen auf der anderen Seite angewiesen.
 
-Um den Einsteig in das Thema zu erleichtern, stellt der FID move Ihnen diesen Kurs bereit.
+Um Ihnen den Einsteig in das Thema zu erleichtern, stellt der FID move diesen Kurs bereit.
 In ihm erklären wir Ihnen
 
 * was Terminologie ist,
@@ -32,4 +32,5 @@ In ihm erklären wir Ihnen
 Wir wählen hierfür ein leichtgewichtiges Datenmodell aus dem [Semantic Web Stack](https://en.wikipedia.org/wiki/Semantic_Web), mit dem einfache, maschinenlesbare Vokabulare erstellt werden können - das [Simple Knowledge Organization System](https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/), kurz SKOS.
 Mit diesem Standard können wesentliche Elemente einer Terminologie abgebildet und für eine Nachnutzung über den eigenen Kontext hinaus für andere ForscherInnen sowie Anwendungen im Semantic Web zur Verfügung gestellt werden.
 
-Wir hoffen, dass diese Einführung verständlich und kurzweilig aufbereitet ist. Falls Sie Fragen zum Material, den Beispielen, Tools und Anleitungen haben, können Sie diese jederzeit über [Issue-Tracker](https://github.com/SArndt-TIB/terminology-guide-for-move/issues) stellen oder sich an xxx wenden.
+Wir hoffen, dass diese Einführung verständlich und kurzweilig aufbereitet ist.
+Falls Sie Fragen oder Anregungen zum Material, den Beispielen, Tools und Anleitungen haben, können Sie diese jederzeit über unseren [Issue-Tracker](https://github.com/SArndt-TIB/terminology-guide-for-move/issues) an uns kommunizieren.

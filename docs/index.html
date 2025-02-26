@@ -53,7 +53,11 @@
       name: "Fachterminologie FAIRöffentlichen", //works
       repo: 'SArndt-TIB/terminology-guide-for-move' , // works
       subMaxLevel: 1 , //works
-      coverpage: true, //works
+      // coverpage: true, //works
+      coverpage: {
+        '/': '_coverpage.md' ,
+        '/en/': '_coverpage.md'
+      },
       themeColor: "#c60804", // works
       search: {
         placeholder: {
@@ -75,7 +79,8 @@
       // pathNamespaces: ['/', '/en/'],
       },
       loadSidebar: true, // is loaded, but cannot jump to destinations unless it is a whole file, use only if to be loaded from _sidebar.md, otherwise specify path to file in ''
-      // routerMode: 'hash', // default hash, alternative: history
+      subMaxLevel: 2,
+      routerMode: 'hash', // default hash, alternative: history
       // alias: {
       //   '/.*/_sidebar.md': '/_sidebar.md'
       //   },

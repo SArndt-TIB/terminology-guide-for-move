@@ -12,7 +12,6 @@ Termini sind Ausdrücke und Symbole, die verwendet werden, um
 
 ## Äquivalente
 
-
 ## Definitionen
 
 ## Begriffsbeziehungen
