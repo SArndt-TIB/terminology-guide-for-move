@@ -1,45 +1,8 @@
-# Was ist Terminologie?
+# Arten der Terminologiearbeit
 
-<!-- ## Terminologie als Resultat und Werkzeug des wissenschaftlichen Arbeitens -->
-Unter *Terminologie* versteht der Duden "\[die\] Gesamtheit der in einem Fachgebiet üblichen Fachwörter und -ausdrücke" 
-<!-- [[1](de/Literatur.md#source1)]. -->
-Die Definition der DIN 2342:2022-07 erweitert die Definition des Dudens, indem sie *Terminologie* als "\[den\] Gesamtbestand der Begriffe und ihrer Bezeichnungen in einem Fachgebiet" versteht 
-<!-- [[2](de/Literatur.md#source2)]. -->
-Mit dieser Definition wird anders als in der Definition des Dudens auf das Wissenssystem eines Fachgebiets verwiesen, das sich in dessen *Begriffen* manifestiert.
-Ein zulässiges Synonym für *Terminologie* ist in beiden Fällen der Ausdruck *Fachwortschatz*.
+## Was ist Terminologiearbeit?
 
-Beide Definitionen stellen explizit den Zusammenhang von Terminologie zu einem Fachgebiet (bspw. Biologie, Verkehrswissenschaften, Philosophie, etc.) her.
-Während sich einzelne Fachgebiete basierend auf distinkten Erkenntnisinteressen und -objekten unter Verwendung unterschiedlicher Forschungsmethoden und -herangehensweisen herausgebildet haben, haben sich damit auch unterschiedliche Wortschätze ergeben, sodass man in der Praxis eigentlich von *Terminologien* sprechen muss.
-
-[jump down](#terminologiepflege-als-teil-der-wissenschaftlichen-arbeit)
-
-Auch innerhalb einzelner Fachgebiete lässt sich eine weitere Ausdifferenzierung des Wortschatzes beobachten, da sich die Fachgebiete in Teilgebiete weiter auffächern und dabei die Erkenntnisinteressen einzelner WissenschaftlerInnen zunehmend eingegrenzt werden.
-
-## Herausforderungen für Terminologien
-
-Die Terminologie eines Fachgebiets ist ein wichtiges Werkzeug für die Arbeit im Fach.
-Einerseits ist sie ein wichtiges Kommunikatonsmittel der einzelnen ForscherInnen sowie der gesamten Forschungsgemeinschaft des Faches.
-Andererseits ist sie ein Artefakt, mit dem das Wissen eines Fachgebiets laufend kodiert wird.
-Terminologie steht damit kontinuierlich im Spannungsfeld zwischen
-
-* individuellem und kollektivem Wissensgewinn,
-* individueller und kollektiver Kommunikation,
-* Wissenskonsolidierung/-standardisierung und Wissensgewinn,
-* Wissenssystem und sprachlichem Ausdruck.
-
-Während der Wissensgewinn eine gewisse Dynamik aufweist, strebt die Wissenskonsolidierung eine Verstetigung an.
-Während neues Wissen einen Bedarf nach neuen Benennungen mit sich bringt, erfordert die Kommunikation der Fachgemeinschaft ein gewisses Maß an begrifflicher und ausdrucksseitiger Standardisierung.
-Mit diesem Gegensatz müssen sich alle Diszplinen befassen und auseinandersetzen.
-Terminologische Klärung, Aktualisierung, Harmonisierung und die weitere terminologische Entwicklung sind eine notwendige, aber selten geschätzte Tätigkeit der fachlichen Arbeit und des wissenschaftlichen Diskurses.
-Eine wissenschaftliche Beschäftigung mit der eigenen Terminologieist eine wichtige Voraussetzung für die Güte der fachlichen Kommunikation:
-Auch durch die Beschaffenheit der Terminologie wird die Präzision, Eindeutigkeit, und Neutralität der Fachkommuniktion bedingt.
-<!-- >TODO Weitere optimale Eigenschaften der Fachkommunikation nennen?<-->
-
-![Grafik zur Visualisierung des Spannungsfeldes, in dem sich die wissenschaftliche Terminologie befindet](docs/images/terminology-spannungsfeld.png)
-
-## Terminologiepflege als Teil der wissenschaftlichen Arbeit
-
-### Arten der Terminologiearbeit
+Terminologiearbeit ist... TASK OPEN: Definition ergänzen!
 
 Die DIN 2330:2022-07 [[2](#source2)] unterscheidet, basierend auf den Kriterien "Umfang der Untersuchungen" und "Systematik der Vorgehensweise", (neben anderen) drei Arten von Terminologiearbeit.
 
