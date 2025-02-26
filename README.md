@@ -2,4 +2,4 @@
 
 ## Open Issues
 
-* Links (Sidebar, Querverweise) springen nicht an Dokumentabschnitte
+* Links (Sidebar, Querverweise) springen nicht an Dokumentabschnitte > funktioniert für einige Mobile Views

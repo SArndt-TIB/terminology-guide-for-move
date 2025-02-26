@@ -57,16 +57,16 @@
       themeColor: "#c60804", // works
       search: {
         placeholder: {
-        '/': 'Zum Suchen hier tippen',
-        '/en/': 'Type to search',
+        '/en/': 'Type to search', // order of appearance seems to be relevant for the functionality of this features
+        '/de/': 'Zum Suchen hier tippen',
       },
       noData: {
-        '/': 'Schade, nix da...',
-        '/en/': 'Sorry - nothing there!',
+        '/en/': 'Sorry - nothing there!', // order of appearance seems to be relevant for the functionality of this features
+        '/de/': 'Schade, nix da...',
       },
-      depth: 3,
+      depth: 1,
       hideOtherSidebarContent: true, // whether or not to hide other sidebar content
-      // paths: [],
+      paths: [],
       // Use different indexes for path prefixes (namespaces).
       // NOTE: Only works in 'auto' mode.
       //
@@ -97,7 +97,8 @@
         buttonText : 'In die Zwischenablage',
         errorText  : 'Fehler',
         successText: 'Kopiert!'
-      }
+      },
+      onlyCover: true,
     }
     </script>
 
@@ -142,6 +143,9 @@
 
     <!-- paginaton  plug-in, works  -->
     <script defer src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+    <!-- emojis -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
 
 
   </body>

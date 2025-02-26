@@ -30,7 +30,8 @@
 
 <!-- [Use this template](https://github.com/MichaelCurrin/docsify-js-template/generate)  -->
 <!-- TODO: Remove on your copy of this template.-->
-[Los geht's](README.md)
+[Los geht's](/de/README.md)
+[Let's go!](/en/README.md)
 <!-- - :ballot_box_with_check: TODO: Use ID of your homepage heading -->
 
 <!-- TODO: Set your background color or image. -->
