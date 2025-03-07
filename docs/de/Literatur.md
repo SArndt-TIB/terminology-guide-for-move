@@ -35,10 +35,14 @@ der TU Braunschweig. Studiengänge. Allgemeine Begriffe aus Wissenschaft und Hoc
 
 17. <a name="source17"></a>Schnieder, Eckehard & Lars Schnieder (2013): Verkehrssicherheit: Maße und Modelle, Methoden und Maßnahmen für den Straßen- und Schienenverkehr. Berlin, Heidelberg: Springer Vieweg. <https://doi.org/10.1007/978-3-540-71033-2>
 
-<!-- xx. <a name="sourcexx"></a> -->
-<!-- xx. <a name="sourcexx"></a> -->
-<!-- xx. <a name="sourcexx"></a> -->
-<!-- xx. <a name="sourcexx"></a> -->
+18. <a name="source18">Deutsches Institut für Normung (o.J.): Was ist eine DIN-Norm? URL: <https://www.din.de/de/ueber-normen-und-standards/din-norm> (Abrufdatum: 04.03.2025).</a>
+
+19. <a name="source19"></a> "Markt" auf Duden online. URL: <https://www.duden.de/node/93897/revision/1228849> (Abrufdatum: 06.03.2025).
+
+20. <a name="source20"></a> "Arbeit" auf Duden online. URL: <https://www.duden.de/node/8007/revision/1350484> (Abrufdatum: 06.03.2025).
+
+21. <a name="source21"></a> "Feld" auf Duden online. URL: <https://www.duden.de/node/45890/revision/1261815> (Abrufdatum: 06.03.2025).
+
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->

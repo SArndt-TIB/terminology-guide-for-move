@@ -1,3 +1,5 @@
+# Terminologiearbeit im Forschungsalltag
+
 ## Was ist Terminologiearbeit?
 
 Terminologiearbeit ist gemäß DIN 2342:2022-07 [[2](Literatur.md#source2)] die "auf der Terminologiewissenschaft aufbauende Terminologierecherche, terminologische Analyse, Terminologieverwaltung und Terminologieprüfung" und "kann sich auf eine Sprache oder auf mehrere Sprachen, auf ein Fachgebiet oder auf mehrere Fachgebiete erstrecken".
@@ -85,7 +87,6 @@ Hierbei ist die Einbringung möglichst umfassender fachlicher Expertise unerläs
 In der wissenschaftlichen Praxis ist dies eher schwer zu erreichen.
 Realistisch lassen sich eher kleinere Themengebiete mit anderen Vertrertern des Faches abstimmen und präskriptive Festlegungen treffen.
 Dies kann zum Beispiel bei der Mitwirkung in Fachgesellschaften (FGSV, VDI-Gesellschaft Fahrzeug- und Verkehrstechnik) oder in Arbeitsausschüssen nationaler und internationaler Normungsorganisationen (DIN, DKE, ISO, CEN/CENELEC) geschehen.
-<!-- @Mathias: VDI-Gesellschaft sinnvoll zu erwähnen? weitere, in denen von Fachleuten Terminologie erarbeitet wird? --->
 
 Auch hier lassen sich entsprechende Beispiele für Terminologieprodukte finden, zum Beispiel
 
@@ -95,6 +96,3 @@ Auch hier lassen sich entsprechende Beispiele für Terminologieprodukte finden, 
   * DIN ISO 8855:2013-11 _Straßenfahrzeuge - Fahrzeugdynamik und Fahrverhalten - Begriffe (ISO 8855:2011)_ [[16](#source16)] und
   * DIN 70010:2001-04 _Systematik der Straßenfahrzeuge - Begriffe für Kraftfahrzeuge, Fahrzeugkombinationen und Anhängefahrzeuge_ [[17](#source17)] zur Normung von Begriffen,
 * die Richtlinie VDI 2157 _Planetengetriebe - Begriffe, Symbole, Berechnungsgrundlagen_ [[18](#source18)], ebenfalls zur Normung von Begriffen.
-
-<!-- |[[16](#source16)]|DIN NAAutomobil||Normung von Begriffen| -->
-<!-- @Mathias weitere gute Beispiele? -->
