@@ -1,6 +1,7 @@
 # Elemente einer Terminologie
 
 Terminologien setzen sich aus unterschiedlichen Elementen zusammen, die bei der Dokumentation erfasst und beschrieben werden müssen.
+Im Folgenden werde diese kurz erläutert.
 
 **Fachwörter** bzw. **Fachausdrücke**: Wörter sind der greifbarste Bestandteil einer Terminologie. Die Fachausdrücke einiger Disziplinen sind schnell erkennbar, da sie in anderen Disziplinen nicht gebräuchlich sind und auch in der Alltagskommunikation eher selten vorkommen. Gute Exemplare für solche auffälligen Fachausdrücke finden sich zum Beispiel in den folgenden Disziplinen:
 
@@ -9,7 +10,7 @@ Terminologien setzen sich aus unterschiedlichen Elementen zusammen, die bei der 
 |Medizin|_arterielle Hypertonie_|chronische Erhöhung des Blutdrucks des arteriellen Gefäßsystems|_Bluthochdruck_|
 |Biologie|_Homöostase_|Gleichgewichtszustand in einem biologischen Organismus|--|
 |Chemie|_2-Hydroxybenzencarbonsäure_|organische Verbindung mit der Formel HOC<sub>6</sub>H<sub>4</sub>COOH, die u.a. in der Medizin angewendet wird|_Salicylsäure_|
-|Musik|_Heterophonie_|Musizierform, bei der die einzelnen Stimmen oder Instrumente dieselbe Melodie singen oder spielen, aber die Meldoie in jeweils eigener Weise ausgestalten|--|
+|Musik|_Heterophonie_|Musizierform, bei der die einzelnen Stimmen oder Instrumente dieselbe Melodie singen oder spielen, aber die Melodie in jeweils eigener Weise ausgestalten|--|
 |Geologie|_Xenolith_|Einschluss eines Gesteins in einem anderen Gestein|_Fremdgestein_|
 |Informatik|_Debugging_|Prozess zum Finden von Fehlern in Programmcode|_Fehlerbehebung_|
 
@@ -29,10 +30,13 @@ Auch nicht-sprachliche Ausdrücke können Teil einer Terminologie sein, z.B. Sym
 
 **Äquivalente**: Da Terminologien häufig im Übersetzungswesen oder in der mehrsprachigen (technischen) Dokumentation verwendet werden, gehören zu Terminologien häufig auch Bezeichnungen aus verschiedenen Einzelsprachen (z.B. Deutsch, Englisch, Spanisch, etc.). Bei dieser Anwendung von Terminologie kommt es in allen Sprachen darauf an, möglichst angemessene Ausdrücke für den mitzuteilenden Sachverhalt zu verwenden. Die Terminologiedokumentation ist deswegen insbesondere darum bemüht, möglichst gute Äquivalente zu finden. Das bedeutet, dass für alle Sprachen möglichst solche Benennungen angegeben werden müssen, die einander im Bedeutungsgehalt möglichst exakt entsprechen und denselben Begriff repräsentieren. Wo dies nicht möglich ist, müssen Lücken dokumentiert werden oder entsprechende Umschreibungen gefunden werden.
 
-**Begriffe**: Im allgemeinen Sprachgebrauch versteht man unter _Begriff_ in der Regel ein Wort oder einen Ausdruck, mit dem ein Sachverhalt sprachlich repräsentiert wird. In der Terminologiewissenschaft ist _Begriff_ jedoch anders definiert: Hier geht es **nicht** um die Ausdrücke, mit denen etwas Fachliches bezeichnet werden kann, sondern es handelt sich hierbei um ein mentales Konstrukt, eine Einheit des menschlichen Wissens. In der DIN 2342:2022-07 wird _Begriff_ definiert als "Denkeinheit, die aus einer Menge von Gegenständen unter Ermittlung der diesen Gegenständen gemeinsamen Eigenschaften mittels Abstraktion gebildet wird" [[2]](Literatur.md#source2). Gegenstände sind dabei Objekte, Prozesse und Phänomene der wahrnehmbaren Welt (z.B. Mensch, Himmel, Pflanze, Haus, Apfel), aber auch Elemente der vorstellbaren Welt (z.B. Einhorn, Fliewatüüt, autonomes Fahrzeug). Begriffe helfen uns, die unterschiedlichen Einzelgegenstände zu kategoriesieren und basierend auf ihrer Ähnlichkeit als "vom selben Typ" zu behandeln. Ein fachlicher Begriff ist dabei ein Element speziellen Wissens, das nicht von allen geteilt wird. Sie sind nicht an eine Sprache gebunden, können aber gesellschaftlich und kulturell geprägt sein.
+**Begriffe**: Im allgemeinen Sprachgebrauch versteht man unter _Begriff_ in der Regel ein Wort oder einen Ausdruck, mit dem ein Sachverhalt sprachlich repräsentiert wird. In der Terminologiewissenschaft ist _Begriff_ jedoch anders definiert: Hier geht es **nicht** um die Ausdrücke, mit denen etwas Fachliches bezeichnet werden kann, sondern es handelt sich hierbei um ein mentales Konstrukt, eine Einheit des menschlichen Wissens. In der DIN 2342:2022-07 wird _Begriff_ definiert als "Denkeinheit, die aus einer Menge von Gegenständen unter Ermittlung der diesen Gegenständen gemeinsamen Eigenschaften mittels Abstraktion gebildet wird" [[2]](Literatur.md#source2). Gegenstände sind dabei Objekte, Prozesse und Phänomene der wahrnehmbaren Welt (z.B. Mensch, Himmel, Pflanze, Haus, Apfel), aber auch Elemente der vorstellbaren Welt (z.B. Einhorn, Fliewatüüt, autonomes Fahrzeug).
+Begriffe helfen uns, die unterschiedlichen Einzelgegenstände zu kategoriesieren und basierend auf ihrer Ähnlichkeit als "vom selben Typ" zu behandeln.
+Ein fachlicher Begriff ist dabei ein Element speziellen Wissens, das nicht von allen geteilt wird.
+Begriffe sind nicht an eine Sprache gebunden, können aber gesellschaftlich und kulturell geprägt sein.
 <!-- Beispiele für kulturell geprägte (Fach-)begriffe ergänzen? -->
 
-**Definitionen**: Begriffe sind - als mentale Einheiten - nicht direkt zugänglich. Die Definition nimmt deswegen die wichtige Rolle wahr, den Begriff sprachlich zu repräsentieren - und zwar ausführlicher als eine Benennung. Die Definition verortet den Begriff im Kontext anderer Begriffe und benennt seine Eigenschaften. Mit diesen kann er von anderen Begriffen abgegrenzt werden. Gegegebnenfalls nennt eine Definition auch Bestandteile der Gegenstände für die der Begriff steht oder Beispiele für solche Gegenstände.
+**Definitionen**: Begriffe sind – als mentale Einheiten – nicht direkt zugänglich. Die Definition nimmt deswegen die wichtige Rolle wahr, den Begriff sprachlich zu repräsentieren – und zwar ausführlicher als eine Benennung. Die Definition verortet den Begriff im Kontext anderer Begriffe und benennt seine Eigenschaften. Mit diesen kann er von anderen Begriffen abgegrenzt werden. Gegegebnenfalls nennt eine Definition auch Bestandteile der Gegenstände für die der Begriff steht oder Beispiele für solche Gegenstände.
 
 **Begriffsbeziehungen**: Begriffe sind Teil eines Systems mit einer Vielzahl von Begriffen, die wir uns im Laufe unseres Lebens von der wahrnehmbaren Welt oder durch unsere Vorstellung und den Austausch mit anderen Menschen machen. Unser Begriffsbestand ist dabei keine unstrukturierte Sammlung, sondern ein gut georndetes System, in dem die Bergiffe in vielfältigen Beziehungen zueinander stehen. Einige Beispiel finden sich in der nachfolgenden Tabelle.
 

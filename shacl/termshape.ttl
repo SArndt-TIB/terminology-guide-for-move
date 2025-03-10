@@ -25,6 +25,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:maxCount 1;
         sh:order 1 ;
         sh:group ex:TermGroup ;
+        sh:datatype xsd:string ;
         sh:name "lokaler Identifier des Begriffs"@de;
         # sh:name "local identifier"@en;
         sh:description "z.B. eine Zahl oder ein alphanumerischer String, der im Vokabular noch nicht verwendet wird, oder eine für das Vokabular reservierte uuid"@de;
@@ -76,6 +77,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:description "Quellenangabe für Informationen über den Begriff"@de ;
         sh:path dcterms:source;
         sh:node ex:Source ;
+        sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
         sh:group ex:TermMetadataGroup
     ];
@@ -93,7 +95,9 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:group ex:TermGroup;
         sh:order 5;
         sh:name "Fachzuordnung"@de;
-        # sh:name "Subject"@en;
+        # sh:datatype xsd:string ;
+        sh:nodeKind sh:IRI ;
+#         sh:name "Subject"@en;
         sh:in (
             "Architektur"
             "Bauwesen"
@@ -189,14 +193,13 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         # rdfs:label "Author of the concept entry"@en;
         sh:path dcterms:creator;
         sh:node ex:Author ;
-        # sh:node ex:AuthorNodeShape ;
         sh:minCount 1;
         sh:group ex:TermMetadataGroup;
         sh:name "Verfasser des Eintrags"@de;
         # sh:name "Author of the concept entry"@en
     ];
     sh:property [
-        a sh:PropertyShape ;
+        # a sh:PropertyShape ;
         sh:path ex:exampleSentence ;
         sh:datatype rdf:langString;
         sh:languageIn ("en" "de");
@@ -206,15 +209,16 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:order 7
     ] ;
     sh:property [
-        a sh:PropertyShape ;
+        # a sh:PropertyShape ;
         sh:path ex:editorialStatus ;
         sh:in ("draft" "approved" "deprecated");
         sh:group ex:TermStatusGroup;
         sh:name "Bearbeitungsstatus"@de ;
+        sh:datatype xsd:string ;
         # sh:name "Editorial status"@en
     ] ;
     sh:property [
-        a sh:PropertyShape ;
+        # a sh:PropertyShape ;
         sh:group ex:TermGroup ;
         sh:datatype xsd:string ;
         sh:name "Mathematisches Symbol"@de; 
@@ -223,7 +227,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:path ex:mathSymbol;
     ] ;
     sh:property [
-        a sh:PropertyShape ;
+        # a sh:PropertyShape ;
         sh:path skos:semanticRelation ;
         sh:nodeKind sh:IRI ;
         sh:node ex:TermRelation ;
@@ -241,6 +245,7 @@ ex:Source a rdfs:Class , sh:NodeShape ;
         sh:path ex:id ;
         sh:minCount 1;
         sh:maxCount 1;
+        sh:datatype xsd:string ;
         sh:name "lokaler Identifier der Quelle"@de;
     ];
     sh:property [
@@ -263,6 +268,7 @@ ex:Source a rdfs:Class , sh:NodeShape ;
         sh:description "der Verfasser der Quelle"@de;
         sh:group ex:SourceGroup ;
         sh:minCount 1 ;
+        sh:datatype xsd:string ;
     ] ;
     sh:property [
         a sh:PropertyShape ;
@@ -271,6 +277,7 @@ ex:Source a rdfs:Class , sh:NodeShape ;
         sh:description "der Herausgeber der Quelle"@de;
         sh:group ex:SourceGroup ;
         sh:path dcterms:publisher;
+        sh:datatype xsd:string ;
     ];
     sh:property [
         a sh:PropertyShape ;
@@ -295,7 +302,6 @@ ex:Source a rdfs:Class , sh:NodeShape ;
     .
 
 ex:Author a sh:NodeShape , rdfs:Class ;
-# ex:AuthorNodeShape a sh:NodeShape ;
     dcterms:title "Verfasser"@de ;
     # dcterms:title "Author"@en ;
     sh:property [
@@ -304,6 +310,7 @@ ex:Author a sh:NodeShape , rdfs:Class ;
         sh:minCount 1;
         sh:maxCount 1;
         sh:name "lokaler Identifier des Verfassers"@de;
+        sh:datatype xsd:string ;
     ] ;
     sh:property [
         a sh:PropertyShape ;
@@ -313,11 +320,13 @@ ex:Author a sh:NodeShape , rdfs:Class ;
         sh:maxCount 1;
         sh:description "mehrere Nachnamen werden in einem Feld in der korrekten Reihenfolge angegeben"@de ;
         # sh:description "several last names should be entered into one field in the correct order"@en
+        sh:datatype xsd:string ;
     ];
     sh:property [
         a sh:PropertyShape ;
         sh:path foaf:firstName ;
         sh:name "Vorname"@de; 
+        sh:datatype xsd:string ;
         # sh:name "first name"@en;
         sh:maxCount 1;
         sh:description "mehrere Vornamen werden in einem Feld in der korrekten Reihenfolge angegeben"@de ;
@@ -331,7 +340,8 @@ ex:Author a sh:NodeShape , rdfs:Class ;
         sh:name "ORCiD"@de;
         # sh:name "ORCiD"@en;
         sh:description "die Orcid muss einem bestimmten Muster entsprechen"@de;
-        sh:description "the Orcid has to have a specific pattern"@de
+        # sh:description "the Orcid has to have a specific pattern"@de;
+        sh:nodeKind sh:IRI ;
     ]
 .
 
@@ -363,109 +373,110 @@ ex:TermRelation a sh:NodeShape , rdfs:Class ;
         a sh:PropertyShape ;
         sh:path rdf:object ;
         sh:nodeKind sh:IRI ;
-        sh:name "Zielbegriff"@de ;
-        # sh:name "Target concept"@en;
-        sh:pattern "^http.*|https.*" # too strict?
+        sh:name "lokale ID des Zielbegriffs"@de ;
+        # sh:name "local ID of target concept"@en;
+        sh:node skos:Concept ;
     ] ;
         sh:property [
         a sh:PropertyShape ;
         sh:path ex:id ;
         sh:minCount 1;
         sh:maxCount 1;
-        sh:name "localID"@de;
+        sh:name "lokale ID der Begriffsbeziehung"@de;
+        sh:datatype xsd:string ;
     ] ;
-    # sh:property	[
-        # # Kann man das mit sh:sparql aus dem aktuellen Eintrag ziehen?
-    #     ex:SubjectShape a sh:PropertyShape ;
-    #     sh:path rdf:subject ;
-    #     sh:nodeKind sh:IRI ;
-    #     sh:defaultValue <www.example.com/$this>
-    # ]; # not needed
-    # sh:name "blupp"
+    sh:property	[
+        a sh:PropertyShape ;
+        sh:node skos:Concept ;
+        sh:path rdf:subject ;
+        sh:nodeKind sh:IRI ;
+        sh:name "lokale ID des Ausgangsbegriffs"@de ;
+        # sh:name "local ID of source concept"@en ;
+    ]; 
 .
 
 
 
-###################################
-### PropertyGroups              ###
-###################################
+# ###################################
+# ### PropertyGroups              ###
+# ###################################
 
-ex:TermGroup a sh:PropertyGroup ;
-    rdfs:label "Angaben zum Begriff"@de;
-    # rdfs:label "Concept information"@en;
-    sh:order 1
-.
+# # ex:TermGroup a sh:PropertyGroup ;
+# #     rdfs:label "Angaben zum Begriff"@de;
+# #     # rdfs:label "Concept information"@en;
+# #     sh:order 1
+# # .
 
-ex:TermRelationsGroup a sh:PropertyGroup ;
-    rdfs:label "Begriffsbeziehungen"@de ;
-    # rdfs:label "Concept relations"@en ;
-    sh:group ex:TermGroup ;
-    sh:order 2
-.
+# # ex:TermRelationsGroup a sh:PropertyGroup ;
+# #     rdfs:label "Begriffsbeziehungen"@de ;
+# #     # rdfs:label "Concept relations"@en ;
+# #     sh:group ex:TermGroup ;
+# #     sh:order 2
+# # .
 
-ex:TermMetadataGroup a sh:PropertyGroup ;
-    rdfs:label "Metadaten zum Eintrag"@de;
-    # rdfs:label "Metadata for the concept entry"@en;
-    sh:order 3
-.
+# # ex:TermMetadataGroup a sh:PropertyGroup ;
+# #     rdfs:label "Metadaten zum Eintrag"@de;
+# #     # rdfs:label "Metadata for the concept entry"@en;
+# #     sh:order 3
+# # .
 
-ex:SourceGroup a sh:PropertyGroup ;
-    rdfs:label "Quellenangaben"@de;
-    # rdfs:label "Sources"@en ;
-    sh:group ex:TermMetadataGroup
-    .
+# # ex:SourceGroup a sh:PropertyGroup ;
+# #     rdfs:label "Quellenangaben"@de;
+# #     # rdfs:label "Sources"@en ;
+# #     sh:group ex:TermMetadataGroup
+# #     .
 
-ex:TermStatusGroup a sh:PropertyGroup ;
-    rdfs:label "Bearbeitungsstatus"@de;
-    # rdfs:label "Editing status"@en ;
-    sh:group ex:TermMetadataGroup ;
-    sh:order 4 
-.
+# # ex:TermStatusGroup a sh:PropertyGroup ;
+# #     rdfs:label "Bearbeitungsstatus"@de;
+# #     # rdfs:label "Editing status"@en ;
+# #     sh:group ex:TermMetadataGroup ;
+# #     sh:order 4 
+# # .
 
-ex:NotesGroup a sh:PropertyGroup ;
-    rdfs:label "Anmerkungen zum Eintrag"@de;
-    # rdfs:label "Notes"@en;
-    sh:group ex:TermMetadataGroup;
-    sh:order 5
-.
+# # ex:NotesGroup a sh:PropertyGroup ;
+# #     rdfs:label "Anmerkungen zum Eintrag"@de;
+# #     # rdfs:label "Notes"@en;
+# #     sh:group ex:TermMetadataGroup;
+# #     sh:order 5
+# # .
 
-ex:DatesGroup a sh:PropertyGroup ;
-    rdfs:label "Datumsangaben zum Eintrag"@de;
-    # rdfs:label "Dates"@en;
-    sh:order 6;
-    sh:group ex:TermMetadataGroup
-.
+# # ex:DatesGroup a sh:PropertyGroup ;
+# #     rdfs:label "Datumsangaben zum Eintrag"@de;
+# #     # rdfs:label "Dates"@en;
+# #     sh:order 6;
+# #     sh:group ex:TermMetadataGroup
+# # .
 
-###################################
-### Vocabs/ List values         ###
-###################################
+# # ###################################
+# # ### Vocabs/ List values         ###
+# # ###################################
 
-<https://purl.org/linsearch/arc> rdfs:label "Architektur"@de.
-<https://purl.org/linsearch/bau> rdfs:label "Bauwesen"@de.
-<https://purl.org/linsearch/che> rdfs:label "Chemie"@de.
-<https://purl.org/linsearch/cet> rdfs:label "Chemische und Umwelttechnik"@de.
-<https://purl.org/linsearch/inf> rdfs:label "Informatik"@de.
-<https://purl.org/linsearch/geo> rdfs:label "Geowissenschaften, Geographie"@de.
-<https://purl.org/linsearch/oek> rdfs:label "Wirtschaftswissenschaften"@de.
-<https://purl.org/linsearch/pae> rdfs:label "Erziehungswissenschaften, Fachdidaktiken"@de.
-<https://purl.org/linsearch/elt> rdfs:label "Elektrotechnik"@de.
-<https://purl.org/linsearch/tec> rdfs:label "Technik allgemein"@de.
-<https://purl.org/linsearch/his> rdfs:label "Geschichte"@de.
-<https://purl.org/linsearch/hor> rdfs:label "Gartenbau"@de.
-<https://purl.org/linsearch/jur> rdfs:label "Rechtswissenschaften"@de.
-<https://purl.org/linsearch/bio> rdfs:label "Biowissenschaften, Biologie"@de.
-<https://purl.org/linsearch/lin> rdfs:label "Sprachwissenschaften"@de.
-<https://purl.org/linsearch/lit> rdfs:label "Literaturwissenschaften"@de.
-<https://purl.org/linsearch/fer> rdfs:label "Werkstoffkunde"@de.
-<https://purl.org/linsearch/mat> rdfs:label "Mathematik"@de.
-<https://purl.org/linsearch/mas> rdfs:label "Maschinenbau, Energietechnik"@de.
-<https://purl.org/linsearch/med> rdfs:label "Medizintechnik"@de.
-<https://purl.org/linsearch/meda> rdfs:label "Medizin"@de.
-<https://purl.org/linsearch/ber> rdfs:label "Bergbau"@de.
-<https://purl.org/linsearch/rest> rdfs:label "Andere Fächer"@de.
-<https://purl.org/linsearch/phi> rdfs:label "Philosophie"@de.
-<https://purl.org/linsearch/phy> rdfs:label "Physik"@de.
-<https://purl.org/linsearch/sow> rdfs:label "Sozialwissenschaften"@de.
-<https://purl.org/linsearch/spo> rdfs:label "Sportwissenschaft"@de.
-<https://purl.org/linsearch/rel> rdfs:label "Religionswissenschaft, Theologie"@de.
-<https://purl.org/linsearch/ver> rdfs:label "Verkehrstechnik, Verkehrswesen"@de.
+# # <https://purl.org/linsearch/arc> rdfs:label "Architektur"@de.
+# # <https://purl.org/linsearch/bau> rdfs:label "Bauwesen"@de.
+# # <https://purl.org/linsearch/che> rdfs:label "Chemie"@de.
+# # <https://purl.org/linsearch/cet> rdfs:label "Chemische und Umwelttechnik"@de.
+# # <https://purl.org/linsearch/inf> rdfs:label "Informatik"@de.
+# # <https://purl.org/linsearch/geo> rdfs:label "Geowissenschaften, Geographie"@de.
+# # <https://purl.org/linsearch/oek> rdfs:label "Wirtschaftswissenschaften"@de.
+# # <https://purl.org/linsearch/pae> rdfs:label "Erziehungswissenschaften, Fachdidaktiken"@de.
+# # <https://purl.org/linsearch/elt> rdfs:label "Elektrotechnik"@de.
+# # <https://purl.org/linsearch/tec> rdfs:label "Technik allgemein"@de.
+# # <https://purl.org/linsearch/his> rdfs:label "Geschichte"@de.
+# # <https://purl.org/linsearch/hor> rdfs:label "Gartenbau"@de.
+# # <https://purl.org/linsearch/jur> rdfs:label "Rechtswissenschaften"@de.
+# # <https://purl.org/linsearch/bio> rdfs:label "Biowissenschaften, Biologie"@de.
+# # <https://purl.org/linsearch/lin> rdfs:label "Sprachwissenschaften"@de.
+# # <https://purl.org/linsearch/lit> rdfs:label "Literaturwissenschaften"@de.
+# # <https://purl.org/linsearch/fer> rdfs:label "Werkstoffkunde"@de.
+# # <https://purl.org/linsearch/mat> rdfs:label "Mathematik"@de.
+# # <https://purl.org/linsearch/mas> rdfs:label "Maschinenbau, Energietechnik"@de.
+# # <https://purl.org/linsearch/med> rdfs:label "Medizintechnik"@de.
+# # <https://purl.org/linsearch/meda> rdfs:label "Medizin"@de.
+# # <https://purl.org/linsearch/ber> rdfs:label "Bergbau"@de.
+# # <https://purl.org/linsearch/rest> rdfs:label "Andere Fächer"@de.
+# # <https://purl.org/linsearch/phi> rdfs:label "Philosophie"@de.
+# # <https://purl.org/linsearch/phy> rdfs:label "Physik"@de.
+# # <https://purl.org/linsearch/sow> rdfs:label "Sozialwissenschaften"@de.
+# # <https://purl.org/linsearch/spo> rdfs:label "Sportwissenschaft"@de.
+# # <https://purl.org/linsearch/rel> rdfs:label "Religionswissenschaft, Theologie"@de.
+# # <https://purl.org/linsearch/ver> rdfs:label "Verkehrstechnik, Verkehrswesen"@de.

@@ -3,7 +3,7 @@
 ## Was ist Terminologiearbeit?
 
 Terminologiearbeit ist gemäß DIN 2342:2022-07 [[2](Literatur.md#source2)] die "auf der Terminologiewissenschaft aufbauende Terminologierecherche, terminologische Analyse, Terminologieverwaltung und Terminologieprüfung" und "kann sich auf eine Sprache oder auf mehrere Sprachen, auf ein Fachgebiet oder auf mehrere Fachgebiete erstrecken".
-<!-- unbedingt vielleicht noch ein bisschen weiter ausführen oder auf  [Aufgaben](/docs/de/Aufgaben.md) verweisen -->
+<!-- unbedingt vielleicht noch ein bisschen weiter ausführen oder auf  [Aufgaben](/docs/de/terminology-6.md) verweisen -->
 
 ## Arten der Terminologiearbeit
 

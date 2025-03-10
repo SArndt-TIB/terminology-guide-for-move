@@ -1,0 +1,1 @@
+# Scope und Zweck festlegen

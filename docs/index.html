@@ -68,15 +68,15 @@
         '/en/': 'Sorry - nothing there!', // order of appearance seems to be relevant for the functionality of this features
         '/de/': 'Schade, nix da...',
       },
-      depth: 1,
+      depth: 7,
       hideOtherSidebarContent: true, // whether or not to hide other sidebar content
-      paths: [],
+      // paths: [],
       // Use different indexes for path prefixes (namespaces).
       // NOTE: Only works in 'auto' mode.
       //
       // When initialiazing an index, we look for the first path from the sidebar.
       // If it matches the prefix from the list, we switch to the corresponding index.
-      // pathNamespaces: ['/', '/en/'],
+      pathNamespaces: ['/de', '/en/'],
       },
       loadSidebar: true, // is loaded, but cannot jump to destinations unless it is a whole file, use only if to be loaded from _sidebar.md, otherwise specify path to file in ''
       subMaxLevel: 3,
