@@ -3,4 +3,13 @@
 Das Online-Tool [CSV-RDF-Mapper](https://ulb-darmstadt.github.io/csv-rdf-mapper/) wird von der ULB Darmstadt entwickelt und in einer Demo-Instanz gehostet.
 Sein Zweck ist die Umwandlung von semi-strukturierten CSV-Dateien in [RDF][RDF]-Daten.
 
+<!-- 
+* Wo muss ich hin?
+* Was brauche ich?
+* was geht rein?
+* was kommt raus?
+* wie gehe ich vor?
+* was sind fehlerquellen?
+ -->
+
 [RDF]: ## "Resource Description Framework"

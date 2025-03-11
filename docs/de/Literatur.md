@@ -43,9 +43,12 @@ der TU Braunschweig. Studiengänge. Allgemeine Begriffe aus Wissenschaft und Hoc
 
 21. <a name="source21"></a> "Feld" auf Duden online. URL: <https://www.duden.de/node/45890/revision/1261815> (Abrufdatum: 06.03.2025).
 
-<!-- xx. <a name="sourcexx"></a> -->
-<!-- xx. <a name="sourcexx"></a> -->
-<!-- xx. <a name="sourcexx"></a> -->
+22. <a name="source22"></a> Isaac, A. & Summers, E. (2009); SKOS Simple Knowledge Organization System Primer. URL: <https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/>  (Abrufdatum: 11.03.2025).
+
+23. <a name="source23"></a>Miles, A. & Bechhofer, S. (2009): SKOS Simple Knowledge Organization System Reference. URL: <https://www.w3.org/TR/2009/REC-skos-reference-20090818/> (Abrufdatum: 11.03.2025).
+
+24. <a name="source24"></a>Isaac, A., Phipps, J. & Rubin, D. (2009): SKOS Use Cases and Requirements. URL: <https://www.w3.org/TR/2009/NOTE-skos-ucr-20090818/> (Abrufdatum: 11.03.2025).
+
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->
