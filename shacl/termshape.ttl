@@ -11,6 +11,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix skosxl: <https://www.w3.org/2008/05/skos-xl#> .
 
 skos:Concept a rdfs:Class, sh:NodeShape ;
     dcterms:title "Begriffsangaben"@de ;
@@ -29,8 +30,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:name "lokaler Identifier des Begriffs"@de;
         # sh:name "local identifier"@en;
         sh:description "z.B. eine Zahl oder ein alphanumerischer String, der im Vokabular noch nicht verwendet wird, oder eine für das Vokabular reservierte uuid"@de;
-    ]
-    ;
+    ];
     sh:property [
         a sh:PropertyShape ;
         sh:path skos:prefLabel;
@@ -42,7 +42,20 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         # sh:name "preferred term"@en;
         sh:description "Tragen Sie hier bitte die gängigste Benennung für den Begriff ein."@de;
         sh:order 3 ;
-        sh:group ex:TermGroup
+        sh:group ex:TermGroup ;
+    ];
+    sh:property [
+        a sh:PropertyShape ;
+        sh:path skosxl:prefLabel;
+        sh:minCount 1;
+        # sh:maxCount 1;
+        sh:name "bevorzugte Benennung - xlLabel"@de ;
+        # sh:name "preferred term"@en;
+        sh:description "Tragen Sie hier bitte die gängigste Benennung für den Begriff ein. Beachten Sie bitte, dass nur eine bevorzugte Benennung per Bergiff und Sprache angegeben werden sollte"@de;
+        sh:order 3 ;
+        sh:group ex:TermGroup ;
+        sh:node ex:PrefLabel ;
+        sh:nodeKind sh:IRI ;
     ];
     sh:property [
         a sh:PropertyShape ;
@@ -55,6 +68,18 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:description "e.g. synonyms, abbreviations, acronyms, equivalent terms in other languages"@en;
         sh:order 4 ;
         sh:group ex:TermGroup
+    ];
+    sh:property [
+        a sh:PropertyShape ;
+        sh:path skosxl:altLabel ;
+        sh:name "alternative Benennung - xlLabel"@de ;
+        # sh:name "alternative term"@en;
+        sh:description "z.B. Synoynme, Abkürzungen, Akronyme, fremdsprachige äquivalente Ausdrücke"@de;
+        sh:description "e.g. synonyms, abbreviations, acronyms, equivalent terms in other languages"@en;
+        sh:order 4 ;
+        sh:group ex:TermGroup ;
+        sh:node ex:AltLabel ;
+        sh:nodeKind sh:IRI ;
     ];
     sh:property [
         a sh:PropertyShape ;
@@ -395,7 +420,49 @@ ex:TermRelation a sh:NodeShape , rdfs:Class ;
     ]; 
 .
 
+ex:PrefLabel a sh:NodeShape , rdfs:Class;
+  rdfs:subClassOf skosxl:Label ;
+  dcterms:title "bevorzugte Benennung des Begriffs - PrefLabel"@de ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:path skosxl:literalForm ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:datatype xsd:string ;
+    sh:name "bevorzugte Benennung - xlLabel"@de ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:path <http://purl.org/dc/terms/language> ;
+    sh:minCount 1;
+    sh:maxCount 1 ;
+    sh:in ("en" "de" "fr" "it" "zh") ;
+    sh:datatype xsd:string ;
+    sh:name "Sprache der Benennung"@de ;
+  ] ;
+.
 
+ex:AltLabel a sh:NodeShape , rdfs:Class;
+  rdfs:subClassOf skosxl:Label ;
+  dcterms:title "alternative Benennung des Begriffs - AltLabel"@de ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:path skosxl:literalForm ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:datatype xsd:string ;
+    sh:name "alternative Benennung - xlLabel"@de ;
+  ] ;
+  sh:property [
+    a sh:PropertyShape ;
+    sh:path <http://purl.org/dc/terms/language> ;
+    sh:minCount 1;
+    sh:maxCount 1 ;
+    sh:in ("en" "de" "fr" "it" "zh") ;
+    sh:datatype xsd:string ;
+    sh:name "Sprache der Benennung"@de ;
+  ] ;
+.
 
 # ###################################
 # ### PropertyGroups              ###

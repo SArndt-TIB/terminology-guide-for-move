@@ -1,8 +1,8 @@
-lokaler Identifier des Begriffs;bevorzugte Benennung;alternative Benennung;Definition;Quellenangaben;Bearbeitungsdatum;Fachzuordnung;Erstellungsdatum;redaktionelle Anmerkung;Anmerkung zur Bearbeitungshistorie;Verfasser des Eintrags;Kontextsatz;Bearbeitungsstatus;Mathematisches Symbol;Begriffsbeziehung
-1;Samstag;Sonnabend;schönster Tag der Woche an dem man alles machen kann;500;12.12.2024;cet;12.12.2023;Samstag ist großartig;gestern überarbeitet;1;Satz als Benutzungsbeispiel;draft;Bsp.;3
-2;Montag;;weniger schöner Tag;500;2024-02-03;cet;2023-01-01;Text für eine Anmerkung;gestern überarbeitet;1;Montag nervt;draft;;3
-3;;Parkplatzsuche;;2;;https://purl.org/linsearch/ver;;;;2;;;;none
-3;;Parkraumsuche;;2;;https://purl.org/linsearch/ver;;;;2;;;;none
-3;Parksuchverkehr;Parkverkehr;Anteil am Straßenverkehr der durch die Suche nach verfügbarem Parkraum entsteht;2;2025-10-03;https://purl.org/linsearch/ver;2025-03-10;TODO: weitere Synonyme suchen;;2;Der Parkraumsuchverkehr ist in Ballungsräumen besonders hoch.;;;4
-4;Straßenverkehr;;;2;;https://purl.org/linsearch/ver;;;;2;;;;none
-5;;Schiffsverkehr;;2;;https://purl.org/linsearch/ver;;;;2;;;;none
+lokaler Identifier des Begriffs;bevorzugte Benennung;bevorzugte Benennung - xlLabel;alternative Benennung;alternative Benennung - xlLabel;Definition;Quellenangaben;Bearbeitungsdatum;Fachzuordnung;Erstellungsdatum;redaktionelle Anmerkung;Anmerkung zur Bearbeitungshistorie;Verfasser des Eintrags;Kontextsatz;Bearbeitungsstatus;Mathematisches Symbol;Begriffsbeziehung
+1;Samstag;1;Sonnabend;2;schönster Tag der Woche an dem man alles machen kann;500;12.12.2024;cet;12.12.2023;Samstag ist großartig;gestern überarbeitet;1;Satz als Benutzungsbeispiel;draft;Bsp.;3
+2;Montag;3;;;weniger schöner Tag;500;2024-02-03;cet;2023-01-01;Text für eine Anmerkung;gestern überarbeitet;1;Montag nervt;draft;;3
+3;;;Parkplatzsuche;4;;2;;https://purl.org/linsearch/ver;;;;2;;;;none
+3;;;Parkraumsuche;5;;2;;https://purl.org/linsearch/ver;;;;2;;;;none
+3;Parksuchverkehr;6;Parkverkehr;7;Anteil am Straßenverkehr der durch die Suche nach verfügbarem Parkraum entsteht;2;2025-10-03;https://purl.org/linsearch/ver;2025-03-10;TODO: weitere Synonyme suchen;;2;Der Parkraumsuchverkehr ist in Ballungsräumen besonders hoch.;;;4
+4;Straßenverkehr;8;;;;2;;https://purl.org/linsearch/ver;;;;2;;;;none
+5;Schiffsverkehr;9;;;;2;;https://purl.org/linsearch/ver;;;;2;;;;none
