@@ -1,2 +1,2 @@
-lokale ID der Begriffsbeziehung;lokale ID des Ausgangsbegriffs;Relationstyp;lokale ID des Zielbegriffs
-1;3;http://www.w3.org/2004/02/skos/core#broader;4
+Begriffbeziehung - ID;Begriffbeziehung - Ausgangsbegriff - ID;Begriffbeziehung - Relationstyp;Begriffbeziehung - Zielbegriff - ID
+3;1;http://www.w3.org/2004/02/skos/core#broader;3

@@ -1,0 +1,117 @@
+@prefix :        <http://purl.org/mydomain/mysubdomain/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex:      <https://www.example.com/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix m4i:     <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl:  <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+:Concept2  rdf:type         skos:Concept;
+        dcterms:created     "2023-01-01"^^xsd:date;
+        dcterms:creator     :Author1;
+        dcterms:modified    "2024-02-03"^^xsd:date;
+        dcterms:source      :Source500;
+        dcterms:subject     <https://purl.org/linsearch/cet>;
+        skos:definition     "weniger schöner Tag"@de;
+        skos:editorialNote  "Text für eine Anmerkung"@de;
+        skos:historyNote    "gestern überarbeitet"@de;
+        skos:prefLabel      "Montag"@de , "monday"@en;
+        ex:editorialStatus  "draft";
+        ex:exampleSentence  "Montag nervt"@de;
+        ex:id               "Concept2" .
+
+:Source2  rdf:type         ex:Source;
+        dcterms:issued     "2020-07-15"^^xsd:gYear;
+        dcterms:publisher  "Wikidata";
+        dcterms:title      "parking search traffic";
+        dcat:accessURL     <https://www.wikidata.org/w/index.php?title=Q97379970&oldid=1936875884>;
+        ex:id              "Source2" .
+
+<https://purl.org/linsearch/ver>
+        rdf:type  skos:Concept .
+
+:Source500  rdf:type       ex:Source;
+        dcterms:creator    :Author4;
+        dcterms:issued     "2022-05-01"^^xsd:gYear;
+        dcterms:publisher  "TIB";
+        dcterms:title      "Lexikon";
+        dcat:accessURL     <http://www.example.com/quelle>;
+        ex:id              "Source500" .
+
+:Author2  rdf:type      foaf:Person;
+        m4i:orcidId     "https://orcid.org/0000-0002-0871-8994";
+        foaf:firstName  "Jane";
+        foaf:lastName   "Doe";
+        ex:id           "Author2" .
+
+:Concept4  rdf:type      skos:Concept;
+        dcterms:creator  :Author2;
+        dcterms:source   :Source2;
+        dcterms:subject  <https://purl.org/linsearch/ver>;
+        skos:prefLabel   "Straßenverkehr"@de;
+        ex:id            "Concept4" .
+
+:Author4  rdf:type      foaf:Person;
+        m4i:orcidId     "https://orcid.org/0000-0002-0871-8993";
+        foaf:firstName  "Harro";
+        foaf:lastName   "Maier";
+        ex:id           "Author4" .
+
+:Concept1  rdf:type         skos:Concept;
+        dcterms:created     "2023-12-12"^^xsd:date;
+        dcterms:creator     :Author1;
+        dcterms:modified    "2024-12-12"^^xsd:date;
+        dcterms:source      :Source500;
+        dcterms:subject     <https://purl.org/linsearch/cet>;
+        skos:altLabel       "Sonnabend"@de;
+        skos:definition     "schönster Tag der Woche an dem man alles machen kann"@de , "best day of the week"@en;
+        skos:editorialNote  "Samstag ist großartig"@de;
+        skos:historyNote    "gestern überarbeitet"@de;
+        skos:prefLabel      "Samstag"@de , "saturday"@en;
+        ex:contextSentence  "this is a context sentence in english"@en;
+        ex:editorialStatus  "draft";
+        ex:exampleSentence  "Satz als Benutzungsbeispiel"@de;
+        ex:id               "Concept1";
+        ex:mathSymbol       "Bsp." .
+
+:Concept3  rdf:type         skos:Concept;
+        dcterms:created     "2025-03-10"^^xsd:date;
+        dcterms:creator     :Author2;
+        dcterms:modified    "2025-10-03"^^xsd:date;
+        dcterms:source      :Source2;
+        dcterms:subject     <https://purl.org/linsearch/ver>;
+        skos:altLabel       "Parkraumsuche"@de , "Parkplatzsuche"@de , "Parkverkehr"@de;
+        skos:broader        :Concept4;
+        skos:definition     "Anteil am Straßenverkehr der durch die Suche nach verfügbarem Parkraum entsteht"@de;
+        skos:editorialNote  "TODO: weitere Synonyme suchen"@de;
+        skos:prefLabel      "parking traffic"@en , "Parksuchverkehr"@de;
+        ex:exampleSentence  "Der Parkraumsuchverkehr ist in Ballungsräumen besonders hoch."@de;
+        ex:id               "Concept3" .
+
+:Author1  rdf:type      foaf:Person;
+        m4i:orcidId     "https://orcid.org/0000-0002-0871-8995";
+        foaf:firstName  "Max";
+        foaf:lastName   "Muster";
+        ex:id           "Author1" .
+
+<https://purl.org/linsearch/cet>
+        rdf:type  skos:Concept .
+
+<http://www.example.com/quelle>
+        rdf:type  rdfs:Resource .
+
+<https://www.wikidata.org/w/index.php?title=Q97379970&oldid=1936875884>
+        rdf:type  rdfs:Resource .
+
+:Concept5  rdf:type      skos:Concept;
+        dcterms:creator  :Author2;
+        dcterms:source   :Source2;
+        dcterms:subject  <https://purl.org/linsearch/ver>;
+        skos:prefLabel   "Schiffsverkehr"@de;
+        ex:id            "Concept5" .

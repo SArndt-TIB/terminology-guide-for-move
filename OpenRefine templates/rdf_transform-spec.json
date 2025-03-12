@@ -1,0 +1,728 @@
+[
+  {
+    "op": "rdf-transform/save-rdf-transform",
+    "rdf-transform": {
+      "version": "2.2.4",
+      "extension": "RDFTransform",
+      "namespaces": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "ex": "https://www.example.com/",
+        "m4i": "http://w3id.org/nfdi4ing/metadata4ing#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "skosxl": "http://www.w3.org/2008/05/skos-xl#"
+      },
+      "baseIRI": "http://purl.org/mydomain/mysubdomain/",
+      "subjectMappings": [
+        {
+          "valueSource": {
+            "source": "column",
+            "columnName": "Verfasser - ID"
+          },
+          "typeMappings": [
+            {
+              "prefix": "foaf",
+              "valueSource": {
+                "source": "constant",
+                "constant": "Person"
+              }
+            }
+          ],
+          "propertyMappings": [
+            {
+              "prefix": "ex",
+              "valueSource": {
+                "source": "constant",
+                "constant": "id"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Verfasser - ID"
+                  },
+                  "valueType": {
+                    "type": "literal"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "foaf",
+              "valueSource": {
+                "source": "constant",
+                "constant": "lastName"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Verfasser  - Nachname"
+                  },
+                  "valueType": {
+                    "type": "literal"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "foaf",
+              "valueSource": {
+                "source": "constant",
+                "constant": "firstName"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Verfasser - Vorname"
+                  },
+                  "valueType": {
+                    "type": "literal"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "m4i",
+              "valueSource": {
+                "source": "constant",
+                "constant": "orcidId"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Verfasser - ORCiD"
+                  },
+                  "valueType": {
+                    "type": "literal"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "valueSource": {
+            "source": "column",
+            "columnName": "Quellennachweis - ID"
+          },
+          "typeMappings": [
+            {
+              "prefix": "ex",
+              "valueSource": {
+                "source": "constant",
+                "constant": "Source"
+              }
+            }
+          ],
+          "propertyMappings": [
+            {
+              "prefix": "ex",
+              "valueSource": {
+                "source": "constant",
+                "constant": "id"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Quellennachweis - ID"
+                  },
+                  "valueType": {
+                    "type": "literal"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "dcterms",
+              "valueSource": {
+                "source": "constant",
+                "constant": "title"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Quellennachweis - Titel"
+                  },
+                  "valueType": {
+                    "type": "literal"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "dcterms",
+              "valueSource": {
+                "source": "constant",
+                "constant": "creator"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Quellennachweis - Verfasser"
+                  },
+                  "valueType": {
+                    "type": "iri"
+                  },
+                  "typeMappings": [
+                    {
+                      "prefix": "foaf",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "Person"
+                      }
+                    }
+                  ],
+                  "propertyMappings": []
+                }
+              ]
+            },
+            {
+              "prefix": "dcterms",
+              "valueSource": {
+                "source": "constant",
+                "constant": "publisher"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Quellennachweis - Herausgeber"
+                  },
+                  "valueType": {
+                    "type": "literal"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "dcterms",
+              "valueSource": {
+                "source": "constant",
+                "constant": "issued"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Quellennachweis - Erscheinungsdatum"
+                  },
+                  "valueType": {
+                    "type": "datatype_literal",
+                    "datatype": {
+                      "prefix": "xsd",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "gYear"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "dcat",
+              "valueSource": {
+                "source": "constant",
+                "constant": "accessURL"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Quellennachweis - Zugangslink"
+                  },
+                  "valueType": {
+                    "type": "iri"
+                  },
+                  "typeMappings": [
+                    {
+                      "prefix": "rdfs",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "Resource"
+                      }
+                    }
+                  ],
+                  "propertyMappings": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "valueSource": {
+            "source": "column",
+            "columnName": "Begriff - ID"
+          },
+          "typeMappings": [
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "Concept"
+              }
+            }
+          ],
+          "propertyMappings": [
+            {
+              "prefix": "ex",
+              "valueSource": {
+                "source": "constant",
+                "constant": "id"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - ID"
+                  },
+                  "valueType": {
+                    "type": "literal"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "prefLabel"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - bevorzugte Benennung (de)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "de"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "altLabel"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - alternative Benennung (de)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "de"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "definition"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Definition (de)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "de"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "dcterms",
+              "valueSource": {
+                "source": "constant",
+                "constant": "source"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Quellenangabe"
+                  },
+                  "valueType": {
+                    "type": "iri"
+                  },
+                  "typeMappings": [
+                    {
+                      "prefix": "ex",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "Source"
+                      }
+                    }
+                  ],
+                  "propertyMappings": []
+                }
+              ]
+            },
+            {
+              "prefix": "dcterms",
+              "valueSource": {
+                "source": "constant",
+                "constant": "modified"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Bearbeitungsdatum"
+                  },
+                  "valueType": {
+                    "type": "datatype_literal",
+                    "datatype": {
+                      "prefix": "xsd",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "date"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "dcterms",
+              "valueSource": {
+                "source": "constant",
+                "constant": "subject"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Fachzuordnung"
+                  },
+                  "valueType": {
+                    "type": "iri"
+                  },
+                  "typeMappings": [
+                    {
+                      "prefix": "skos",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "Concept"
+                      }
+                    }
+                  ],
+                  "propertyMappings": []
+                }
+              ]
+            },
+            {
+              "prefix": "dcterms",
+              "valueSource": {
+                "source": "constant",
+                "constant": "created"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Erstellungsdatum"
+                  },
+                  "valueType": {
+                    "type": "datatype_literal",
+                    "datatype": {
+                      "prefix": "xsd",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "date"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "editorialNote"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - redaktionelle Anmerkung (de)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "de"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "historyNote"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Anmerkung zur Bearbeitungshistorie (de)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "de"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "dcterms",
+              "valueSource": {
+                "source": "constant",
+                "constant": "creator"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Verfasser des Eintrags"
+                  },
+                  "valueType": {
+                    "type": "iri"
+                  },
+                  "typeMappings": [
+                    {
+                      "prefix": "foaf",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "Person"
+                      }
+                    }
+                  ],
+                  "propertyMappings": []
+                }
+              ]
+            },
+            {
+              "prefix": "ex",
+              "valueSource": {
+                "source": "constant",
+                "constant": "exampleSentence"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Kontextsatz (de)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "de"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "ex",
+              "valueSource": {
+                "source": "constant",
+                "constant": "editorialStatus"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Bearbeitungsstatus"
+                  },
+                  "valueType": {
+                    "type": "literal"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "ex",
+              "valueSource": {
+                "source": "constant",
+                "constant": "mathSymbol"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Mathematisches Symbol"
+                  },
+                  "valueType": {
+                    "type": "literal"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "broader"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Begriffsbeziehung - Oberbegriff"
+                  },
+                  "valueType": {
+                    "type": "iri"
+                  },
+                  "typeMappings": [
+                    {
+                      "prefix": "skos",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "Concept"
+                      }
+                    }
+                  ],
+                  "propertyMappings": []
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "prefLabel"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - bevorzugte Benennung (en)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "en"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "altLabel"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - alternative Benennung (en)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "en"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "definition"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Definition (en)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "en"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "editorialNote"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - redaktionelle Anmerkung (en)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "en"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "historyNote"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Anmerkung zur Bearbeitungshistorie (en)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "en"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "ex",
+              "valueSource": {
+                "source": "constant",
+                "constant": "contextSentence"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Kontextsatz (en)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "en"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

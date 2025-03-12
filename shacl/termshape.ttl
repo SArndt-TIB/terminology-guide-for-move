@@ -27,7 +27,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:order 1 ;
         sh:group ex:TermGroup ;
         sh:datatype xsd:string ;
-        sh:name "lokaler Identifier des Begriffs"@de;
+        sh:name "Begriff - ID"@de;
         # sh:name "local identifier"@en;
         sh:description "z.B. eine Zahl oder ein alphanumerischer String, der im Vokabular noch nicht verwendet wird, oder eine für das Vokabular reservierte uuid"@de;
     ];
@@ -38,7 +38,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:maxCount 1;
         sh:datatype rdf:langString ;
         sh:languageIn ("en" "de");
-        sh:name "bevorzugte Benennung"@de ;
+        sh:name "Begriff - bevorzugte Benennung"@de ;
         # sh:name "preferred term"@en;
         sh:description "Tragen Sie hier bitte die gängigste Benennung für den Begriff ein."@de;
         sh:order 3 ;
@@ -49,7 +49,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:path skosxl:prefLabel;
         sh:minCount 1;
         # sh:maxCount 1;
-        sh:name "bevorzugte Benennung - xlLabel"@de ;
+        sh:name "Begriff - bevorzugte Benennung - xlLabel"@de ;
         # sh:name "preferred term"@en;
         sh:description "Tragen Sie hier bitte die gängigste Benennung für den Begriff ein. Beachten Sie bitte, dass nur eine bevorzugte Benennung per Bergiff und Sprache angegeben werden sollte"@de;
         sh:order 3 ;
@@ -62,7 +62,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:path skos:altLabel ;
         sh:datatype rdf:langString ;
         sh:languageIn ("en" "de");
-        sh:name "alternative Benennung"@de ;
+        sh:name "Begriff - alternative Benennung"@de ;
         # sh:name "alternative term"@en;
         sh:description "z.B. Synoynme, Abkürzungen, Akronyme, fremdsprachige äquivalente Ausdrücke"@de;
         sh:description "e.g. synonyms, abbreviations, acronyms, equivalent terms in other languages"@en;
@@ -72,7 +72,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
     sh:property [
         a sh:PropertyShape ;
         sh:path skosxl:altLabel ;
-        sh:name "alternative Benennung - xlLabel"@de ;
+        sh:name "Begriff - alternative Benennung - xlLabel"@de ;
         # sh:name "alternative term"@en;
         sh:description "z.B. Synoynme, Abkürzungen, Akronyme, fremdsprachige äquivalente Ausdrücke"@de;
         sh:description "e.g. synonyms, abbreviations, acronyms, equivalent terms in other languages"@en;
@@ -89,7 +89,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:uniqueLang true ;
         sh:path skos:definition;
         sh:order 2 ;
-        sh:name "Definition"@de;
+        sh:name "Begriff - Definition"@de;
         # sh:name "definition"@en;
         sh:description "Tragen Sie hier bitte eine Definition für den Begriff ein."@de ;
         # sh:description "Add a short definition for the term."@en ;
@@ -97,7 +97,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
     ];
     sh:property [
         a sh:PropertyShape;
-        sh:name "Quellenangaben"@de;
+        sh:name "Begriff - Quellenangabe"@de;
         # sh:name "Sources"@en;
         sh:description "Quellenangabe für Informationen über den Begriff"@de ;
         sh:path dcterms:source;
@@ -110,7 +110,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         a sh:PropertyShape;
         sh:group ex:DatesGroup ;
         sh:path dcterms:modified ;
-        sh:name "Bearbeitungsdatum"@de ;
+        sh:name "Begriff - Bearbeitungsdatum"@de ;
         # sh:name "Modification date"@en ;
         sh:datatype xsd:date
     ];
@@ -119,7 +119,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:path dcterms:subject ;
         sh:group ex:TermGroup;
         sh:order 5;
-        sh:name "Fachzuordnung"@de;
+        sh:name "Begriff - Fachzuordnung"@de;
         # sh:datatype xsd:string ;
         sh:nodeKind sh:IRI ;
 #         sh:name "Subject"@en;
@@ -188,7 +188,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         a sh:PropertyShape ;
         sh:group ex:DatesGroup ;
         sh:path dcterms:created ;
-        sh:name "Erstellungsdatum"@de;
+        sh:name "Begriff - Erstellungsdatum"@de;
         # sh:name "Creation date"@en;
         sh:datatype xsd:date
     ] ;
@@ -198,7 +198,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:path skos:editorialNote ;
         sh:datatype rdf:langString;
         sh:languageIn ("en" "de") ;
-        sh:name "redaktionelle Anmerkung"@de;
+        sh:name "Begriff - redaktionelle Anmerkung"@de;
         # sh:name "editorial note"@en;
         sh:group ex:NotesGroup
     ] ;
@@ -208,19 +208,19 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:path skos:historyNote ;
         sh:datatype rdf:langString;
         sh:languageIn ("en" "de") ;
-        sh:name "Anmerkung zur Bearbeitungshistorie"@de;
+        sh:name "Begriff - Anmerkung zur Bearbeitungshistorie"@de;
         # sh:name "history note"@en;
         sh:group ex:NotesGroup
     ];
     sh:property [
         a sh:PropertyShape ;
-        rdfs:label "Verfasser des Eintrags"@de;
+        rdfs:label "Begriff - Verfasser des Eintrags"@de;
         # rdfs:label "Author of the concept entry"@en;
         sh:path dcterms:creator;
         sh:node ex:Author ;
         sh:minCount 1;
         sh:group ex:TermMetadataGroup;
-        sh:name "Verfasser des Eintrags"@de;
+        sh:name "Begriff - Verfasser des Eintrags"@de;
         # sh:name "Author of the concept entry"@en
     ];
     sh:property [
@@ -229,7 +229,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:datatype rdf:langString;
         sh:languageIn ("en" "de");
         sh:group ex:TermGroup ;
-        sh:name "Kontextsatz"@de;
+        sh:name "Begriff - Kontextsatz"@de;
         # sh:name "context sentence"@en ;
         sh:order 7
     ] ;
@@ -238,7 +238,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:path ex:editorialStatus ;
         sh:in ("draft" "approved" "deprecated");
         sh:group ex:TermStatusGroup;
-        sh:name "Bearbeitungsstatus"@de ;
+        sh:name "Begriff - Bearbeitungsstatus"@de ;
         sh:datatype xsd:string ;
         # sh:name "Editorial status"@en
     ] ;
@@ -246,7 +246,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         # a sh:PropertyShape ;
         sh:group ex:TermGroup ;
         sh:datatype xsd:string ;
-        sh:name "Mathematisches Symbol"@de; 
+        sh:name "Begriff - Mathematisches Symbol"@de; 
         # sh:name "Mathematical symbol"@en ;
         sh:order 6 ;
         sh:path ex:mathSymbol;
@@ -257,7 +257,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         sh:nodeKind sh:IRI ;
         sh:node ex:TermRelation ;
         sh:group ex:TermRelationsGroup ;
-        sh:name "Begriffsbeziehung"@de ;
+        sh:name "Begriff - Begriffsbeziehung"@de ;
         # sh:name "concept relation"@en
     ]
 .
@@ -271,7 +271,7 @@ ex:Source a rdfs:Class , sh:NodeShape ;
         sh:minCount 1;
         sh:maxCount 1;
         sh:datatype xsd:string ;
-        sh:name "lokaler Identifier der Quelle"@de;
+        sh:name "Quellennachweis - ID"@de;
     ];
     sh:property [
         a sh:PropertyShape ;
@@ -279,14 +279,14 @@ ex:Source a rdfs:Class , sh:NodeShape ;
         sh:minCount 1;
         sh:datatype rdf:langString ;
         sh:languageIn ("en" "de");
-        sh:name "Titel"@de ;
+        sh:name "Quellennachweis - Titel"@de ;
         # sh:name "Title"@en ;
         sh:description "Geben Sie hier den Titel der Quelle für alle Angaben zum terminologischen Eintrag an."@de ;
         # sh:description "Add the title of the source for the concept entry."@en ;
     ] ;
     sh:property [
         a sh:PropertyShape ;
-        sh:name "Verfasser"@de ;
+        sh:name "Quellennachweis - Verfasser"@de ;
         # sh:name "Author of the source"@en ;
         sh:node ex:Author ;
         sh:path dcterms:creator ;
@@ -297,7 +297,7 @@ ex:Source a rdfs:Class , sh:NodeShape ;
     ] ;
     sh:property [
         a sh:PropertyShape ;
-        sh:name "Herausgeber"@de;
+        sh:name "Quellennachweis - Herausgeber"@de;
         # sh:name "Publisher of the source"@en;
         sh:description "der Herausgeber der Quelle"@de;
         sh:group ex:SourceGroup ;
@@ -306,7 +306,7 @@ ex:Source a rdfs:Class , sh:NodeShape ;
     ];
     sh:property [
         a sh:PropertyShape ;
-        sh:name "Erscheinungsdatum"@de;
+        sh:name "Quellennachweis - Erscheinungsdatum"@de;
         # sh:name "Publication date"@en;
         sh:group ex:SourceGroup ;
         sh:minCount 1 ;
@@ -317,7 +317,7 @@ ex:Source a rdfs:Class , sh:NodeShape ;
         a sh:PropertyShape ;
         sh:path dcat:accessURL;
         sh:datatype xsd:anyURI ;
-        sh:name "Zugangslink"@de;
+        sh:name "Quellennachweis - Zugangslink"@de;
         # sh:name "access URL"@en;
         sh:description "z.B. ein persistenter Identifier wie eine DOI"@de;
         # sh:description "e.g. a persistent identifier like a DOI"@en;
@@ -334,13 +334,13 @@ ex:Author a sh:NodeShape , rdfs:Class ;
         sh:path ex:id ;
         sh:minCount 1;
         sh:maxCount 1;
-        sh:name "lokaler Identifier des Verfassers"@de;
+        sh:name "Verfasser - ID"@de;
         sh:datatype xsd:string ;
     ] ;
     sh:property [
         a sh:PropertyShape ;
         sh:path foaf:lastName ;
-        sh:name "Nachname"@de;
+        sh:name "Verfasser  - Nachname"@de;
         # sh:name "Last name"@en;
         sh:maxCount 1;
         sh:description "mehrere Nachnamen werden in einem Feld in der korrekten Reihenfolge angegeben"@de ;
@@ -350,7 +350,7 @@ ex:Author a sh:NodeShape , rdfs:Class ;
     sh:property [
         a sh:PropertyShape ;
         sh:path foaf:firstName ;
-        sh:name "Vorname"@de; 
+        sh:name "Verfasser - Vorname"@de; 
         sh:datatype xsd:string ;
         # sh:name "first name"@en;
         sh:maxCount 1;
@@ -362,7 +362,7 @@ ex:Author a sh:NodeShape , rdfs:Class ;
         sh:path m4i:hasOrcidId ;
         sh:maxCount 1;
         sh:pattern "^https?:\\/\\/orcid\\.org\\/(000\\d-000(?:1-[5-9]|2-[0-9]|3-[0-9])\\d{3}-\\d{3}[\\dX])$"^^xsd:string;
-        sh:name "ORCiD"@de;
+        sh:name "Verfasser - ORCiD"@de;
         # sh:name "ORCiD"@en;
         sh:description "die Orcid muss einem bestimmten Muster entsprechen"@de;
         # sh:description "the Orcid has to have a specific pattern"@de;
@@ -384,7 +384,7 @@ ex:TermRelation a sh:NodeShape , rdfs:Class ;
             # skos:broaderTransitive
         );
         sh:nodeKind sh:IRI ;
-        sh:name "Relationstyp"@de ;
+        sh:name "Begriffbeziehung - Relationstyp"@de ;
         # sh:name "relation type"@en ;
         sh:description """Der Relationstyp gibt die Art der Beziehung zwischen den beiden Begriffen an. 
             Die verfügbaren Typen stammen aus dem SKOS-Standard: 
@@ -398,7 +398,7 @@ ex:TermRelation a sh:NodeShape , rdfs:Class ;
         a sh:PropertyShape ;
         sh:path rdf:object ;
         sh:nodeKind sh:IRI ;
-        sh:name "lokale ID des Zielbegriffs"@de ;
+        sh:name "Begriffbeziehung - Zielbegriff - ID"@de ;
         # sh:name "local ID of target concept"@en;
         sh:node skos:Concept ;
     ] ;
@@ -407,7 +407,7 @@ ex:TermRelation a sh:NodeShape , rdfs:Class ;
         sh:path ex:id ;
         sh:minCount 1;
         sh:maxCount 1;
-        sh:name "lokale ID der Begriffsbeziehung"@de;
+        sh:name "Begriffbeziehung - ID"@de;
         sh:datatype xsd:string ;
     ] ;
     sh:property	[
@@ -415,7 +415,7 @@ ex:TermRelation a sh:NodeShape , rdfs:Class ;
         sh:node skos:Concept ;
         sh:path rdf:subject ;
         sh:nodeKind sh:IRI ;
-        sh:name "lokale ID des Ausgangsbegriffs"@de ;
+        sh:name "Begriffbeziehung - Ausgangsbegriff - ID"@de ;
         # sh:name "local ID of source concept"@en ;
     ]; 
 .
@@ -429,7 +429,7 @@ ex:PrefLabel a sh:NodeShape , rdfs:Class;
     sh:minCount 1;
     sh:maxCount 1;
     sh:datatype xsd:string ;
-    sh:name "bevorzugte Benennung - xlLabel"@de ;
+    sh:name "PrefLabel (skosxl) - Benennung"@de ;
   ] ;
   sh:property [
     a sh:PropertyShape ;
@@ -438,7 +438,7 @@ ex:PrefLabel a sh:NodeShape , rdfs:Class;
     sh:maxCount 1 ;
     sh:in ("en" "de" "fr" "it" "zh") ;
     sh:datatype xsd:string ;
-    sh:name "Sprache der Benennung"@de ;
+    sh:name "PrefLabel (skosxl) - Sprache"@de ;
   ] ;
 .
 
@@ -451,7 +451,7 @@ ex:AltLabel a sh:NodeShape , rdfs:Class;
     sh:minCount 1;
     sh:maxCount 1;
     sh:datatype xsd:string ;
-    sh:name "alternative Benennung - xlLabel"@de ;
+    sh:name "AltLabel (skosxl) - Benennung"@de ;
   ] ;
   sh:property [
     a sh:PropertyShape ;
@@ -460,7 +460,7 @@ ex:AltLabel a sh:NodeShape , rdfs:Class;
     sh:maxCount 1 ;
     sh:in ("en" "de" "fr" "it" "zh") ;
     sh:datatype xsd:string ;
-    sh:name "Sprache der Benennung"@de ;
+    sh:name "AltLabel (skosxl) - Sprache"@de ;
   ] ;
 .
 
