@@ -1,6 +1,7 @@
 # Übersicht
 
 * [Scope und Zweck festlegen](tutorial-3.md)
+* [Terminologieleitfaden aufsetzen](tutorial-15.md)
 * [Ein Git-Repositorium einrichten](tutorial-2.md)
 * [Daten sammeln, als CSV dokumentieren und nach RDF konvertieren](tutorial-12.md)
   <!-- * [Tabellarische Datenverwaltung für CSV-RDF-Mapper](tutorial-14.md) -->

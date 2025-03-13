@@ -6,4 +6,4 @@ Für eine detaillierte Einführung verweisen wir an dieser Stelle zunächst auf 
 
 Im Rahmen des FID-Move-Tutorials konzentrieren wir uns zunächst vor allem auf eine tabellarische Dokumentatiion von Terminologie und Tools zu ihrer Konvertierung nach RDF unter Verwendung des SKOS-Standards.
 
-Weiterführende Literatur findet sich auch im [Literatuverzeichnis](Literatur.md), hier insbesondere [[22]](Literatur.md#source22), [[23]](Literatur.md#sourceXX) und [[24]](Literatur.md#sourceXX).
+Weiterführende Literatur findet sich auch im [Literatuverzeichnis](Literatur.md), hier insbesondere [[22]](Literatur.md#source22), [[23]](Literatur.md#source23) und [[24]](Literatur.md#source24).

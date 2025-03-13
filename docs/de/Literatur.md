@@ -49,7 +49,8 @@ der TU Braunschweig. Studiengänge. Allgemeine Begriffe aus Wissenschaft und Hoc
 
 24. <a name="source24"></a>Isaac, A., Phipps, J. & Rubin, D. (2009): SKOS Use Cases and Requirements. URL: <https://www.w3.org/TR/2009/NOTE-skos-ucr-20090818/> (Abrufdatum: 11.03.2025).
 
-<!-- xx. <a name="sourcexx"></a> -->
+25. <a name="source25"></a> "Samstag" auf Duden online. URL: <https://www.duden.de/node/125291/revision/1235876> (Abrufdatum: 13.03.2025).
+
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->

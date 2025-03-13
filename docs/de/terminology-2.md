@@ -24,3 +24,8 @@ Auch durch die Beschaffenheit der Terminologie wird die Präzision, Eindeutigkei
 <!-- >TODO Weitere optimale Eigenschaften der Fachkommunikation nennen?<-->
 
 Die Arbeit an und mit Terminologie sollte deswegen möglichst systematisch erfolgen und die Ergebnisse sollten nicht nur dokumentiert werden, sondern so dokumentiert werden, dass sie möglichst auch für andere ForscherInnen und AnwenderInnen nachnutzbar sind.
+
+TODO: ergänzen: sprachliche 1:n-Beziehungen
+
+* Ambiguität: Homonymie, Polysemie
+* Synonymie
