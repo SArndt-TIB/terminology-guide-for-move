@@ -30,10 +30,10 @@ Für die Nutzung mit dem Tool [CSV-RDF-Mapper](tools_SKOS-CSV2RDF.md) haben wir 
 Die Struktur von `terms.csv` und die Bedeutung ihrer Spalten wird anhand einiger Beispieldaten erläutert.
 Die nachfolgende Tabelle enthält zwei Begriffe:
 
-|lokaler Identifier des Begriffs|bevorzugte Benennung|bevorzugte Benennung - xlLabel|alternative Benennung|alternative Benennung - xlLabel|Definition|Quellenangaben|Bearbeitungsdatum|Fachzuordnung|Erstellungsdatum|redaktionelle Anmerkung|Anmerkung zur Bearbeitungshistorie|Verfasser des Eintrags|Kontextsatz|Bearbeitungsstatus|Mathematisches Symbol|Begriffsbeziehung|
+|lokaler Identifier des Begriffs|bevorzugte Benennung|bevorzugte Benennung - xlLabel|alternative Benennung|alternative Benennung - xlLabel|Definition|Quellenangaben|Bearbeitungsdatum|Fachzuordnung|Erstellungsdatum|redaktionelle Anmerkung|Änderungsvermerk|Verfasser des Eintrags|Kontextsatz|Bearbeitungsstatus|Symbol oder Formelzeichen|Begriffsbeziehung|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|1|Samstag|1|Sonnabend|2|schönster Tag der Woche an dem man alles machen kann|500|12.12.2024|cet|12.12.2023|Samstag ist großartig|gestern überarbeitet|1|Satz als Benutzungsbeispiel|draft|Bsp.|3|
-|2|Montag|3|||weniger schöner Tag|500|2024-02-03|cet|2023-01-01|Text für eine Anmerkung|gestern überarbeitet|1|Montag nervt|draft||3|
+|1|Samstag|1|Sonnabend|2|schönster Tag der Woche an dem man alles machen kann|500|12.12.2024|cet|12.12.2023|Samstag ist großartig|2025-03-13 englischsprachige Definition ergänzt|1|Satz als Benutzungsbeispiel|draft|Bsp.|3|
+|2|Montag|3|||weniger schöner Tag|500|2024-02-03|cet|2023-01-01|Text für eine Anmerkung|2025-03-13 englischsprachige Definition ergänzt|1|Montag nervt|draft||3|
 |3|Parksuchverkehr|6|Parkverkehr|7|Anteil am Straßenverkehr der durch die Suche nach verfügbarem Parkraum entsteht|2|2025-10-03|https://purl.org/linsearch/ver|2025-03-10|TODO: weitere Synonyme suchen||2|Der Parkraumsuchverkehr ist in Ballungsräumen besonders hoch.|||4|
 |3|||Parkplatzsuche|4||2||https://purl.org/linsearch/ver||||2||||none|
 |3|||Parkraumsuche|5||2||https://purl.org/linsearch/ver||||2||||none|
@@ -41,7 +41,7 @@ Die nachfolgende Tabelle enthält zwei Begriffe:
 |5|Schiffsverkehr|9||||2||https://purl.org/linsearch/ver||||2||||none|
 
 <!-- old -->
-<!-- |lokaler Identifier des Begriffs|bevorzugte Benennung (de)|alternative Benennung (de)|Definition (de)|Quellenangaben|Bearbeitungsdatum|Fachzuordnung|Erstellungsdatum|redaktionelle Anmerkung|Anmerkung zur Bearbeitungshistorie|Verfasser des Eintrags|Kontextsatz|Bearbeitungsstatus|Mathematisches Symbol|Begriffsbeziehung|
+<!-- |lokaler Identifier des Begriffs|bevorzugte Benennung (de)|alternative Benennung (de)|Definition (de)|Quellenangaben|Bearbeitungsdatum|Fachzuordnung|Erstellungsdatum|redaktionelle Anmerkung|Änderungsvermerk|Verfasser des Eintrags|Kontextsatz|Bearbeitungsstatus|Symbol oder Formelzeichen|Begriffsbeziehung|
 |:-:|:-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |Begriff-1|Parksuchverkehr|Parkverkehr|Anteil am Straßenverkehr, der durch die Suche nach verfügbarem Parkraum entsteht|https://www.wikidata.org/wiki/Q97379970 (durch Referenznummer ersetzen)|2025-10-03|https://purl.org/linsearch/ver (durch kontrollierten Wert ersetzen)|2025-03-10|TODO: weitere Synonyme suchen|--|https://orcid.org/0000-0002-1584-4316 Jane Doe (durch Verweisnummer ersetzen)|Der Parkraumsuchverkehr ist in Ballungsräumen besonders hoch.|--||Begriff-2|
 |Begriff-1||Parkplatzsuche||||||||||||
@@ -69,9 +69,9 @@ Die Tabelle `terms.csv` enthält die folgenden Spalten:
 * **Fachzuordnung**: 
 * **Erstellungsdatum**: 
 * **redaktionelle Anmerkung**: 
-* **Anmerkung zur Bearbeitungshistorie**: 
+* **Änderungsvermerk**: 
 * **Verfasser des Eintrags**: 
 * **Kontextsatz**: 
 * **Bearbeitungsstatus**: 
-* **Mathematisches Symbol**: 
+* **Symbol oder Formelzeichen**: 
 * **Begriffsbeziehung**:  -->

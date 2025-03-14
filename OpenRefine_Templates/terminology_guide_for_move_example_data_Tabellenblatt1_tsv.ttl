@@ -20,7 +20,7 @@
         dcterms:subject     <https://purl.org/linsearch/cet>;
         skos:definition     "weniger schöner Tag"@de;
         skos:editorialNote  "Text für eine Anmerkung"@de;
-        skos:historyNote    "gestern überarbeitet"@de;
+        skos:changeNote    "2025-03-13 englischsprachige Definition ergänzt"@de;
         skos:prefLabel      "Montag"@de , "monday"@en;
         ex:editorialStatus  "draft";
         ex:exampleSentence  "Montag nervt"@de;
@@ -72,7 +72,7 @@
         skos:altLabel       "Sonnabend"@de;
         skos:definition     "schönster Tag der Woche an dem man alles machen kann"@de , "best day of the week"@en;
         skos:editorialNote  "Samstag ist großartig"@de;
-        skos:historyNote    "gestern überarbeitet"@de;
+        skos:changeNote    "2025-03-13 englischsprachige Definition ergänzt"@de;
         skos:prefLabel      "Samstag"@de , "saturday"@en;
         ex:contextSentence  "this is a context sentence in english"@en;
         ex:editorialStatus  "draft";

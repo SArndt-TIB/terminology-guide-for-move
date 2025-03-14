@@ -237,11 +237,11 @@
               }
             },
             {
-              "uri": "http://www.w3.org/2004/02/skos/core#historyNote",
-              "curie": "skos:historyNote",
+              "uri": "http://www.w3.org/2004/02/skos/core#changeNote",
+              "curie": "skos:changeNote",
               "target": {
                 "nodeType": "cell-as-literal",
-                "columnName": "Begriff - Anmerkung zur Bearbeitungshistorie",
+                "columnName": "Begriff - Änderungsvermerk",
                 "expression": "value",
                 "isRowNumberCell": false
               }
@@ -288,7 +288,7 @@
               "curie": "ex:mathSymbol",
               "target": {
                 "nodeType": "cell-as-literal",
-                "columnName": "Begriff - Mathematisches Symbol",
+                "columnName": "Begriff - Symbol oder Formelzeichen",
                 "expression": "value",
                 "isRowNumberCell": false
               }

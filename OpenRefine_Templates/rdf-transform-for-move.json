@@ -486,7 +486,7 @@
                 {
                   "valueSource": {
                     "source": "column",
-                    "columnName": "Begriff - Anmerkung zur Bearbeitungshistorie (de)"
+                    "columnName": "Begriff - Änderungsvermerk (de)"
                   },
                   "valueType": {
                     "type": "language_literal",
@@ -570,7 +570,7 @@
                 {
                   "valueSource": {
                     "source": "column",
-                    "columnName": "Begriff - Mathematisches Symbol"
+                    "columnName": "Begriff - Symbol oder Formelzeichen"
                   },
                   "valueType": {
                     "type": "literal"
@@ -692,7 +692,7 @@
                 {
                   "valueSource": {
                     "source": "column",
-                    "columnName": "Begriff - Anmerkung zur Bearbeitungshistorie (en)"
+                    "columnName": "Begriff - Änderungsvermerk (en)"
                   },
                   "valueType": {
                     "type": "language_literal",

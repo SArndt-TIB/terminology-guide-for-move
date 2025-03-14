@@ -68,7 +68,7 @@ skos:Concept1
     skos:definition
     "sch\u00f6nster Tag der Woche an dem man alles machen kann"^^rdf:langString;
     skos:editorialNote "Samstag ist gro\u00dfartig"^^rdf:langString;
-    skos:historyNote "gestern \u00fcberarbeitet"^^rdf:langString;
+    skos:changeNote "2025-03-13 englischsprachige Definition ergänzt"^^rdf:langString;
     skos:prefLabel "Samstag"^^rdf:langString;
     skos:semanticRelation ex:TermRelation3 .
 skos:Concept2
@@ -85,7 +85,7 @@ skos:Concept2
     skos:altLabel "null"^^rdf:langString;
     skos:definition "weniger sch\u00f6ner Tag"^^rdf:langString;
     skos:editorialNote "Text f\u00fcr eine Anmerkung"^^rdf:langString;
-    skos:historyNote "gestern \u00fcberarbeitet"^^rdf:langString;
+    skos:changeNote "2025-03-13 englischsprachige Definition ergänzt"^^rdf:langString;
     skos:prefLabel "Montag"^^rdf:langString;
     skos:semanticRelation ex:TermRelation3 .
 skos:Concept3
@@ -109,7 +109,7 @@ skos:Concept3
         "null"^^rdf:langString;
     skos:editorialNote
     "TODO: weitere Synonyme suchen"^^rdf:langString, "null"^^rdf:langString;
-    skos:historyNote "null"^^rdf:langString;
+    skos:changeNote "null"^^rdf:langString;
     skos:prefLabel "Parksuchverkehr"^^rdf:langString, "null"^^rdf:langString;
     skos:semanticRelation ex:TermRelation4, ex:TermRelationnone.
 skos:Concept4
@@ -126,7 +126,7 @@ skos:Concept4
     skos:altLabel "null"^^rdf:langString;
     skos:definition "null"^^rdf:langString;
     skos:editorialNote "null"^^rdf:langString;
-    skos:historyNote "null"^^rdf:langString;
+    skos:changeNote "null"^^rdf:langString;
     skos:prefLabel "Stra\u00dfenverkehr"^^rdf:langString;
     skos:semanticRelation ex:TermRelationnone.
 
@@ -219,7 +219,7 @@ skos:Concept1
     skos:definition
     "sch\u00f6nster Tag der Woche an dem man alles machen kann"^^rdf:langString;
     skos:editorialNote "Samstag ist gro\u00dfartig"^^rdf:langString;
-    skos:historyNote "gestern \u00fcberarbeitet"^^rdf:langString;
+    skos:changeNote "2025-03-13 englischsprachige Definition ergänzt"^^rdf:langString;
     skos:prefLabel "Samstag"^^rdf:langString;
     skos:semanticRelation ex:TermRelation3;
     sko:altLabel ex:AltLabel2;
@@ -238,7 +238,7 @@ skos:Concept2
     skos:altLabel "null"^^rdf:langString;
     skos:definition "weniger sch\u00f6ner Tag"^^rdf:langString;
     skos:editorialNote "Text f\u00fcr eine Anmerkung"^^rdf:langString;
-    skos:historyNote "gestern \u00fcberarbeitet"^^rdf:langString;
+    skos:changeNote "2025-03-13 englischsprachige Definition ergänzt"^^rdf:langString;
     skos:prefLabel "Montag"^^rdf:langString;
     skos:semanticRelation ex:TermRelation3;
     sko:altLabel ex:AltLabelnull;
@@ -264,7 +264,7 @@ skos:Concept3
         "null"^^rdf:langString;
     skos:editorialNote
     "TODO: weitere Synonyme suchen"^^rdf:langString, "null"^^rdf:langString;
-    skos:historyNote "null"^^rdf:langString;
+    skos:changeNote "null"^^rdf:langString;
     skos:prefLabel "Parksuchverkehr"^^rdf:langString, "null"^^rdf:langString;
     skos:semanticRelation ex:TermRelation4, ex:TermRelationnone;
     sko:altLabel ex:AltLabel4, ex:AltLabel5, ex:AltLabel7;
@@ -283,7 +283,7 @@ skos:Concept4
     skos:altLabel "null"^^rdf:langString;
     skos:definition "null"^^rdf:langString;
     skos:editorialNote "null"^^rdf:langString;
-    skos:historyNote "null"^^rdf:langString;
+    skos:changeNote "null"^^rdf:langString;
     skos:prefLabel "Stra\u00dfenverkehr"^^rdf:langString;
     skos:semanticRelation ex:TermRelationnone;
     sko:altLabel ex:AltLabelnull;
@@ -302,7 +302,7 @@ skos:Concept5
     skos:altLabel "null"^^rdf:langString;
     skos:definition "null"^^rdf:langString;
     skos:editorialNote "null"^^rdf:langString;
-    skos:historyNote "null"^^rdf:langString;
+    skos:changeNote "null"^^rdf:langString;
     skos:prefLabel "Schiffsverkehr"^^rdf:langString;
     skos:semanticRelation ex:TermRelationnone;
     sko:altLabel ex:AltLabelnull;

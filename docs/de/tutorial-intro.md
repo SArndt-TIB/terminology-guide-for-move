@@ -9,9 +9,9 @@
     <!-- * [Vorlagen und Tabellenstruktur](tutorial-4.md) -->
     <!-- * [Umwandlung nach RDF](tutorial-5.md) -->
   * [Tabellarische Datenverwaltung für OpenRefine](tutorial-13.md)
-    * [Einführung: OpenRefine](tools_OpenRefine.md)
-    * [Vorlagen und Tabellenstruktur](tutorial-10.md)
-    * [Umwandlung nach RDF](tutorial-11.md)
+    * [OpenRefine](tools_OpenRefine.md)
+    * [Vorlagen](tutorial-10.md)
+    * [RDF](tutorial-11.md)
 * [Metadaten ergänzen](tutorial-6.md)
 * [Identifier erstellen](tutorial-7.md)
 * [Veröffentlichen](tutorial-8.md)

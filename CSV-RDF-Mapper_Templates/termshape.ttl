@@ -205,10 +205,10 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
     sh:property  [
         a sh:PropertyShape ;
         sh:order 2 ;
-        sh:path skos:historyNote ;
+        sh:path skos:changeNote ;
         sh:datatype rdf:langString;
         sh:languageIn ("en" "de") ;
-        sh:name "Begriff - Anmerkung zur Bearbeitungshistorie"@de;
+        sh:name "Begriff - Änderungsvermerk"@de;
         # sh:name "history note"@en;
         sh:group ex:NotesGroup
     ];
@@ -246,7 +246,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
         # a sh:PropertyShape ;
         sh:group ex:TermGroup ;
         sh:datatype xsd:string ;
-        sh:name "Begriff - Mathematisches Symbol"@de; 
+        sh:name "Begriff - Symbol oder Formelzeichen"@de; 
         # sh:name "Mathematical symbol"@en ;
         sh:order 6 ;
         sh:path ex:mathSymbol;
