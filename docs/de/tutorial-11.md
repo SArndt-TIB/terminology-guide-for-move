@@ -95,7 +95,7 @@ Der aus unserer Vorlage mit Beispieldaten generierte Output in dieser Exportdate
 
 <!-- Updaten wenn ich ex: ersetzt habe -->
 
-```Turtle
+``` turtle
 @prefix :        <http://purl.org/mydomain/mysubdomain/> .
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .

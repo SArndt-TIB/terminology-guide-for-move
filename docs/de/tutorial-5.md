@@ -2,7 +2,7 @@
 
 Graph, der am 2025-03-10 bei CSV-RDF-Mapper rausgekommen ist
 
-```Turtle
+``` turtle
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
@@ -134,7 +134,7 @@ skos:Concept4
 
 ## Update vom 2025-03-11
 
-```Turtle
+``` turtle
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.

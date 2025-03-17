@@ -1,6 +1,6 @@
 # Metadaten ergänzen
 
-Die im Schritt [Datensammlung, Dokumentation, Konversion](tutorial-12) erzeugten RDF-Dateien sollten jetzt noch um weitere Statements angereichert werden, u.a.mit Metadaten zur gesamten Terminologie und nicht nur zu den einzelnen Einträgen.
+Die im Schritt [Datensammlung, Dokumentation, Konversion](tutorial-12) erzeugten RDF-Dateien sollten jetzt noch um weitere Statements angereichert werden, u.a.mit Metadaten zur gesamten Terminologie und nicht nur zu den einzelnen Einträgen. Warum auch Vokabulare Metadaten haben sollten, erläutern wir [hier](https://github.com/TIBHannover/terminology-metadata/blob/main/MetadataGuide.md#12-why-ontology-metadata).
 
 Hierzu muss das Vokabular als Entität explizit hinzugefügt werden, um darüber Aussagen machen zu können.
 Es braucht nun selbst einen Identifier.
@@ -77,19 +77,21 @@ Insbesondere der dort beschriebene Use Case [Metadata recommendations in SHACL -
 Sie finden dort auch ein kurzes Einführungsvideo zur Nutzung.
 
 <!-- <video  width="320" height="240" controls>
-    <source src="images/394812512-55cdf44f-5289-4989-9014-5e670fd73418.mp4" type="video/mp4">
+    <source src="images/form_generator-low-qual.mp4" type="video/mp4">
 </video> -->
 
-[filename](images/394812512-55cdf44f-5289-4989-9014-5e670fd73418.mp4 ':include :type=video controls width=100%')
+[form_generator-low-qual.mp4](images/form_generator-low-qual.mp4 ':include :type=video controls width=100%')
 
 Im Wesentlichen müssen Sie folgende Schritte durchführen:
 
 1. Gehen Sie zur Datei <https://github.com/TIBHannover/terminology-metadata/blob/main/OntoMetadataShape4Forms.ttl> und kopieren Sie den Quellcode dieser Datei:
   ![Screenshot des Metadaten-Repositoriums der TIB auf GitHub, der zeigt, wo man dden Quellcode der Datei kopieren kann](images/GitHub-OntoMetadataShape4Forms.png)
-2. Gehen Sie zur LIve-Demo des Dienstes [SHACL Form Generator](https://ulb-darmstadt.github.io/shacl-form/) der ULB Darmstadt, in den Menü-Punkt [Try your own](https://ulb-darmstadt.github.io/shacl-form/#try-your-own).
+2. Gehen Sie zur Live-Demo des Dienstes [SHACL Form Generator](https://ulb-darmstadt.github.io/shacl-form/) der ULB Darmstadt, in den Menü-Punkt [Try your own](https://ulb-darmstadt.github.io/shacl-form/#try-your-own).
   ![Screenshot des Tools SHACL Form Generator der ULB Darmstadt](images/ULB_Darmstadt-SHACL_Form_Generator.png)
 3. Fügen Sie den kopierten Quellcode in die Box mit der Überschrift `Enter your SHACL shapes here` ein und verlassen Sie dann das Feld (zum Beispiel mit der Tabulator-Taste oder durch Klicken auf einen anderen Teil des Tools). Dabei wird ein Formular generiert, in das Sie Ihre Metadaten eingeben können und das zugleich aus den eingegebenen Werten Code generiert und validiert:
   ![](images/ULB_Darmstadt-SHACL_Form_Generator-WithData-All_Valid.png)
+
+  Sollten Sie Schwierigkeiten mit den angefragten Daten haben, können Sie weitere Hilfestellungen in unserem [Metadaten-Guide](https://github.com/TIBHannover/terminology-metadata/blob/main/MetadataGuide.md) bekommen. Bei Fragen zur Metadaten-Empfehlung können Sie diese in unserem zugehörigen [GitHub-Diskussionforum (Abschnitt Q&A)](https://github.com/TIBHannover/terminology-metadata/discussions/categories/q-a) stellen. Vorschläge und Bugs können Sie uns direkt im [Issue-Tracker](https://github.com/TIBHannover/terminology-metadata/issues) mitteilen.
 4. Nachdem Sie mindestens die Pflichteingaben in der erwarteten Form gemacht haben, werden die Daten als valide angesehen und Sie können den generierten Code kopieren, um ihn für Ihre eigenen Daten zu nutzen. Ein beispielhafter Output wäre:
   
   ``` turtle
