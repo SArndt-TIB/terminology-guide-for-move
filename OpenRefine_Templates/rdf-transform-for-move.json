@@ -102,7 +102,13 @@
                     "columnName": "Verfasser - ORCiD"
                   },
                   "valueType": {
-                    "type": "literal"
+                    "type": "datatype_literal",
+                    "datatype": {
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "http://www.w3.org/2001/XMLSchema#anyURI"
+                      }
+                    }
                   }
                 }
               ]
@@ -244,18 +250,14 @@
                     "columnName": "Quellennachweis - Zugangslink"
                   },
                   "valueType": {
-                    "type": "iri"
-                  },
-                  "typeMappings": [
-                    {
-                      "prefix": "rdfs",
+                    "type": "datatype_literal",
+                    "datatype": {
                       "valueSource": {
                         "source": "constant",
-                        "constant": "Resource"
+                        "constant": "http://www.w3.org/2001/XMLSchema#anyURI"
                       }
                     }
-                  ],
-                  "propertyMappings": []
+                  }
                 }
               ]
             }
@@ -480,7 +482,7 @@
               "prefix": "skos",
               "valueSource": {
                 "source": "constant",
-                "constant": "historyNote"
+                "constant": "changeNote"
               },
               "objectMappings": [
                 {
@@ -686,7 +688,7 @@
               "prefix": "skos",
               "valueSource": {
                 "source": "constant",
-                "constant": "historyNote"
+                "constant": "changeNote"
               },
               "objectMappings": [
                 {

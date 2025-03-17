@@ -18,18 +18,14 @@
         dcterms:modified    "08.11.2025"^^xsd:date;
         dcterms:subject     <http://uri.gbv.de/terminology/bk/55.84>;
         skos:editorialNote  "add definitions"@en , "get approval for concept by project lead"@en , "add context sentence"@en , "Begriff von Projektleitung absegnen lassen"@de , "Definitionen ergänzen"@de , "Kontextsatz ergänzen"@de;
-        skos:historyNote    "6"@de , "6"@en , "8"@de , "8"@en , "7"@de , "7"@en;
         skos:prefLabel      "street traffic"@en , "Straßenverkehr"@de;
         ex:editorialStatus  "draft";
-        ex:id               "Concept2";
-        ex:mathSymbol       "6" , "8" , "7" .
-
-<https://example.com/verlagsseite/buchseite>
-        rdf:type  rdfs:Resource .
+        ex:id               "Concept2" .
 
 :Source2  rdf:type         ex:Source;
         dcterms:publisher  "Wikidata";
         dcterms:title      "parking search traffic";
+        dcat:accessURL     "https://www.wikidata.org/w/index.php?title=Q97379970&oldid=1936875884"^^xsd:anyURI;
         ex:id              "Source2" .
 
 <https://purl.org/linsearch/ver>
@@ -49,15 +45,14 @@
         dcterms:subject     <http://uri.gbv.de/terminology/bk/55.84>;
         skos:altLabel       "Parkplatzsuche"@de , "Parksuchverkehr"@de , "Parkverkehr"@de;
         skos:broader        :Concept2;
+        skos:changeNote     "Die Definition wurde geändert, weil ..."@de , "The definition has been changed due to the fact that ..."@en;
         skos:definition     "Anteil des Straßenverkehrs, der bei der Suche nach einem Parkplatz anfällt"@de , "portion of street traffic resulting from the search for parking space"@en;
         skos:editorialNote  "Please search further synoynms in English"@en , "Bitte weitere Synonyme aus dem Englischen suchen!"@de;
-        skos:historyNote    "5"@de , "5"@en , "4"@de , "4"@en , "3"@de , "3"@en;
         skos:prefLabel      "parking traffic"@en , "Parkraumsuchverkehr"@de;
         ex:contextSentence  "Parking traffic is highest in densely populated metropolitan areas."@en;
         ex:editorialStatus  "draft";
         ex:exampleSentence  "Der Parkraumsuchverkehr ist in Ballungsgebieten am höchsten."@de;
-        ex:id               "Concept1";
-        ex:mathSymbol       "3" , "4" , "5" .
+        ex:id               "Concept1" .
 
 :Author4  rdf:type      foaf:Person;
         m4i:orcidId     "https://orcid.org/0000-0002-0871-8993";
@@ -70,7 +65,7 @@
         dcterms:issued     "2026"^^xsd:gYear;
         dcterms:publisher  "Fiktiver Verlag";
         dcterms:title      "Wörterbuch der Verkehrswissenschaften";
-        dcat:accessURL     <https://example.com/verlagsseite/buchseite>;
+        dcat:accessURL     "https://example.com/verlagsseite/buchseite"^^xsd:anyURI;
         ex:id              "Source1" .
 
 :Author1  rdf:type      foaf:Person;
@@ -79,14 +74,12 @@
         foaf:lastName   "Doe";
         ex:id           "Author1" .
 
-:Concept5  rdf:type       skos:Concept;
-        dcterms:creator   :Author2;
-        dcterms:source    :Source2;
-        dcterms:subject   <https://purl.org/linsearch/ver>;
-        skos:historyNote  "12"@en , "12"@de;
-        skos:prefLabel    "Schiffsverkehr"@de;
-        ex:id             "Concept5";
-        ex:mathSymbol     "12" .
+:Concept5  rdf:type      skos:Concept;
+        dcterms:creator  :Author2;
+        dcterms:source   :Source2;
+        dcterms:subject  <https://purl.org/linsearch/ver>;
+        skos:prefLabel   "Schiffsverkehr"@de;
+        ex:id            "Concept5" .
 
 <http://uri.gbv.de/terminology/bk/55.84>
         rdf:type  skos:Concept .
