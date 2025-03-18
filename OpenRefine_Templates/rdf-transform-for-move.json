@@ -18,7 +18,7 @@
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "skosxl": "http://www.w3.org/2008/05/skos-xl#"
       },
-      "baseIRI": "http://purl.org/mydomain/mysubdomain/",
+      "baseIRI": "http://purl.org/terminology-guide-for-move/testvocab/",
       "subjectMappings": [
         {
           "valueSource": {

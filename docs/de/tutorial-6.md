@@ -7,8 +7,8 @@ Es braucht nun selbst einen Identifier.
 
 In [Schritt 3 des Konversionsprozesses mit OpenRefine](tutorial-11.md#schritt-3---wechseln-sie-zur-bearbeitungshistorie) wurde durch die Datei [https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/rdf-transform-for-move.json](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/rdf-transform-for-move.json) bereits eine Festlegung getroffen, wie die Identifier der einzelnen Quellen, Autoren und Begriffe aussehen sollen.
 
-Unsere Vorlage setzt hierfür im Header der JSON-Datei als sogenannte `baseIRI` den Wert `http://purl.org/mydomain/mysubdomain/`.
-Dieser wird verwendet, um für jede der Entitäten einen eindeutigen Identifier zu erstellen, z.B. <http://purl.org/mydomain/mysubdomain/Concept2>.
+Unsere Vorlage setzt hierfür im Header der JSON-Datei als sogenannte `baseIRI` den Wert `http://purl.org/terminology-guide-for-move/testvocab/`.
+Dieser wird verwendet, um für jede der Entitäten einen eindeutigen Identifier zu erstellen, z.B. <http://purl.org/terminology-guide-for-move/testvocab/Concept2>.
 Für den Identifier des Vokabulars verwenden wir diesen ohne das abschließende `/`, also `http://purl.org/mydomain/mysubdomain`.
 
 <details>
@@ -35,7 +35,7 @@ Für den Identifier des Vokabulars verwenden wir diesen ohne das abschließende 
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "skosxl": "http://www.w3.org/2008/05/skos-xl#"
       },
-      "baseIRI": "http://purl.org/mydomain/mysubdomain/",
+      "baseIRI": "http://purl.org/terminology-guide-for-move/testvocab/",
       "subjectMappings": [
         // ...
       ]
@@ -51,7 +51,7 @@ In dieser Datei ergänzen Sie nun als erstes folgende Statements mit der von Ihn
 Damit Sie diese Datei auch ggf. mit Spezialtools öffnen können, ergänzen wir hier die auch im Turtle-Export festgelegten Präfixe, mit denen in Turtle die URIs der Entitäten abgekürzt werden können.
 
 ``` turtle
-@prefix :        <http://purl.org/mydomain/mysubdomain/> . # ggf. ändern, wenn Sie nicht mit den Beispieldaten unseres Tutorials arbeiten
+@prefix :        <http://purl.org/terminology-guide-for-move/testvocab/> . # ggf. ändern, wenn Sie nicht mit den Beispieldaten unseres Tutorials arbeiten
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ex:      <https://www.example.com/> .
@@ -129,7 +129,7 @@ Im Wesentlichen müssen Sie folgende Schritte durchführen:
     dcterms:abstract "\"Autonomous Driving Terms,\" aims to provide precise definitions for key concepts, ranging from fundamental sensor technologies (LiDAR, RADAR, cameras) and algorithmic processes (sensor fusion, path planning, object detection) to complex regulatory and ethical considerations (liability, algorithmic bias, safety validation)."@en;
     vann:preferredNamespacePrefix ":";
     dcterms:license <https://unlicense.org/>;
-    owl:versionIRI <http://purl.org/mydomain/mysubdomain/2025-03-17>;
+    owl:versionIRI <http://purl.org/terminology-guide-for-move/testvocab/2025-03-17>;
     doap:bug-database <https://www.example.com/your-code-repository/issues>;
     premis:documentation <https://www.example.com/your-code-repository/docs>;
     a owl:Ontology.
@@ -138,7 +138,7 @@ Im Wesentlichen müssen Sie folgende Schritte durchführen:
 5. Die Präfix-Definitionen dieser Datei können in die Metadaten-Datei `metadata.ttl` für Ihr Vokabular übernommen werden. So wird sichergestellt, dass alle übernommenen Statements weiterhin korrekt interpretiert werden können. Die einzelnen Statements, die vom Tool der ULB erzeigt wurden, beziehen sich nun auf ein anonymes, nicht-benanntes Element, einen sogenannten _blank node_, der über den Wert `_:3c87b10b-c47f-4fc4-b6f2-d1371cbb946d` repräsentiert wird. Diesen Wert können Sie als einen Platzhalter auffassen, der durch die baseIRI Ihres eigenen Vokabulars ersetzt werden muss. Das Statement `_:3c87b10b-c47f-4fc4-b6f2-d1371cbb946d dcterms:title a owl:Ontology` können Sie weglassen, da wir es bereits in metadata.ttl ergänzt hatten - allerdings mit der vollausgeschriebenen Form `rdf:type` von `a`.  Die restlichen Statements können Sie in die Datei `metadata.ttl` übernehmen. Am Ende könnte `metadata.ttl` also folgenden Inhalt haben:
 
   ``` turtle
-  @prefix :        <http://purl.org/mydomain/mysubdomain/> . # ggf. ändern, wenn Sie nicht mit den Beispieldaten unseres Tutorials arbeiten
+  @prefix :        <http://purl.org/terminology-guide-for-move/testvocab/> . # ggf. ändern, wenn Sie nicht mit den Beispieldaten unseres Tutorials arbeiten
   @prefix dcat:    <http://www.w3.org/ns/dcat#> .
   @prefix dcterms: <http://purl.org/dc/terms/> .
   @prefix ex:      <https://www.example.com/> .
@@ -179,7 +179,7 @@ Im Wesentlichen müssen Sie folgende Schritte durchführen:
     dcterms:abstract "\"Autonomous Driving Terms,\" aims to provide precise definitions for key concepts, ranging from  fundamental sensor technologies (LiDAR, RADAR, cameras) and algorithmic processes (sensor fusion, path planning, object detection) to complex regulatory and ethical considerations (liability, algorithmic bias, safety validation)."@en;
     vann:preferredNamespacePrefix "atd";
     dcterms:license <https://unlicense.org/>;
-    owl:versionIRI <http://purl.org/mydomain/mysubdomain/2025-03-17>;
+    owl:versionIRI <http://purl.org/terminology-guide-for-move/testvocab/2025-03-17>;
     doap:bug-database <https://www.example.com/your-code-repository/issues>;
     premis:documentation <https://www.example.com/your-code-repository/docs>;
     .
