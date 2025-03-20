@@ -7,7 +7,10 @@ Man spricht in diesem Kontext auch von persistenten Identifikatoren oder PIDs.
 Für die dauerhafte Erreichbarkeit einer Ressource braucht es zuverlässige und langfristig agierende Dienstleister, die die Ressource in allen Varianten langfristig und ohne Unterbrechung zur Verfügung stellen können.
 Mit der [Einrichtung eines GitHub- oder GitLab-basierten Repositoriums](tutorial-2.md) haben wir bereits eine gute Grundlage gelegt, um die zu unserem Vokabular gehörigen Dateien zu verwalten, dauerhaft verfügbar zu halten und auch offizielle Releases herauszugeben.
 Leider sind die Links dieser Ressourcen nicht sonderlich chic und memorabel - der wirklich maschinenlesbare Output der Konversion unserer Tabelle nach RDF mit OpenRefine ist zum Beispiel unter <https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl> erreichbar.
-Solche Links als Identifier für das Vokabular zu verwenden ist theoretisch zwar möglich, aber sähe ein wenig gewähnungsbedürftig aus, ganz zu Schweigen von den Identifiern der einzelnen Entitäten wie den Begriffen:
+Solche Links als Identifier für das Vokabular zu verwenden ist theoretisch zwar möglich, aber sähe ein wenig gewähnungsbedürftig aus, ganz zu Schweigen von den Identifiern der einzelnen Entitäten wie den Begriffen.
+
+<details>
+<summary>Zeige ein Beispiel</summary>
 
 ``` turtle
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
@@ -25,6 +28,7 @@ Solche Links als Identifier für das Vokabular zu verwenden ist theoretisch zwar
   rdf:type skos:Concept ;
   skos:prefLabel "Parkraumsuchverkehr"@en .
 ```
+</details>
 
 Ein weitere Problem besteht darin, dass eine terminologische Ressource auch einmal umziehen kann.
 Der ursprüngliche Identifier wäre dann nicht mehr der gültige Link zur Ressource und müsste aktualisiert werden - und zwar überall, wo er zu Referenzzwecken verwendet wird!
@@ -56,19 +60,31 @@ Der Nutzer kann _domain_ und _PURL name_ bestimmen wodurch individuelle PURLs er
 
 Die Registrierung der Domains erfolgt dabei über ein Webformular, sodass dieser Service insbesondere für Einsteiger sehr gut geeignet ist.
 
+<details>
+<summary>Zeige Webformular</summary>
+
 ![](images/PURLorg%20-%20administration.png)
+</details>
 
 Da eine Domain nur einmal vergeben werden kann, macht es Sinn, zunächst mit einer Suche zu prüfen, ob die gewünschte Domain nicht schon vergeben ist.
 Der nachfolgende Screeshot zeigt die Ergebnisse zur Suche nach `library`.
 
+<details>
+<summary>Zeige Suchergebnisse</summary>
+
 ![](images/PURLorg%20-%20domain%20search.png)
+</details>
 
 Ist die gewünschte Domain noch frei, kann sie angelegt und im Anschluss konfiguriert werden.
 Im Screenshot sieht man die für dieses Tutorial registrierte Domain <http://purl.org/terminology-guide-for-move> für seine mit Stand 2025-03-18 gültige Adresse <https://sarndt-tib.github.io/terminology-guide-for-move/#/>.
 Als HTTP Statuscode wurde hier `302 Found` gewählt, um anzuzeigen, dass eine Ressource existiert sowie bei Anfragen ihren Ort anzuzeigen oder dorthin weiterzuleiten.
 Bei der Verwendung der PURL in einem Webbrowser erfolgt dies so schnell, dass der Nutzer es eigentlich kaum merkt.
 
+<details>
+<summary>Zeige Konfiguration</summary>
+
 ![](images/PURLorg-new-domain-saved.png)
+</details>
 
 Nach dem Anlegen einer Domain können dann weitere Subdomains angelegt werden.
 Beim Beispiel dieses Tutoriums könnten Subdomains zum Beispiel für die Unterseiten benötigt werden.
@@ -94,13 +110,17 @@ Die aktuelle Konfiguration löst einen `404 Not found`-Fehler aus.
 Mit einer neuen partiellen Weiterleitung von <http://purl.org//terminology-guide-for-move/testvocab/> auf <https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl#>, also auf ein Fragment des Vokabulars, wird die Auflösung der Entitäten-Identifier des Vokabulars zumindest auf das gesamte Vokabulardokument möglich.
 In einem Tool wie Protégé wird dann mit dem Aufrufen des Identifiers des Begriffs das gesamte Vokabular geladen.
 <!-- Je nach Browser wird auch gleich der Sprung an die richtige Stelle im Dokument vorgenommen. > nein, stimmt irgendwie nicht, zumindest nicht bei GitHub raw files -->
-Die gesamten Konfigurationen sind im folgeden Screenshot aufgelistet:
+Die gesamten Konfigurationen sind im folgeden Screenshot aufgelistet.
 
 * [ ] TODO: zeigen, wie man auf eine versionierte Version auflösen kann.
 <!-- * [ ] TODO: zeigen, wie man auf einzelne Begriffe auflöst? die müssten dann aber auch als eigenes Dokument angelegt werden, was einen weiteren Prozessierungsschritt erfordert... -->
 
+<details>
+<summary>Zeige Screenshot</summary>
+
 <!-- Screenshot ggf. aktualisieren, wenn Versionen und einzelne Begriffe beschrieben sind -->
 ![](images/PURLorg-all-configs.png)
+</details>
 
 ### w3id
 
@@ -115,6 +135,226 @@ Um einen Identifier zu registrieren, muss eine sogenannte [.htaccess](https://de
 Auf der Homepage wird jedoch eine Anleitung gegeben, wie ein [neuer Identifier erstellt](https://w3id.org/#new) werden kann.
 Hier finden Sie auch weitere Hilfestellungen zur Arbeit mit GitHub.
 Darüber hinaus gibt es sehr viele gute Beispiele bereits registrierter Identifier, von denen man für seine eigene Konfiguration Inspiration holen kann.
+
+Ein sehr nützliches Feature des Servcices ist, dass er zur sogenannten [Content Negotitation](Content Negotiation) fähig ist.
+Dies bedeutet, dass mit demselben Identifier verschiedene Ressourcen bereitgestellt werden können, wenn eine entsprechende Anfrage gestellt wird.
+Für ein maschinenlesbares Vokabular wie wir es hier erstellt haben, ist dies sehr sinnvoll:
+Da der Code für menschliche Nutzer meist ungewohnt und schlecht lesbar ist, werden Vokabulare häufig durch menschengerechtere Ressourcen angereichert, die häufig aus dem Code generiert werden kann oder sogar eigens zusammengestellt wurde.
+Ein Beispiel, das dies verdeutlicht, ist das kontrollierte Vokabular "Mobility Theme", das als Ergänzung für das Mobilitäts-Metadatenschema _Mobility DCAT-AP_ vorgesehen ist und als Klassifikation für die Datensätze dienen soll.
+Es verwendet den Identifier <https://w3id.org/mobilitydcat-ap/mobility-theme> - eine w3id!
+Bei Verwendung dieser ID in einem Webbrowser wird die folgende Webresource <https://mobilitydcat-ap.github.io/controlled-vocabularies/mobility-theme/latest/index.html#/> aufgerufen.
+Es handelt sich hierbei um eine generierte, um wenige erläuternde Texte ergänzte Dokumentationsseite, die eher für die Durchsicht des Vokabulars durch Menschen gedacht ist.
+Für eine Maschine, die mit semantischen Daten arbeiten kann, wird jedoch auch eine Ressource über den Identifier <https://w3id.org/mobilitydcat-ap/mobility-theme> bereitgestellt.
+Bei einer Anfrage über [curl](https://de.wikipedia.org/wiki/CURL) wird der Anfragende weiterverwiesen an die richtige Ressource.
+
+```bash
+curl -H "Accept: application/rdf+xml" https://w3id.org/mobilitydcat-ap/mobility-theme -v
+```
+
+Als Rückmeldung erhält der Anfragende den Status der Ressource und die aktuell konfigurierte Ziel-Adresse der Ressource im angefragten Format.
+Diese Antwort wird selbst als HTML-Code gesendet.
+
+<details>
+<summary>Zeige Server-Response</summary>
+
+<!-- volle Antwort in gitbash -->
+
+``` html
+* Host w3id.org:443 was resolved.
+* IPv6: (none)
+* IPv4: 162.209.11.63
+*   Trying 162.209.11.63:443...
+* schannel: disabled automatic use of client certificate
+* Connected to w3id.org (162.209.11.63) port 443
+* using HTTP/1.x
+> GET /mobilitydcat-ap/mobility-theme HTTP/1.1
+> Host: w3id.org
+> User-Agent: curl/8.11.0
+> Accept: application/rdf+xml
+>
+* Request completely sent off
+< HTTP/1.1 303 See Other
+< Date: Thu, 20 Mar 2025 10:48:12 GMT
+< Server: Apache/2.4.29 (Ubuntu)
+< Access-Control-Allow-Origin: *
+< Location: https://mobilitydcat-ap.github.io/controlled-vocabularies/mobility-theme/latest/mobility
+-theme.rdf
+< Content-Length: 380
+< Content-Type: text/html; charset=iso-8859-1
+<
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>303 See Other</title>
+</head><body>
+<h1>See Other</h1>
+<p>The answer to your request is located <a href="https://mobilitydcat-ap.github.io/controlled-vocab
+ularies/mobility-theme/latest/mobility-theme.rdf">here</a>.</p>
+<hr>
+<address>Apache/2.4.29 (Ubuntu) Server at w3id.org Port 443</address>
+</body></html>
+* Connection #0 to host w3id.org left intact
+
+```
+</details>
+
+Um die Ressource im angefragten RDF/XML-Format zu erreichen, wird der Anfragende an die Adresse <https://mobilitydcat-ap.github.io/controlled-vocabularies/mobility-theme/latest/mobility-theme.rdf> weitervermittelt, die ebenfalls über einen Webbrowser angezeigt werden kann, aber auch für auf RDF spezialisierte Tools verarbeitet werden kann.
+
+Die zugehörige Konfiguration der w3id, also die .htaccess-Datei, findet sich unter <https://github.com/perma-id/w3id.org/blob/master/mobilitydcat-ap/.htaccess>.
+<!-- source commit: https://github.com/perma-id/w3id.org/commit/42954b8e420d5497c89a26d13b6ad7d7abcc2901 -->
+
+<details>
+<summary>Zeige vollständige .htaccess-Datei</summary>
+
+```
+Header set Access-Control-Allow-Origin *
+Options -MultiViews
+Options +FollowSymLinks
+
+# Directive to ensure *.rdf files served as appropriate content type,
+# if not present in main apache config
+AddType application/rdf+xml .rdf
+AddType text/turtle .ttl
+AddType application/n-triples .n3
+AddType application/ld+json .json
+
+RewriteEngine on
+SetEnvIf Accept ^.+$ SYNTAX=other
+SetEnvIf Accept ^.*application/rdf\+xml.* SYNTAX=rdf
+SetEnvIf Accept ^.*text/turtle.* SYNTAX=ttl
+SetEnvIf Accept ^.*application/json-ld.* SYNTAX=json
+SetEnvIf Accept ^.*application/n-triples.* SYNTAX=nt
+SetEnvIf Accept ^.*text/html.* SYNTAX=html
+SetEnvIf Accept ^\*/\*$ SYNTAX=ttl
+SetEnvIf Request_URI ^.*$ ROOT_URL=https://mobilitydcat-ap.github.io
+
+#####     mobilityDCAT-AP     #####
+
+# Latest specification draft
+RewriteCond %{ENV:SYNTAX} ^(rdf|ttl|json|nt)$
+RewriteRule ^drafts(/latest)?/?$ %{ENV:ROOT_URL}/mobilityDCAT-AP/drafts/latest/mobilitydcat-ap.%{ENV:SYNTAX} [R=303,L]
+
+# Versioned specification draft
+RewriteCond %{ENV:SYNTAX} ^(rdf|ttl|json|nt)$
+RewriteRule ^drafts/([0-9].[0-9].[0-9])/?$ %{ENV:ROOT_URL}/mobilityDCAT-AP/drafts/$1-draft-0.1/mobilitydcat-ap_v$1.%{ENV:SYNTAX} [R=303,L]
+
+RewriteCond %{ENV:SYNTAX} ^(rdf|ttl|json|nt)$
+RewriteRule ^drafts/([0-9].[0-9].[0-9])-([^/]+)/?$ %{ENV:ROOT_URL}/mobilityDCAT-AP/drafts/$1-$2/mobilitydcat-ap_v$1.%{ENV:SYNTAX} [R=303,L]
+
+# Latest specification draft documentation
+RewriteCond %{ENV:SYNTAX} ^html$
+RewriteRule ^drafts(/latest)?/?$ %{ENV:ROOT_URL}/mobilityDCAT-AP/drafts/latest/index.html [R=303,L]
+
+# Versioned specification draft documentation
+RewriteCond %{ENV:SYNTAX} ^html$
+RewriteRule ^drafts/([0-9].[0-9].[0-9])/?$ %{ENV:ROOT_URL}/mobilityDCAT-AP/drafts/$1-draft-0.1/index.html [R=303,L]
+
+RewriteCond %{ENV:SYNTAX} ^html$
+RewriteRule ^drafts/([0-9].[0-9].[0-9])-([^/]+)/?$ %{ENV:ROOT_URL}/mobilityDCAT-AP/drafts/$1-$2/index.html [R=303,L]
+
+# Versioned specification releases
+RewriteCond %{ENV:SYNTAX} ^(rdf|ttl|json|nt)$
+RewriteRule ^(releases/)?([0-9].[0-9].[0-9])/?$ %{ENV:ROOT_URL}/mobilityDCAT-AP/releases/$2/mobilitydcat-ap.%{ENV:SYNTAX} [R=303,L]
+
+# Latest specification releases
+RewriteCond %{ENV:SYNTAX} ^(rdf|ttl|json|nt)$
+RewriteRule ^(releases)?(/latest)?/?$ %{ENV:ROOT_URL}/mobilityDCAT-AP/releases/mobilitydcat-ap.%{ENV:SYNTAX} [R=303,L]
+
+# Versioned specification documentation
+RewriteCond %{ENV:SYNTAX} ^html$
+RewriteRule ^(releases/)?([0-9].[0-9].[0-9])/?$ %{ENV:ROOT_URL}/mobilityDCAT-AP/releases/$2/index.html [R=303,L]
+
+# Latest specification documentation
+RewriteCond %{ENV:SYNTAX} ^html$
+RewriteRule ^(releases)?(/latest)?/?$ %{ENV:ROOT_URL}/mobilityDCAT-AP/releases/index.html [R=303,L]
+
+#####     Controlled Vocabularies     #####
+
+# Versioned vocabulary
+RewriteCond %{ENV:SYNTAX} ^(rdf|ttl|json|nt)$
+RewriteRule ^(.+)/([0-9].[0-9].[0-9])/?(.*)$ %{ENV:ROOT_URL}/controlled-vocabularies/$1/$2/$1.%{ENV:SYNTAX} [R=303,L]
+
+# Latest vocabulary
+RewriteCond %{ENV:SYNTAX} ^(rdf|ttl|json|nt)$
+RewriteRule ^([^/]+)/?(.*)$ %{ENV:ROOT_URL}/controlled-vocabularies/$1/latest/$1.%{ENV:SYNTAX} [R=303,L]
+
+# Versioned documentation
+RewriteCond %{ENV:SYNTAX} ^html$
+RewriteRule ^(.+)/([0-9].[0-9].[0-9])/?(.*)$ %{ENV:ROOT_URL}/controlled-vocabularies/$1/$2/index.html#/$3 [R=303,L,NE]
+
+# Vocabulary documentation
+RewriteCond %{ENV:SYNTAX} ^html$
+RewriteRule ^([^/]+)/?(.*)$ %{ENV:ROOT_URL}/controlled-vocabularies/$1/latest/index.html#/$2 [R=303,L,NE]
+
+# No serialisation available
+RewriteCond %{ENV:SYNTAX} ^other$
+RewriteRule ^([^/]+)/?(.*)$ %{ENV:ROOT_URL}/controlled-vocabularies/406.html [R=406,L]
+
+#####     Default     #####
+
+# Specification repo
+RewriteCond %{ENV:MARKER} ^other$
+RewriteRule ^.*$ https://github.com/mobilityDCAT-AP [R=303,L]
+
+# Default response
+RewriteRule ^.*$ https://github.com/mobilityDCAT-AP [R=303,L]
+
+```
+</details>
+
+In den Zeilen 1-3 werden zunächst einige generelle Einstellungen vorgenommen.
+In den Zeilen 5-10 wird sichergestellt, dass für die angefragten Formate die korrkten Dateien ausgewählt werden, z.B. sollen für application/rdf+xml Dateien mit der Endung .rdf ausgeliefert werden.
+In den Zeilen 12-20 wird die sogenannte _Rewrite Engine_ konfiguriert, ein Modul, mit dem dem Webserver ermöglicht wird, die URIs "umzuschreiben".
+Hier wird definiert, wie die Anfragen an den Server interpretiert werden sollen und welches Format angefragt wird.
+In den Zeilen 22ff. werden dann verschiedene Regeln definiert, nach denen Anfragen an den Webserver umgeschrieben und weitergeleitet oder beantwortet werden sollen.
+Die Datei enthält nicht nur Regeln für das Vokabular _Mobility Theme_, sondern auch für andere Elemente, die zum Metadatenschema _Mobility DCAT-AP_ gehören.
+Zeile 22-60 legen Regeln für das Metadatenschema fest.
+Ab Zeile 62 werden Regeln für kontrollierte Vokabulare festgelegt.
+Die relevante Regel, mit der <https://w3id.org/mobilitydcat-ap/mobility-theme>
+nach
+<https://mobilitydcat-ap.github.io/controlled-vocabularies/mobility-theme/latest/mobility-theme.rdf>
+umgeleitet wird, ist ab Zeile 68 zu finden - hier noch einmal wiederholt:
+
+```
+# Latest vocabulary
+RewriteCond %{ENV:SYNTAX} ^(rdf|ttl|json|nt)$
+RewriteRule ^([^/]+)/?(.*)$ %{ENV:ROOT_URL}/controlled-vocabularies/$1/latest/$1.%{ENV:SYNTAX} [R=303,L]
+```
+
+Sie wurde hinzugefügt, um eine ID auf die aktuellste Version eines Vokabulars umzuleiten.
+In der zweiten Zeile dieses Snippets wird eine Bedingung für die Weiterleitung festgelegt.
+Die Regel wird nur dann ausgeführt, wenn die Anfrage an den Server nach einem der hier angegebenen Elemente - rdf, ttl, json oder nt - fragt.
+In der dritten Zeile des Snippets wird die Regel zur Umschreibung des für die Anfrage verwendeten Identifiers <https://w3id.org/mobilitydcat-ap/mobility-theme> festgelegt.
+`^([^/]+)/?(.*)$` ist ein regulärer Ausdruck, mit dem ein Teil des eingehenden Identifiers erfasst wird, sofern er diesem Muster entspricht, und anschließend für die Bildung der URL verwendet, über die die angefragte Ressource tatsächlich abgerufen werden kann.
+Das Muster extrahiert den Vokabularnamen und setzt ihn an den durch `$1` gekennzeichneten Stellen ein.
+`%{ENV:ROOT_URL}` wurde vorab bereits definiert und setzt die Basis-URL fest.
+`%{ENV:SYNTAX}` setzt die Dateiendung basierend auf der Anfrage fest.
+Am Ende der Zeile wird festgelegt, dass der Statuscode `303 See Other` ausgegeben werden soll und mit `L`, dass keine weitere Regel angewendet werden soll.
+
+Neben dieser Regel wurden auch Regeln für die Weiterleitung von Identifiern mit Versionsinformationen auf versionierte Varianten den Vokabulars und seiner Dokumentation definiert,
+* z.B. verweist <https://w3id.org/mobilitydcat-ap/mobility-theme/1.0.1> auf <https://mobilitydcat-ap.github.io/controlled-vocabularies/mobility-theme/1.0.1/mobility-theme.rdf>.
+* z.B. verweist <https://w3id.org/mobilitydcat-ap/mobility-theme/1.0.0> auf die versionierte Dokumentationsseite <https://mobilitydcat-ap.github.io/controlled-vocabularies/mobility-theme/1.0.0/index.html#/>.
+
+Darüber hinaus könnte man natürlich auch die Weiterleitungen für die einzelnen Konzepte konfigurieren.
+Eine Beispielkonfiguration findet sich zum Beispiel bei [Voc4Cat](https://github.com/perma-id/w3id.org/blob/master/nfdi4cat/voc4cat/.htaccess):
+
+```
+# HTML - documentation individual concept or collection
+RewriteCond %{HTTP_ACCEPT} text/html
+RewriteRule "^v?([0-9]{4}\-[0-9]{2}\-[0-9]{2})\/voc4cat_([0-9]{7,})" "https://nfdi4cat.github.io/voc4cat/v$1/voc4cat/index.html#https://w3id.org/nfdi4cat/voc4cat_$2" [R=303,L,NE,NC]
+```
+
+Mit dieser Regel wird festgelegt, dass eine ID wie <https://w3id.org/nfdi4cat/voc4cat_0000002> direkt an die richtige Stelle der Dokumentation springt, die hier zu finden wäre: <https://nfdi4cat.github.io/voc4cat/latest/voc4cat/index.html#https://w3id.org/nfdi4cat/voc4cat_0000002>.
+Auch der Bezug von RDF-Versionen per Konzept ist für Voc4Cat konfiguriert.
+
+```
+# TURTLE - individual concept or collection turtle files of
+RewriteCond %{HTTP_ACCEPT} text/turtle [OR]
+RewriteCond %{HTTP_ACCEPT} application/x-turtle
+RewriteRule "^v?([0-9]{4}\-[0-9]{2}\-[0-9]{2})\/voc4cat_([0-9]{7,})" https://nfdi4cat.github.io/voc4cat/v$1/voc4cat/$2.ttl [R=303,L,NE,NC]
+```
+
+Dies erfordert allerdings, dass einzelne Turtle-Dateien für die Begriffe verwaltet werden, worauf wir in diesem Tutorial bisher allerdings verzichtet haben.
+
 
 ### Persistent Identifiers for Semantic Artifacts (PIDA)
 

@@ -13,10 +13,10 @@
   * [Terminologieleitfaden aufsetzen](tutorial-15.md)
   * [Versionskotrolle ermöglichen](tutorial-2.md)
   * [Daten sammeln, als CSV dokumentieren und nach RDF konvertieren](tutorial-12.md)
-    * [Tabellarische Datenverwaltung für CSV-RDF-Mapper](tutorial-14.md)
-      * [Einführung: CSV-RDF-Mapper](tools_SKOS-CSV2RDF.md)
-      * [Vorlagen und Tabellenstruktur](tutorial-4.md)
-      * [Umwandlung nach RDF](tutorial-5.md)
+    <!-- * [Tabellarische Datenverwaltung für CSV-RDF-Mapper](tutorial-14.md) -->
+      <!-- * [Einführung: CSV-RDF-Mapper](tools_SKOS-CSV2RDF.md) -->
+      <!-- * [Vorlagen und Tabellenstruktur](tutorial-4.md) -->
+      <!-- * [Umwandlung nach RDF](tutorial-5.md) -->
     * [Tabellarische Datenverwaltung für OpenRefine](tutorial-13.md)
       * [OpenRefine](tools_OpenRefine.md)
       * [Vorlagen](tutorial-10.md)
