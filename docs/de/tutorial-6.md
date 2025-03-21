@@ -225,3 +225,30 @@ Am Ende könnte `metadata.ttl` also folgenden Inhalt haben:
   </details>
 
 * [ ] jetzt noch erklären, wie man den OpenRefine-Output und die metadata.ttl zusammenbringt
+<!-- testen, ob die Verwendung derselben IRI im metadata.ttl nicht vielleicht doch als Fehler erkannt wird -->
+* [ ] PURL für metadata.ttl anlegen
+* [ ] metadata.ttl ins Repo pushen
+* [ ] 
+Die Datei `metadata.ttl` kann separat auf dem GitHub-Repositorium verwaltet werden und vom Vokabular importiert werden.
+Hierfür muss dem Vokabular nach dem Erzeugen ein Statement hinzugefügt werden, in dem der Ort der Datei `metadata.ttl` angegeben wird.
+Dies kann entweder ein raw-Link von GitHub sein, was in unserem Fall <https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl> wäre.
+Wir können aber auch für diese Datei eine PURL einrichten, z.B. <http://purl.org/terminology-guide-for-move/testvocab/metadata>.
+
+``` turtle
+<http://purl.org/terminology-guide-for-move/testvocab/> owl:imports <http://purl.org/terminology-guide-for-move/testvocab/metadata>.
+```
+
+Durch den Import werden in Anwendungen, die den Turtle-Code laden können, dann auch die Metadaten geladen. Wir zeigen den Unterschied im Screenshot im Editor Protégé
+
+<details>
+<summary>
+Zeige den Vergleich
+</summary>
+
+|Ohne Metadaten|Mit Metadaten|
+|-|-|
+|![](images/testvocab-without-metadata.png)|![](images/testvocab-without-metadata.png)|
+
+</details>
+
+Bei diesem Verfahren sollte man jedoch sehr genau darauf achten, dass die Metadaten bei einer neuen Erzeugung des Vokabulars aktualisiert werden und dass auch das IMport-Statement in einer neuen Version des Vokabulars nicht vergessen wird.
