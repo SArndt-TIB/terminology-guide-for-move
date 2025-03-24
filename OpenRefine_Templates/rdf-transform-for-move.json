@@ -723,6 +723,29 @@
               ]
             }
           ]
+        },
+        {
+          "valueSource": {
+            "source": "constant",
+            "constant": "http://purl.org/terminology-guide-for-move/testvocab"
+          },
+          "typeMappings": [
+            {
+              "prefix": "owl",
+              "valueSource": {
+                "source": "constant",
+                "constant": "Ontology"
+              }
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "ConceptScheme"
+              }
+            }
+          ],
+          "propertyMappings": []
         }
       ]
     }
