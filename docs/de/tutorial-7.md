@@ -102,16 +102,23 @@ Auch jede beliebige andere PURL mit einem korrekten PURL-Namen löst mit dieser 
 Für das mit OpenRefine erzeugte Beispieldatenvokabular (vgl. [Konversion nach RDF)](tutorial-11.md)) hatten wir bereits eine PURL verwendet.
 Auch diese wurde über den PURL-Dienst als Subdomain von <http://purl.org/terminology-guide-for-move> als <http://purl.org/terminology-guide-for-move/testvocab> registriert.
 Sie leitet mit HTTP-Status-Code `303 See Other` zur Rohdatei auf GitHub, die unter <https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl> erreichbar ist.
+Auch für die Version des Vokabulars mit Metadaten sollten wir eine PURL einrichten.
+Diese kann man unter [http://purl.org/terminology-guide-for-move/testvocab+metadata](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl) erreichen.
 
-Die Identifier der einzelnen Entitäten des Vokabular beinhalten diese PURL als Bestandteil, da sie als Basis-IRI für das Vokabular verwendet wurde.
+Die Identifier der einzelnen Entitäten des Vokabulars beinhalten die PURL des Vokabulars (ohne Metadaten) <http://purl.org/terminology-guide-for-move/testvocab/> als Bestandteil, da sie als Basis-IRI für das Vokabular bei dessen Erzeugung verwendet wurde.
 Wir hatten zum Beispiel Entitäten wie <http://purl.org/terminology-guide-for-move/testvocab/Concept5> angelegt.
 Auch diese könnten jetzt mit einer PURL aufgelöst werden, wofür aber noch weitere Konfiguration notwendig ist.
-Die aktuelle Konfiguration löst einen `404 Not found`-Fehler aus.
+Die Konfiguration wie wir sie bis hierhin vorgenommen haben, löst einen `404 Not found`-Fehler aus.
 Mit einer neuen partiellen Weiterleitung von <http://purl.org//terminology-guide-for-move/testvocab/> auf <https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl#>, also auf ein Fragment des Vokabulars, wird die Auflösung der Entitäten-Identifier des Vokabulars zumindest auf das gesamte Vokabulardokument möglich.
 In einem Tool wie Protégé wird dann mit dem Aufrufen des Identifiers des Begriffs das gesamte Vokabular geladen.
+
+Diese Identifier lösen nicht auf die Version mit Metadaten auf.
+Um dies zu erreichen, haben wir eine weitere Umleitung eingerichtet von [http://purl.org/terminology-guide-for-move/testvocab+metadata](http://purl.org/terminology-guide-for-move/testvocab+metadata) auf die Location [https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl#](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl#).
+Mit dieser erneut partiellen Umleitung können die Identifier der einzelnen Begriffe angepasst (<http://purl.org/terminology-guide-for-move/testvocab+metadata/Concept5>) werden und rufen dann das Vokabular mit Metadaten ab.
+Diese Identifier werden durch das Vokabular allerdings nicht verwendet.
+Für ein eigenes Vokabular ist es empfehlenswert, die Metadaten gleich in die richtige Datei einzufügen und die PURL für das Gesamtvokabular inkl. Metadaten zu vergeben - anders als es hier zu Demonstrationszwecken erfolgt ist.
 <!-- Je nach Browser wird auch gleich der Sprung an die richtige Stelle im Dokument vorgenommen. > nein, stimmt irgendwie nicht, zumindest nicht bei GitHub raw files -->
 Die gesamten Konfigurationen sind im folgeden Screenshot aufgelistet.
-
 * [ ] TODO: zeigen, wie man auf eine versionierte Version auflösen kann.
 <!-- * [ ] TODO: zeigen, wie man auf einzelne Begriffe auflöst? die müssten dann aber auch als eigenes Dokument angelegt werden, was einen weiteren Prozessierungsschritt erfordert... -->
 
