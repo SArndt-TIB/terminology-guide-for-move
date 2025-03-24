@@ -728,6 +728,44 @@
                   }
                 }
               ]
+            },
+            {
+              "prefix": "rdfs",
+              "valueSource": {
+                "source": "constant",
+                "constant": "label"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - bevorzugte Benennung (de)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "de"
+                  }
+                }
+              ]
+            },
+            {
+              "prefix": "rdfs",
+              "valueSource": {
+                "source": "constant",
+                "constant": "label"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - bevorzugte Benennung (en)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "en"
+                  }
+                }
+              ]
             }
           ]
         },
