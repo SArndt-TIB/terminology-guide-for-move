@@ -41,7 +41,9 @@
 
 
 
-:Concept1  rdf:type         skos:Concept;
+:Concept1  rdf:type         skos:Concept,
+rdfs:Class # delete after test
+;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
         dcterms:modified    "08.11.2025"^^xsd:date;
@@ -111,7 +113,7 @@
         dcterms:subject <http://d-nb.info/gnd/4059501-8>;
         vann:preferredNamespacePrefix "tgfm";
         dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode>;
-        owl:versionIRI <http://purl.org/terminology-guide-for-move/testvocab/202500331>;
+        owl:versionIRI <http://purl.org/terminology-guide-for-move/202500331/testvocab>;
         doap:bug-database <https://github.com/SArndt-TIB/terminology-guide-for-move/issues>;
         premis:documentation <http://purl.org/terminology-guide-for-move>;
    .
