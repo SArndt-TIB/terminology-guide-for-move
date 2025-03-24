@@ -12,7 +12,7 @@
 @prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-:Concept1  rdf:type         skos:Concept;
+:Concept1  rdf:type         rdfs:Class , skos:Concept;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
         dcterms:modified    "08.11.2025"^^xsd:date;
@@ -44,7 +44,7 @@
         foaf:lastName   "Maier";
         ex:id           "Author4" .
 
-:Concept5  rdf:type      skos:Concept;
+:Concept5  rdf:type      rdfs:Class , skos:Concept;
         dcterms:creator  :Author2;
         dcterms:source   :Source2;
         dcterms:subject  <https://purl.org/linsearch/ver>;
@@ -63,7 +63,7 @@
         foaf:lastName   "Doe";
         ex:id           "Author1" .
 
-:Concept2  rdf:type         skos:Concept;
+:Concept2  rdf:type         skos:Concept , rdfs:Class;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
         dcterms:modified    "08.11.2025"^^xsd:date;

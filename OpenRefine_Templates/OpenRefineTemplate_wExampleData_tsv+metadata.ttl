@@ -39,11 +39,7 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-
-
-:Concept1  rdf:type         skos:Concept,
-rdfs:Class # delete after test
-;
+:Concept1  rdf:type         rdfs:Class , skos:Concept;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
         dcterms:modified    "08.11.2025"^^xsd:date;
@@ -75,7 +71,7 @@ rdfs:Class # delete after test
         foaf:lastName   "Maier";
         ex:id           "Author4" .
 
-:Concept5  rdf:type      skos:Concept;
+:Concept5  rdf:type      rdfs:Class , skos:Concept;
         dcterms:creator  :Author2;
         dcterms:source   :Source2;
         dcterms:subject  <https://purl.org/linsearch/ver>;
@@ -94,7 +90,7 @@ rdfs:Class # delete after test
         foaf:lastName   "Doe";
         ex:id           "Author1" .
 
-:Concept2  rdf:type         skos:Concept;
+:Concept2  rdf:type         skos:Concept , rdfs:Class;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
         dcterms:modified    "08.11.2025"^^xsd:date;
@@ -115,8 +111,7 @@ rdfs:Class # delete after test
         dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode>;
         owl:versionIRI <http://purl.org/terminology-guide-for-move/202500331/testvocab>;
         doap:bug-database <https://github.com/SArndt-TIB/terminology-guide-for-move/issues>;
-        premis:documentation <http://purl.org/terminology-guide-for-move>;
-   .
+        premis:documentation <http://purl.org/terminology-guide-for-move>;.
 
 :Source1  rdf:type         ex:Source;
         dcterms:creator    :Author4 , :Author1;

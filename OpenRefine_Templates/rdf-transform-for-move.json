@@ -275,6 +275,13 @@
                 "source": "constant",
                 "constant": "Concept"
               }
+            },
+            {
+              "prefix": "rdfs",
+              "valueSource": {
+                "source": "constant",
+                "constant": "Class"
+              }
             }
           ],
           "propertyMappings": [
