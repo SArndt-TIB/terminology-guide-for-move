@@ -11,8 +11,13 @@ Im nächsten Schritt nutzen wir OpenRefine, um eine RDF-Version dieser Daten zu 
 
 Starten Sie OpenRefine so wie für Ihr Betriebssystem angegeben. Nähere Informationen zum Starten und Beenden der Anwendung finden Sie [hier](https://openrefine.org/docs/manual/running). Beim Start sollte sich bereits ein Webbrowser oder ein neuer Tab in einem laufenden Webbrowser öffnen, der die Adresse [http://127.0.0.1:3333](http://127.0.0.1:3333) aufruft.
 Hier sollte dann der folgende Startbildschirm zu sehen sein:
+<details>
+<summary>
+Zeige den Start-Screen
+</summary>
 
 ![Screenshot des OpenRefine-Startbildschirms](images/openrefine-startscree.png)
+</details>
 
 ## Schritt 2 -  Legen Sie ein neues Projekt an
 
@@ -21,7 +26,14 @@ Hier können Sie ein Projekt durch Laden einer lokalen Datei starten.
 Nach dem Laden der Datei wird zunächst der Dateiname innerhalb der roten Markierung angezeigt.
 Um fortzufahren, bestätigen Sie den Vorgang mit dem Button `Nächste`.
 
+<details>
+<summary>
+Zeige die Ansicht zum Anlegen eines neuen Projekts
+</summary>
+
 ![Screenshot von OpenRefine mit der Ansicht zum Anlegen eines neuen Projekts](images/openrefine-create_new_project.png)
+
+</details>
 
 Anschließend wird eine Vorschau der Daten angezeigt.
 OpenRefine ist in der Lage, das Dateiformat zu erkennen und die Daten entsprechend zu prozessieren.
@@ -38,10 +50,25 @@ Bevor man das Projekt endgültig anlegt, kann man optional noch den Projektnamen
 Dies ist sinnvoll, sobald man mehrere Projekte verwaltet.
 Der folgende Screenshot zeigt den Vorschaubildschirm mit den eben vorgestellten, einstellbaren Optionen.
 
+<details>
+<summary>
+Zeige den Vorschaubildschirm
+</summary>
+
 ![Screenshot des Vorschaubildschirms von OpenRefine sowie der Parsing-Optionen für den Import einer Quelle](images/openrefine-preview_dataload.png)
+
+</details>
 
 Nachdem das Projekt erstellt wurde, wird es geöffnet.
 Man sieht dann in der Startansicht diverse Elemente.
+
+<details>
+<summary>
+Zeige die Startansicht des Projekts
+</summary>
+
+![Screenshot von OpenRefine mit geladenen Daten und Annotationen, die die Elemente des graphischen User Interfaces erläutern](images/openrefine-data_loaded.png)
+</details>
 
 1 Die Daten werden auch in OpenRefine tabellarisch angezeigt. Standardmäßig werden 10 Zeilen angezeigt.<br>
 2 Man hat die Option die Ansicht zwischen Zeilen und Datensätzen umzuschalten. Bei der Form unserer Tabelle ist diese Option nicht bedeutsam.<br>
@@ -50,22 +77,33 @@ Man sieht dann in der Startansicht diverse Elemente.
 5 Die Daten lassen sich darüber hinaus auch mit diversen Facetten und Filtern in beliebige Teilmengen aufteilen. Standardmäßig wird der Reiter `Facette/ Filter` zuerst geöffnet, mit `Rückgängig/ Wiederholen` kann umgeschaltet werden zum Bearbetungsverlauf - alle Zellen lassen sich einzeln oder in Massenbearbeitungen überarbeiten.<br>
 6 Die später benötigte Erweiterung RDF Transform sollte bereits über einen Button aufrufbar sein.
 
-![Screenshot von OpenRefine mit geladenen Daten und Annotationen, die die Elemente des graphischen User Interfaces erläutern](images/openrefine-data_loaded.png)
-
 ## Schritt 3 - Wechseln Sie zur Bearbeitungshistorie
 
 Wechseln Sie zur Ansicht der Bearbeitungshistorie mit dem Button `Rückgängig / Wiederholen`.
 Hier müssen jetzt zwei Buttons - `Extrahieren...` und `Anwenden...` verfügbar sein.
 
-![](images/openrefine_history.png)
+<details>
+<summary>
+Zeige die Bearbeitungshistorie
+</summary>
+
+![Screenshot von Open Refine, der die Bearbeitungshistorie zeigt](images/openrefine_history.png)
+</details>
+
 
 Klicken Sie auf den Button `Anwenden...`.
 Es öffnet sich ein Eingabefenster, in das Sie einen OpenRefine-Vorgangsverlauf einfügen können.
 Diesen Vorgangsverlauf haben wir bereits auf unserem GitHub-Repositorium in der Datei [rdf-transform-for-move.json](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/rdf-transform-for-move.json) vordefiniert.
 Den Inhalt dieser Datei können Sie jetzt einfach in das Fenster hineinkopieren.
-Im Anschluss wenden Sie ihn durch Klcik auf den Button `Operationen durchführen` an.
+Im Anschluss wenden Sie ihn durch Klick auf den Button `Operationen durchführen` an.
+
+<details>
+<summary>
+Zeige Fenster zur Eingabe des Vorgangsverlaufes
+</summary>
 
 ![Schreenshot von OpenRefine, der das geöffnete Fenster für die Eingabe eines Vorgangsverlaufes zeigt](images/openrefine-vorgangsverlauf-anwenden.png)
+</details>
 
 Im Anschluss sehen Sie im Verlauf des Projekts dann zwei Bearbeitungsschritte:
 
@@ -75,7 +113,13 @@ Im Anschluss sehen Sie im Verlauf des Projekts dann zwei Bearbeitungsschritte:
 Der Arbeitsschritt `Save RDF Transform` beinhaltet die Definition eines Mappings der tabellarischen Daten auf ein RDF-basiertes Schema.
 Dieses kann nur angewendet werden, wenn die Tabellenvorlagen bei der Bearbeitung nicht in ihrer Struktur geändert wurde.
 
+<details>
+<summary>
+Zeige Vorgangsverlauf mit den zwei Arbeitsschritten
+</summary>
+
 ![Screenshot von OpenRefine, das die zwei Bearbeitungsschritte aus dem geladenen Vorgangsverlauf zeigt](images/openrefine_history_is_applied.png)
+</details>
 
 - [ ] TODO: Noch ergänzen: Wie updated man das RDF-Transform-Schema um den eigenen Identifier?
 
@@ -85,7 +129,13 @@ Um nun einen RDF-Export Ihrer Daten zu erhalten müssen Sie jetzt nicht mehr vie
 Lediglich ein Klick auf den Button `Export` und die Auswahl der richtigen Export-Option ist notwendig.
 Wir wählen hier unter `RDF Transform` den `Pretty Export` und dort - wegen besserer Lesbarkeit des Codes - `Turtle (Pretty)`.
 
+<details>
+<summary>
+Zeige das Export-Menü
+</summary>
+
 ![Screenshot von OpenRefine, der das Menü zum Exportieren von RDF-Dateien zeigt](images/openrefine-rdf_export.png)
+</details>
 
 OpenRefine erstellt dabei eine Datei mit dem Namen [OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl) (sofern das Projekt beim Datenimport nicht anders benannt wurde!).
 Die erzeugte Datei wird dabei wie ein Download behandelt.
@@ -94,6 +144,12 @@ Diesen Export sollten Sie im selben Repositorium ablegen, in dem Sie auch die ta
 Der aus unserer Vorlage mit Beispieldaten generierte Output in dieser Exportdatei sieht folgendermaßen aus:
 
 <!-- Updaten wenn ich ex: ersetzt habe -->
+
+<details>
+<summary>
+Zeige den Code der Output-Datei
+</summary>
+
 
 ``` turtle
 @prefix :        <http://purl.org/terminology-guide-for-move/testvocab/> .
@@ -110,15 +166,46 @@ Der aus unserer Vorlage mit Beispieldaten generierte Output in dieser Exportdate
 @prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-:Concept2  rdf:type         skos:Concept;
+:Concept1  rdf:type         rdfs:Class , skos:Concept;
+        rdfs:label          "parking traffic"@en , "Parkraumsuchverkehr"@de;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
         dcterms:modified    "08.11.2025"^^xsd:date;
+        dcterms:source      :Source2 , :Source1;
         dcterms:subject     <http://uri.gbv.de/terminology/bk/55.84>;
-        skos:editorialNote  "add definitions"@en , "get approval for concept by project lead"@en , "add context sentence"@en , "Begriff von Projektleitung absegnen lassen"@de , "Definitionen ergänzen"@de , "Kontextsatz ergänzen"@de;
-        skos:prefLabel      "street traffic"@en , "Straßenverkehr"@de;
+        skos:altLabel       "Parkplatzsuche"@de , "Parksuchverkehr"@de , "Parkverkehr"@de;
+        skos:broader        :Concept2;
+        skos:changeNote     "The definition has been changed due to the fact that ..."@en , "Die Definition wurde geändert, weil ..."@de;
+        skos:definition     "Anteil des Straßenverkehrs, der bei der Suche nach einem Parkplatz anfällt"@de , "portion of street traffic resulting from the search for parking space"@en;
+        skos:editorialNote  "Bitte weitere Synonyme aus dem Englischen suchen!"@de , "Please search further synoynms in English"@en;
+        skos:prefLabel      "Parkraumsuchverkehr"@de , "parking traffic"@en;
+        ex:contextSentence  "Parking traffic is highest in densely populated metropolitan areas."@en;
         ex:editorialStatus  "draft";
-        ex:id               "Concept2" .
+        ex:exampleSentence  "Der Parkraumsuchverkehr ist in Ballungsgebieten am höchsten."@de;
+        ex:id               "Concept1" .
+
+<https://purl.org/linsearch/ver>
+        rdf:type  skos:Concept .
+
+:Author2  rdf:type      foaf:Person;
+        m4i:orcidId     "https://orcid.org/0000-0002-0871-8994"^^xsd:anyURI;
+        foaf:firstName  "Jane";
+        foaf:lastName   "Doe";
+        ex:id           "Author2" .
+
+:Author4  rdf:type      foaf:Person;
+        m4i:orcidId     "https://orcid.org/0000-0002-0871-8993"^^xsd:anyURI;
+        foaf:firstName  "Harro";
+        foaf:lastName   "Maier";
+        ex:id           "Author4" .
+
+:Concept5  rdf:type      rdfs:Class , skos:Concept;
+        rdfs:label       "Schiffsverkehr"@de;
+        dcterms:creator  :Author2;
+        dcterms:source   :Source2;
+        dcterms:subject  <https://purl.org/linsearch/ver>;
+        skos:prefLabel   "Schiffsverkehr"@de;
+        ex:id            "Concept5" .
 
 :Source2  rdf:type         ex:Source;
         dcterms:publisher  "Wikidata";
@@ -126,37 +213,25 @@ Der aus unserer Vorlage mit Beispieldaten generierte Output in dieser Exportdate
         dcat:accessURL     "https://www.wikidata.org/w/index.php?title=Q97379970&oldid=1936875884"^^xsd:anyURI;
         ex:id              "Source2" .
 
-<https://purl.org/linsearch/ver>
-        rdf:type  skos:Concept .
-
-:Author2  rdf:type      foaf:Person;
-        m4i:orcidId     "https://orcid.org/0000-0002-0871-8994";
+:Author1  rdf:type      foaf:Person;
+        m4i:orcidId     "https://orcid.org/0000-0002-0871-8994"^^xsd:anyURI;
         foaf:firstName  "Jane";
         foaf:lastName   "Doe";
-        ex:id           "Author2" .
+        ex:id           "Author1" .
 
-:Concept1  rdf:type         skos:Concept;
+:Concept2  rdf:type         skos:Concept , rdfs:Class;
+        rdfs:label          "Straßenverkehr"@de , "street traffic"@en;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
         dcterms:modified    "08.11.2025"^^xsd:date;
-        dcterms:source      :Source1 , :Source2;
         dcterms:subject     <http://uri.gbv.de/terminology/bk/55.84>;
-        skos:altLabel       "Parkplatzsuche"@de , "Parksuchverkehr"@de , "Parkverkehr"@de;
-        skos:broader        :Concept2;
-        skos:changeNote     "Die Definition wurde geändert, weil ..."@de , "The definition has been changed due to the fact that ..."@en;
-        skos:definition     "Anteil des Straßenverkehrs, der bei der Suche nach einem Parkplatz anfällt"@de , "portion of street traffic resulting from the search for parking space"@en;
-        skos:editorialNote  "Please search further synoynms in English"@en , "Bitte weitere Synonyme aus dem Englischen suchen!"@de;
-        skos:prefLabel      "parking traffic"@en , "Parkraumsuchverkehr"@de;
-        ex:contextSentence  "Parking traffic is highest in densely populated metropolitan areas."@en;
+        skos:editorialNote  "add definitions"@en , "add context sentence"@en , "Definitionen ergänzen"@de , "get approval for concept by project lead"@en , "Begriff von Projektleitung absegnen lassen"@de , "Kontextsatz ergänzen"@de;
+        skos:prefLabel      "street traffic"@en , "Straßenverkehr"@de;
         ex:editorialStatus  "draft";
-        ex:exampleSentence  "Der Parkraumsuchverkehr ist in Ballungsgebieten am höchsten."@de;
-        ex:id               "Concept1" .
+        ex:id               "Concept2" .
 
-:Author4  rdf:type      foaf:Person;
-        m4i:orcidId     "https://orcid.org/0000-0002-0871-8993";
-        foaf:firstName  "Harro";
-        foaf:lastName   "Maier";
-        ex:id           "Author4" .
+<http://purl.org/terminology-guide-for-move/testvocab>
+        rdf:type  skos:ConceptScheme , owl:Ontology .
 
 :Source1  rdf:type         ex:Source;
         dcterms:creator    :Author4 , :Author1;
@@ -166,20 +241,10 @@ Der aus unserer Vorlage mit Beispieldaten generierte Output in dieser Exportdate
         dcat:accessURL     "https://example.com/verlagsseite/buchseite"^^xsd:anyURI;
         ex:id              "Source1" .
 
-:Author1  rdf:type      foaf:Person;
-        m4i:orcidId     "https://orcid.org/0000-0002-0871-8994";
-        foaf:firstName  "Jane";
-        foaf:lastName   "Doe";
-        ex:id           "Author1" .
-
-:Concept5  rdf:type      skos:Concept;
-        dcterms:creator  :Author2;
-        dcterms:source   :Source2;
-        dcterms:subject  <https://purl.org/linsearch/ver>;
-        skos:prefLabel   "Schiffsverkehr"@de;
-        ex:id            "Concept5" .
-
 <http://uri.gbv.de/terminology/bk/55.84>
         rdf:type  skos:Concept .
 
+
 ```
+
+</details>

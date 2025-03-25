@@ -220,12 +220,12 @@ Die Beispieldaten zeigen Metadaten für das Testvokabular dieses Tutorials.
   Die restlichen erzeugten Statements können Sie an der Entität, die als owl:Ontology deklariert wurde, ergänzen.
 
   <details>
-  <summary>Zeige die erweiterte Entität &#139;http://purl.org/terminology-guide-for-move/testvocab&#8250;</summary>
+  <summary>Zeige die erweiterte Entität &#60;http://purl.org/terminology-guide-for-move/testvocab&#62;</summary>
 
   ``` turtle
   <http://purl.org/terminology-guide-for-move/testvocab>  rdf:type owl:Ontology ;
     rdf:type skos:ConceptScheme;
-    # ab hier finden Sie die mit dem Tool der ULB-Darmstadt erzeugten Statments
+    # ab hier finden Sie die mit dem Tool der ULB Darmstadt erzeugten Statments
     dcterms:title "Demo-Vokabular für den Terminology Guide for Move"@de;
     dcterms:creator <https://orcid.org/0000-0002-1019-9151>;
     dcterms:created "2025-03-21T13:56:00"^^xsd:dateTime;

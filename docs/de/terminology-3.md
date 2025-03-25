@@ -96,3 +96,5 @@ Auch hier lassen sich entsprechende Beispiele für Terminologieprodukte finden, 
   * DIN ISO 8855:2013-11 _Straßenfahrzeuge - Fahrzeugdynamik und Fahrverhalten - Begriffe (ISO 8855:2011)_ [[16](#source16)] und
   * DIN 70010:2001-04 _Systematik der Straßenfahrzeuge - Begriffe für Kraftfahrzeuge, Fahrzeugkombinationen und Anhängefahrzeuge_ [[17](#source17)] zur Normung von Begriffen,
 * die Richtlinie VDI 2157 _Planetengetriebe - Begriffe, Symbole, Berechnungsgrundlagen_ [[18](#source18)], ebenfalls zur Normung von Begriffen.
+
+<!-- [13]: ## "tüt" -->

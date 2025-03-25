@@ -29,3 +29,5 @@ TODO: ergänzen: sprachliche 1:n-Beziehungen
 
 * Ambiguität: Homonymie, Polysemie
 * Synonymie
+
+<!-- [13]: ## "tüt" -->

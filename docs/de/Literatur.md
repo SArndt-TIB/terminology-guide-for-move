@@ -51,9 +51,12 @@ der TU Braunschweig. Studiengänge. Allgemeine Begriffe aus Wissenschaft und Hoc
 
 25. <a name="source25"></a> "Samstag" auf Duden online. URL: <https://www.duden.de/node/125291/revision/1235876> (Abrufdatum: 13.03.2025).
 
-<!-- xx. <a name="sourcexx"></a> -->
-<!-- xx. <a name="sourcexx"></a> -->
-<!-- xx. <a name="sourcexx"></a> -->
+26. <a name="Drewer & Schmitz 2017"></a> Drewer, P. & Schmitz, K.-D. (2017): Terminologiemanagement: Grundlagen - Methoden - Werkzeuge. Springer: Berlin, Heidelberg. DOI: <http://link.springer.com/10.1007/978-3-662-53315-4> (Abrufdatum: 25.03.2025).
+
+27. <a name="source27"></a> "Moped" auf Duden online. URL: <https://www.duden.de/node/98971/revision/1313187> (Abrufdatum: 25.03.2025).
+
+28. <a name="source28"></a> DIN 2331:2019-12 Begriffssysteme und ihre Darstellung.
+
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->
