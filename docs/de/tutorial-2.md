@@ -1,5 +1,7 @@
 # Versionskontrolle einrichten mit git
 
+tbd todo to do
+
 * Repo einrichten
 * Basics zum Arbeiten
   * Branches

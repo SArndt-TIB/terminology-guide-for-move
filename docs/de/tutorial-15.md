@@ -1,5 +1,7 @@
 # Terminologieleitfaden
 
+tbd todo to do
+
 * nach welchen Kriterien werden Vorzugsbenennungen ausgewählt?
   * Umgang mit Fremdwörtern?
 * welche orthographischen Präferenzen sollten beachtet werden?

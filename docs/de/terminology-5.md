@@ -42,6 +42,10 @@ Ein fachlicher Begriff ist dabei ein Element speziellen Wissens, das nicht von a
 Begriffe sind nicht an eine Sprache gebunden, können aber gesellschaftlich und kulturell geprägt sein.
 <!-- Beispiele für kulturell geprägte (Fach-)begriffe ergänzen? -->
 
+<!-- > Morphologie (Biologie)
+> Die Morphologie (aus altgriechisch μορφή morphé, deutsch ‚Gestalt‘, ‚Form‘, und -logie (aus λόγος lógos, deutsch ‚Lehre‘)) als Teilbereich der Biologie und der Pathologie ist die Lehre von der Struktur und Form von Organismen und beschreibt die mit der Zeit sich wandelnde Gestalt. Morphologische Beschreibungen haben sich zunächst nur auf makroskopisch sichtbare Merkmale wie Organe oder Gewebe bezogen, zum Teil wurde die Morphologie auch unterteilt in Anatomie (als Lehre vom Bau der inneren Organe) und Eidonomie (zur Beschreibung der äußeren Gestalt). Mit der Verbesserung der Mikroskope und mit Anfärbungsmethoden konnten entsprechende Untersuchungen im 19. Jahrhundert[1] bis auf die zelluläre und subzelluläre Ebene ausgedehnt werden (Ultrastrukturforschung). Im angloamerikanischen Sprachraum wird auch von molecular morphology gesprochen, also der Gestaltbeschreibung von Makromolekülen wie ribosomaler DNA.[2] In deutschsprachigen Ländern ist der Morphologiebegriff üblicherweise für Strukturen oberhalb der molekularen Ebene reserviert. 
+> Source: <https://de.wikipedia.org/w/index.php?title=Morphologie_(Biologie)&oldid=249735739> -->
+
 ## Definitionen
 
 Begriffe sind – als mentale Einheiten – nicht direkt zugänglich. Die Definition nimmt deswegen die wichtige Rolle wahr, den Begriff sprachlich zu repräsentieren – und zwar ausführlicher als eine Benennung. Die Definition verortet den Begriff im Kontext anderer Begriffe und benennt seine Eigenschaften. Mit diesen kann er von anderen Begriffen abgegrenzt werden. Gegegebnenfalls nennt eine Definition auch Bestandteile der Gegenstände für die der Begriff steht oder Beispiele für solche Gegenstände.
@@ -59,8 +63,18 @@ Begriffe sind Teil eines Systems mit einer Vielzahl von Begriffen, die wir uns i
 
 ## Quellenangaben
 
-Bei der Dokumentation terminologischer Informationen ist es sinnvoll, möglichst Belege anzugeben, die die Gültigkeit bestätigen. Die Quellen sollten möglichst dem Fach entstammen.
+Bei der Dokumentation terminologischer Informationen ist es sinnvoll, möglichst Belege anzugeben, die die Gültigkeit bestätigen.<br>
+:exclamation: Wie bei allen fachbezogenen Arbeiten sollte bei der Recherche darauf geachtet werden, dass die Quellen fachlichen Qualitätsansprüchen genügen!<br>
+[Drewer & Schmitz 2017 [26]][Drewer & Schmitz 2017], S. 51ff. nennen hierzu eine Reihe von Kriterien, die die Quelle erfüllen sollte:<br>
+
+* Zuverlässigkeit: die Quelle ist fachlich anerkannt/ stammt aus dem Fach<br>
+* Aktualität: die Quelle deckt den neuesten Kenntnisstand ab<br>
+* Muttersprachlichkeit: die Quelle ist in der Muttersprache des Verfassers abgefasst<br>
+* Fachkompetenz: der Verfasser ist ein anerkannter Experte im Fachgebiet<br>
+
+
 
 [Allgemeinbegriff]: ## "Begriff, der ausgehend von mehr als einem Gegenstand gebildet wird (Quelle: DIN 2342:2022-07)"
 [Individualbegriff]: ## "Begriff, der ausgehend von einem einzelnen Gegenstand gebildet wird (Quelle: DIN 2342:2022-07)"
+[Drewer & Schmitz 2017]: ## "Drewer, P. & Schmitz, K.-D. (2017): Terminologiemanagement: Grundlagen - Methoden - Werkzeuge. Springer: Berlin, Heidelberg. DOI: <http://link.springer.com/10.1007/978-3-662-53315-4> (Abrufdatum: 25.03.2025)." 
 <!-- [13]: ## "tüt" -->

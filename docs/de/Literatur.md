@@ -57,8 +57,9 @@ der TU Braunschweig. Studiengänge. Allgemeine Begriffe aus Wissenschaft und Hoc
 
 28. <a name="source28"></a> DIN 2331:2019-12 Begriffssysteme und ihre Darstellung.
 
-<!-- xx. <a name="sourcexx"></a> -->
-<!-- xx. <a name="sourcexx"></a> -->
+29. <a name="source29"></a> Rat für deutsche Rechtschreibung (Hg.) (2024): Amtliches Regelwerk der deutschen Rechtschreibung Regeln und Wörterverzeichnis. Mannheim: Leibniz-Institut für Deutsche Sprache. URL: https://www.rechtschreibrat.com/DOX/RfdR_Amtliches-Regelwerk_2024.pdf (Abrufdatum: 26.03.2025).
+
+30. <a name="sourcexx"></a>Duden Online (o.J.): Duden Sprachwissen Rechtschreibregeln. URL: https://www.duden.de/sprachwissen/rechtschreibregeln (Abrufdatum: 26.03.2025).
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->

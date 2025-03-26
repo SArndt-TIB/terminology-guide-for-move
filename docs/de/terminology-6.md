@@ -10,16 +10,6 @@ Im Wesentlichen geht es darum,
 * die gesammelten Informationen in einer nachnutzbaren Form zu dokumentieren und
 * diese Dokumentation zu aktualisieren, wenn es Änderungen gibt.
 
-> :exclamation: Wie bei allen fachbezogenen Arbeiten sollte bei der Recherche darauf geachtet werden, dass die Quellen fachlichen Qualitätsansprüchen genügen!<br>
-> [Drewer & Schmitz 2017 [26]][Drewer & Schmitz 2017], S. 51ff. nennen hierzu eine Reihe von Kriterien, die die Quelle erfüllen sollte:<br>
-> * Zuverlässigkeit: die Quelle ist fachlich anerkannt<br>
-> * Aktualität: die Quelle deckt den neuesten Kenntnisstand ab<br>
-> * Muttersprachlichkeit: die Quelle ist in der Muttersprache des Verfassers abgefasst<br>
-> * Fachkompetenz: der Verfasser ist ein anerkannter Experte im Fachgebiet<br>
-<!-- ><br> -->
-<!-- ><br> -->
-<!-- ><br> -->
-
 ## Termini sichten und erfassen
 
 Die greifbarste Manifestation der Terminologie sind die in der Fachkommunikation verwendeten Termini.
@@ -27,6 +17,7 @@ Ein guter Startpunkt für die Terminologiearbeit ist deswegen die Erstellung sog
 Hierfür werden meist bestehende Dokumente ausgewertet, in denen Termini verwendet werden.
 Im wissenschaftlichen Umfeld eignen sich hierzu zum Beispiel Publikationen, Lehrmaterialien, Vorträge oder Lehrwerke.
 In einigen Disziplinen könnten auch Fachdatenbanken oder fachliche Softwares relevante Informationen enthalten.
+Zur Auswahl der Quellen sollten auch einige [Kriterien](terminology-5.md#quellenangaben) beachtet werden.
 Auch der direkte Input von Fachexperten kann hierbei relevant sein.
 Bei der Recherche und Ersterfassung können aus den Quellen auch gleich Kontextinformationen erhoben werden, beispielsweise können Definitionen oder Synonyme bereits dokumentiert werden.
 
@@ -89,6 +80,7 @@ Siehe auch: [Elemente einer Terminologie - Begriffsbeziehungen](terminology-5.md
 Der Schritt der Bewertung und Bereinigung des Terminologiebestandes ist in der wissenschaftlichen Terminologhiearbeit von niedrigerer Priorität als in der Terminologiearbeit für Unternehmen.
 Dennoch kann es Sinn machen, ihn durchzuführen.
 Es ist zum Beispiel ratsam unter den erfassten Synonymen ein bevorzugtes auszuwählen, das bestimmte Kriterien erfüllt, z.B. 
+
 * sollte es möglichst eindeutig sein,
 * keine unerwünschten Nebenbedeutungen haben, sondern neutral sein,
 * eine hohe Verbreitung im Fach haben und geläufig sein,
@@ -96,19 +88,35 @@ Es ist zum Beispiel ratsam unter den erfassten Synonymen ein bevorzugtes auszuw�
 * den gängigen orthografischen Konventionen entspricht.
 
 Zur Bereinigung siehe vertiefend auch [Drewer & Schmitz 2017 [26]][Drewer & Schmitz 2017], S. 80-97.<br>
-Zur aktuellen Orthografie siehe auch https://www.rechtschreibrat.com/regeln-und-woerterverzeichnis/
-https://www.duden.de/sprachwissen/rechtschreibregeln
+Zur Bildung und Motivation von Benennungen siehe vertiefend auch [Drewer & Schmitz 2017 [26]][Drewer & Schmitz 2017], S. 70-80.
+Zur aktuellen Orthografie siehe auch [Rat für deutsche Rechtschreibung 2024 [28]][Rat für deutsche Rechtschreibung 2024] und [Duden Online (o.J.)][Duden Online (o.J.)] [[29]](Literatur.md#source29).
 
 ## Schaffung neuer Benennungen
 
-Zur Termgewinnung siehe vertiefend auch [Drewer & Schmitz 2017 [26]][Drewer & Schmitz 2017], S. 39-64.
+Die Deskription der Begriffe und ihre systematischen Zusammenhänge kann terminologische Lücken sichtbar machen.
+In diesen Fällen kann man darüber nachdenken, eine Benennung zu bilden.
+Die geplante Benennungsbildung macht sicherlich sehr viel Sinn, wenn ein Produkt einen kundenwirksamen Namen bekommen soll.
+In der Wissensentwicklung ist dieser Prozess vermutlich weniger plötzlich und bewusst, sondern erfolgt sukzessive und erwächst vermutlich aus einer wissenschaftlichen Reflexion über die Präzision und Adäquatheit über den aufgrund von Beobachtung an Sachverhalten gebildeten Begriff sowie die Angemessenheit der dafür gewachsenen Benennungen.
+Die Benennungsbildung hat hier dann vielleicht einen präzisierenden Charakter, und es ist weniger mit vollkommenen Neuschöpfungen zu rechnen.
+
+Zur Bildung von Benennungen siehe vertiefend auch [Drewer & Schmitz 2017 [26]][Drewer & Schmitz 2017], S. 70-80.
+
+> Falls Sie von einer interessanten Benennungsbildung aus Ihrem Fachbereich berichten können, würden wir uns sehr freuen, wenn Sie uns davon erzählen. Besuchen Sie einfach unseren [Issue-Tracker](https://github.com/SArndt-TIB/terminology-guide-for-move/issues).
 
 ## Aktualisierung und Erweiterung
 
-Zur Termgewinnung siehe vertiefend auch [Drewer & Schmitz 2017 [26]][Drewer & Schmitz 2017], S. 39-64.
+Da sich mit wissenschaftlichen Methoden generiertes Wissen ständig weiterentwickelt, vermehrt und überholt, müssen auch wissenschaftliche Terminologien kontinuierlich weiterentwickelt werden.
+Eine kontinuierliche Überprüfung der ursprünglichen Dokumentation der Terminologie ist genauso wichtig wie die Ergänzung neuer Konzepte, die innerhalb ihres Scopes liegen.
+Hierbei ist es sinnvoll, auch Feedback der Nutzer zu erlauben oder sogar gezielt einzuholen.
+Ein Ticketsystem oder Issue-Tracker kann dabei helfen.
+Soll die Terminologie langfristig zur Verfügung gestellt werden, ist es sinnvoll schon vorab zu bedenken, wie häufig Aktualisierungen notwendig sind, mit welchen Aufwänden zu rechnen ist und wie oft Releases bereitgestellt werden sollen.
+Um eingehende Anfragen bearbeiten zu können, kann es hilfreich sein, auch Kriterien zu überlgen, nach denen diese Anfragen priorisiert werden sollen.
 
+Zur Aktualisierung siehe vertiefend auch [Drewer & Schmitz 2017 [26]][Drewer & Schmitz 2017], S. 177-182.
 
 [Drewer & Schmitz 2017]: ## "Drewer, P. & Schmitz, K.-D. (2017): Terminologiemanagement: Grundlagen - Methoden - Werkzeuge. Springer: Berlin, Heidelberg. DOI: <http://link.springer.com/10.1007/978-3-662-53315-4> (Abrufdatum: 25.03.2025)." 
 [27]: ## "&#147;Moped&#148; auf Duden online. URL: <https://www.duden.de/node/98971/revision/1313187> (Abrufdatum: 25.03.2025)."
 [DIN23312019]: ## "DIN 2331:2019-12 Begriffssysteme und ihre Darstellung."
 [motiviert]: ## "Das bedeutet, dass es nach Möglichkeit Wortbestandteile hat, die bereits bekannt sind, und aus denen sich die Gesmatbedeutung des Wortes gut ableiten lässt, z.B._Spur-halte-assistent"
+[Rat für deutsche Rechtschreibung 2024]: ## "Rat für deutsche Rechtschreibung (Hg.) (2024): Amtliches Regelwerk der deutschen Rechtschreibung Regeln und Wörterverzeichnis. Mannheim: Leibniz-Institut für Deutsche Sprache. URL: https://www.rechtschreibrat.com/DOX/RfdR_Amtliches-Regelwerk_2024.pdf (Abrufdatum: 26.03.2025)."
+[Duden Online (o.J.)]: ## "Duden Online (o.J.): Duden Sprachwissen Rechtschreibregeln. URL: https://www.duden.de/sprachwissen/rechtschreibregeln (Abrufdatum: 26.03.2025)."

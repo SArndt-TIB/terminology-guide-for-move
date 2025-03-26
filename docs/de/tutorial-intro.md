@@ -1,5 +1,7 @@
 # Übersicht
 
+tbd todo to do
+
 * [Scope und Zweck festlegen](tutorial-3.md)
 * [Terminologieleitfaden aufsetzen](tutorial-15.md)
 * [Ein Git-Repositorium einrichten](tutorial-2.md)
