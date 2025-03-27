@@ -6,7 +6,7 @@ Ein Identifier im Kontext der Terminologiearbeit für das Semantic Web ist eine 
 Man spricht in diesem Kontext auch von persistenten Identifikatoren oder PIDs.
 Für die dauerhafte Erreichbarkeit einer Ressource braucht es zuverlässige und langfristig agierende Dienstleister, die die Ressource in allen Varianten langfristig und ohne Unterbrechung zur Verfügung stellen können.
 Mit der [Einrichtung eines GitHub- oder GitLab-basierten Repositoriums](tutorial-2.md) haben wir bereits eine gute Grundlage gelegt, um die zu unserem Vokabular gehörigen Dateien zu verwalten, dauerhaft verfügbar zu halten und auch offizielle Releases herauszugeben.
-Leider sind die Links dieser Ressourcen nicht sonderlich chic und memorabel - der wirklich maschinenlesbare Output der Konversion unserer Tabelle nach RDF mit OpenRefine ist zum Beispiel unter <https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl> erreichbar.
+Leider sind die Links dieser Ressourcen nicht sonderlich chic und memorabel - der wirklich maschinenlesbare Output der Konvertierung unserer Tabelle nach RDF mit OpenRefine ist zum Beispiel unter <https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl> erreichbar.
 Solche Links als Identifier für das Vokabular zu verwenden ist theoretisch zwar möglich, aber sähe ein wenig gewähnungsbedürftig aus, ganz zu Schweigen von den Identifiern der einzelnen Entitäten wie den Begriffen.
 
 <details>
@@ -99,7 +99,7 @@ Der PURL Type/ HTTP Status Code muss dabei auf `partial` gesetzt werden.
 <http://purl.org/terminology-guide-for-move/de/tutorial-6> leitet dann weiter auf die Unterseite <https://sarndt-tib.github.io/terminology-guide-for-move/#/de/tutorial-6>.
 Auch jede beliebige andere PURL mit einem korrekten PURL-Namen löst mit dieser Konfiguration auf das richtige Ziel auf, z.B. <http://purl.org/terminology-guide-for-move/de/About> auf <https://sarndt-tib.github.io/terminology-guide-for-move/#/de/About>.
 
-Für das mit OpenRefine erzeugte Beispieldatenvokabular (vgl. [Konversion nach RDF)](tutorial-11.md)) hatten wir bereits eine PURL verwendet.
+Für das mit OpenRefine erzeugte Beispieldatenvokabular (vgl. [Konvertierung nach RDF)](tutorial-11.md)) hatten wir bereits eine PURL verwendet.
 Auch diese wurde über den PURL-Dienst als Subdomain von <http://purl.org/terminology-guide-for-move> als <http://purl.org/terminology-guide-for-move/testvocab> registriert.
 Sie leitet mit HTTP-Status-Code `303 See Other` zur Rohdatei auf GitHub, die unter <https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl> erreichbar ist.
 Auch für die Version des Vokabulars mit Metadaten sollten wir eine PURL einrichten.

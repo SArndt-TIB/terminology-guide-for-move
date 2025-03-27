@@ -14,3 +14,5 @@ tbd todo to do
   * versionIRI
   * date:modified
   * rdfs:definedBy
+
+[Library Carpentry: Introduction to Git](https://librarycarpentry.github.io/lc-git/)

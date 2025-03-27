@@ -1,0 +1,6 @@
+* [Zurück](../README.md)
+* [Start](README.md)
+* [Workflow: OpenRefine](open-refine/README.md)
+* [Workflow: CSV-RDF-Mapper](CSV-RDF-Mapper/README.md)
+* [Workflow: SKOS Play!](SKOS-Play/README.md)
+* [Workflow: SHACL-Formulare](SHACL-Formulare/README.md)

@@ -65,6 +65,7 @@ Im Abschnitt [Nützliche Links](#nützliche-links) finden Sie zudem weitere Link
   * [OpenRefine extension for Google Sheets and Google Drive](https://github.com/OpenRefine/refine-gdata-extension)
 * [Cleaning Data with OpenRefine](https://programminghistorian.org/en/lessons/cleaning-data-with-openrefine) by Seth van Hooland, Ruben Verborgh, and Max De Wilde at Porgramming Historian
 * [Fetching and Parsing Data from the Web with OpenRefine](https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine) from Evan Peter Williamson at Programming Historian
+* [Library Carpentry: OpenRefine](https://librarycarpentry.github.io/lc-open-refine/)
 <!-- * []() -->
 <!-- * []() -->
 <!-- * []() -->

@@ -59,8 +59,9 @@ der TU Braunschweig. Studiengänge. Allgemeine Begriffe aus Wissenschaft und Hoc
 
 29. <a name="source29"></a> Rat für deutsche Rechtschreibung (Hg.) (2024): Amtliches Regelwerk der deutschen Rechtschreibung Regeln und Wörterverzeichnis. Mannheim: Leibniz-Institut für Deutsche Sprache. URL: https://www.rechtschreibrat.com/DOX/RfdR_Amtliches-Regelwerk_2024.pdf (Abrufdatum: 26.03.2025).
 
-30. <a name="sourcexx"></a>Duden Online (o.J.): Duden Sprachwissen Rechtschreibregeln. URL: https://www.duden.de/sprachwissen/rechtschreibregeln (Abrufdatum: 26.03.2025).
-<!-- xx. <a name="sourcexx"></a> -->
+30. <a name="source30"></a>Duden Online (o.J.): Duden Sprachwissen Rechtschreibregeln. URL: https://www.duden.de/sprachwissen/rechtschreibregeln (Abrufdatum: 26.03.2025).
+
+31. <a name="source31"></a>Christian Mader and Christian Wartena (2014): Supporting Web Vocabulary Development by Automated Quality Assessment: Results of a Case Study in a Teaching Context. In: Workshop on Human-Semantic Web Interaction (HSWI 14). URL: <http://eprints.cs.univie.ac.at/4045/> (Abrufdatum: 27.03.2025). (= CEUR Workshop Proceedings)
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->
 <!-- xx. <a name="sourcexx"></a> -->

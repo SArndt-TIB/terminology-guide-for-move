@@ -1,4 +1,4 @@
-# Konversion nach RDF
+# Konvertierung nach RDF
 
 An diesem Punkt des Tutorials gehen wir davon aus, dass Sie eine der von uns bereitgestellten [Vorlagen](tutorial-10.md) verwendet haben, um erste Daten zu sammeln sowie das Tool [OpenRefine](tools_OpenRefine.md) installiert haben.
 Wenn Sie noch keine Daten gesammelt haben, können Sie den Konvertierungsschritt auch mit unseren Beispieldaten ausprobieren, die Sie in einer der folgenden Vorlagen finden:
@@ -7,7 +7,7 @@ Wenn Sie noch keine Daten gesammelt haben, können Sie den Konvertierungsschritt
 
 Im nächsten Schritt nutzen wir OpenRefine, um eine RDF-Version dieser Daten zu erstellen, die dem SKOS-Standard entspricht.
 
-## Schritt 1 -  Starten Sie OpenRefine
+## Starten Sie OpenRefine
 
 Starten Sie OpenRefine so wie für Ihr Betriebssystem angegeben. Nähere Informationen zum Starten und Beenden der Anwendung finden Sie [hier](https://openrefine.org/docs/manual/running). Beim Start sollte sich bereits ein Webbrowser oder ein neuer Tab in einem laufenden Webbrowser öffnen, der die Adresse [http://127.0.0.1:3333](http://127.0.0.1:3333) aufruft.
 Hier sollte dann der folgende Startbildschirm zu sehen sein:
@@ -19,7 +19,7 @@ Zeige den Start-Screen
 ![Screenshot des OpenRefine-Startbildschirms](images/openrefine-startscree.png)
 </details>
 
-## Schritt 2 -  Legen Sie ein neues Projekt an
+## Legen Sie ein neues Projekt an
 
 Gehen Sie zum Menüpunkt `Projekt erstellen`.
 Hier können Sie ein Projekt durch Laden einer lokalen Datei starten.
@@ -77,7 +77,7 @@ Zeige die Startansicht des Projekts
 5 Die Daten lassen sich darüber hinaus auch mit diversen Facetten und Filtern in beliebige Teilmengen aufteilen. Standardmäßig wird der Reiter `Facette/ Filter` zuerst geöffnet, mit `Rückgängig/ Wiederholen` kann umgeschaltet werden zum Bearbetungsverlauf - alle Zellen lassen sich einzeln oder in Massenbearbeitungen überarbeiten.<br>
 6 Die später benötigte Erweiterung RDF Transform sollte bereits über einen Button aufrufbar sein.
 
-## Schritt 3 - Wechseln Sie zur Bearbeitungshistorie
+## Wechseln Sie zur Bearbeitungshistorie
 
 Wechseln Sie zur Ansicht der Bearbeitungshistorie mit dem Button `Rückgängig / Wiederholen`.
 Hier müssen jetzt zwei Buttons - `Extrahieren...` und `Anwenden...` verfügbar sein.
@@ -123,7 +123,7 @@ Zeige Vorgangsverlauf mit den zwei Arbeitsschritten
 
 - [ ] TODO: Noch ergänzen: Wie updated man das RDF-Transform-Schema um den eigenen Identifier?
 
-## Schritt 4 -  Export der RDF-Daten
+## Export der RDF-Daten
 
 Um nun einen RDF-Export Ihrer Daten zu erhalten müssen Sie jetzt nicht mehr viel machen.
 Lediglich ein Klick auf den Button `Export` und die Auswahl der richtigen Export-Option ist notwendig.

@@ -1,6 +1,8 @@
 # Tabellenvorlagen für das Tool CSV-RDF-Mapper
 
-Für die Nutzung mit dem Tool [CSV-RDF-Mapper](tools_SKOS-CSV2RDF.md) haben wir mehrere Vorlagen erstellt, deren Zweck und Struktur wir im Folgenden erläutern.
+## Formate und Downloads
+
+Für die Nutzung mit dem Tool [CSV-RDF-Mapper](tools_SKOS-CSV-RDF-Mapper.md) haben wir mehrere Vorlagen erstellt, deren Zweck und Struktur wir im Folgenden erläutern.
 
 |Vorlage|Zweck|
 |-|-|
@@ -11,7 +13,7 @@ Für die Nutzung mit dem Tool [CSV-RDF-Mapper](tools_SKOS-CSV2RDF.md) haben wir 
 |[sources.csv](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/CSV-RDF-Mapper_Templates/sources.csv)|Die Tabelle `sources.csv` ist eine Ergänzung der Tabelle `terms.csv` und dient der Beschreibung von Quellen, die bei der Recherche herangezogen wurden und als Belege für die Informationen in `terms.csv`, `termrelations.csv`, `xlLabels_pref` und `xlLabels_alt` dienen.|
 |[authors.csv](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/CSV-RDF-Mapper_Templates/authors.csv)|Die Tabelle `authors.csv` ist eine Ergänzung der Tabelle `terms.csv` und dient einerseits der Angabe von Personen, die am Vokabular mitgewirkt und die einzelnen Einträge verfasst haben oder für die Autoren der in `sources.csv` genannten Quellen.|
 
-## Struktur von `terms.csv`
+## Struktur von `terms.csv` und Erläuterung der Spalten
 
 ### Wichtige Hinweise vorweg
 
@@ -25,7 +27,7 @@ Für die Nutzung mit dem Tool [CSV-RDF-Mapper](tools_SKOS-CSV2RDF.md) haben wir 
 
 > Das Dateiformat ist CSV, die verwendeten Trennzeichen sind allerdings keien Kommas, sondern Semikolons.
 
-### Beispieldaten
+### Tabelle mit Beispieldaten
 
 Die Struktur von `terms.csv` und die Bedeutung ihrer Spalten wird anhand einiger Beispieldaten erläutert.
 Die nachfolgende Tabelle enthält zwei Begriffe:
@@ -75,3 +77,5 @@ Die Tabelle `terms.csv` enthält die folgenden Spalten:
 * **Bearbeitungsstatus**: 
 * **Symbol oder Formelzeichen**: 
 * **Begriffsbeziehung**:  -->
+
+## Vorlage zur Verwaltung eigener Daten nutzen

@@ -1,12 +1,12 @@
 # Metadaten ergänzen
 
-Die im Schritt [Datensammlung, Dokumentation, Konversion](tutorial-12) erzeugte RDF-Datei sollten jetzt noch um weitere Statements angereichert werden, u.a. mit Metadaten zur gesamten Terminologie und nicht nur zu den einzelnen Einträgen.
+Die im [Workflow mit OPenRefine](step-4/open-refine/README.md) erzeugte RDF-Datei sollte jetzt noch um weitere Statements angereichert werden, u.a. mit Metadaten zur gesamten Terminologie und nicht nur zu den einzelnen Einträgen.
 Warum auch Vokabulare Metadaten haben sollten, erläutern wir [hier](https://github.com/TIBHannover/terminology-metadata/blob/main/MetadataGuide.md#12-why-ontology-metadata).
 
 <!-- Hierzu muss das Vokabular als Entität explizit hinzugefügt werden, um darüber Aussagen machen zu können. -->
 <!-- Es braucht nun selbst einen Identifier. -->
 
-In [Schritt 3 des Konversionsprozesses mit OpenRefine](tutorial-11.md#schritt-3---wechseln-sie-zur-bearbeitungshistorie) wurde durch die Datei [https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/rdf-transform-for-move.json](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/rdf-transform-for-move.json) bereits eine Festlegung getroffen, wie die Identifier der einzelnen Quellen, Autoren und Begriffe aussehen sollen.
+Im [Konvertierungsprozess mit OpenRefine](tutorial-11.md#wechseln-sie-zur-bearbeitungshistorie) wurde durch die Datei [https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/rdf-transform-for-move.json](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/rdf-transform-for-move.json) bereits eine Festlegung getroffen, wie die Identifier der einzelnen Quellen, Autoren und Begriffe aussehen sollen.
 
 Unsere Vorlage setzt hierfür im Header der JSON-Datei als sogenannte `baseIRI` den Wert `http://purl.org/terminology-guide-for-move/testvocab/`.
 Dieser wird verwendet, um für jede der Entitäten einen eindeutigen Identifier zu erstellen, z.B. <http://purl.org/terminology-guide-for-move/testvocab/Concept2>.
@@ -47,13 +47,13 @@ Dabei verwenden wir ihn ohne das abschließende `/`, also `http://purl.org/termi
 ```
 </details>
 
-Durch unsere Konversion mit OpenRefine wurde bereits eine entsprechende Entität angelegt, deren Beschreibung wir in nachfolgenden Schritten ergänzen wollen.
-In unserer im [Konversionschritt](tutorial-11.md) erzeugten [Output-Datei](../../OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl) finden sich hier bereits folgende Statements.
+Durch unsere Konvertierung mit OpenRefine wurde bereits eine entsprechende Entität angelegt, deren Beschreibung wir in nachfolgenden Schritten ergänzen wollen.
+In unserer im [Konvertierungschritt](tutorial-11.md) erzeugten [Output-Datei](../../OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl) finden sich hier bereits folgende Statements.
 Diese wollen wir um neue Statements erweitern.
 
 <details>
 <summary>
-Zeige mir die bei der Konversion angelegte Entität
+Zeige mir die bei der Konvertierung angelegte Entität
 </summary>
 
 ``` turtle

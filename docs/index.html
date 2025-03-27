@@ -12,17 +12,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css">
-    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css" /> -->
-     <!-- not functional -->
-    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" /> -->
     <!-- nice -->
-    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css" /> -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" /> -->
     <!-- okayish -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="light"> -->
+    <!-- <link rel="stylesheet alternative" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css" title="dark"> -->
+    <!-- not my cuppa -->
     <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" /> -->
-    <!-- terrible -->
     <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css" />  -->
-    <!-- terrible! -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sushantrahate/docsify-darkly-theme/css/darkly.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sushantrahate/docsify-darkly-theme/css/darkly.min.css"> -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/LIGMATV/docsify-theme-github/github.css"> -->
+    <!-- not functional -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/addons/core-dark.min.css" /> -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css" /> -->
+    <!-- new -->
 
     <!-- Edit on GitHub plugin, ohne defer, has to stay in head -->
     <script src="//unpkg.com/docsify-edit-on-github@1/index.js"></script>
@@ -68,7 +75,7 @@
         '/en/': 'Sorry - nothing there!', // order of appearance seems to be relevant for the functionality of this features
         '/de/': 'Schade, nix da...',
       },
-      depth: 7,
+      depth: 10,
       hideOtherSidebarContent: true, // whether or not to hide other sidebar content
       // paths: [],
       // Use different indexes for path prefixes (namespaces).
@@ -79,7 +86,7 @@
       pathNamespaces: ['/de', '/en/'],
       },
       loadSidebar: true, // is loaded, but cannot jump to destinations unless it is a whole file, use only if to be loaded from _sidebar.md, otherwise specify path to file in ''
-      subMaxLevel: 1,
+      subMaxLevel: 20,
       routerMode: 'hash', // default hash, alternative: history
       // alias: {
       //   '/.*/_sidebar.md': '/_sidebar.md'

@@ -1,7 +1,32 @@
-# Datensammlung, Dokumentation, Konversion
+# Schritt 4: Vokabular
+<!-- tbd todo to do -->
+In dieser Sektion des Tuturials erläutern wir Ihnen, wie sie Ihr eigenes Vokabular zusammenstellen und es anschließend in eine RDF-Ressource umwandeln können.
+Man kann dies auf verschiedenen Wegen erreichen, von denen wir Ihnen hier einige vorstellen möchten.
+Wir haben uns bemüht, besonders anfängerfreundliche Tools und Methoden zu nutzen, für die wir Ihnen entsprechende Vorlagen und Mappings bereitstellen.
+Mit diesen können Sie relativ schnell eigene Daten sammeln, die Tools relativ einfach bedienen und einfache, aber nachnutzbare terminologische Ressourcen erstellen, die nicht nur von FachkollegInnen, sondern auch von anderen Interessierten in unterschiedlicher Weise nachgenutzt werden können.
 
-## Was sollte man sammeln?
+## Tabellarische Datenverwaltung
 
+Um möglichst vielen Personen die Mitgestaltung eines Vokabulars ohne größere Einsteigshürden zu erlauben, empfehlen wir, die Datensammlung in tabellarischer Form durchzuführen und dafür zum Beispiel Tabellenkalkulationstools oder Texteditoren zu nutzen.
+Hier bieten sich zum Beispiel Tools wie Microsoft Excel, Open Office Calc, Google Sheets oder NextCloud Tables an, die eine lokale oder cloud-basierte Bearbeitung ermöglichen.
+Tabellen lassen sich zudem auch sehr gut mit Text-Editoren wie VisualStudio Code oder Notepad++ verwalten, wenn sie in nicht-binären Formaten wie [CSV][CSV] oder [TSV][TSV] verwaltet werden.
+Teilweise bieten die genannten Tools auch sehr elaborierte Valididerungsmöglichkeiten an, die bereits bei der Eingabe in eine Tabelle eine rigorose Prüfung und entsprechende Warnungen erlauben.
+Bei der Verwendung solcher Tabellensoftwares sollte die Tabellenstruktur unbedingt eingehalten werden, um spätere Konvertierungsprozesse bestmöglichst zu unterstützen, Fehler zu vermeiden und ein valides Endergebnis zu erstellen.
+Wir stellen Ihnen entsprechende Vorlagen für die Nutzung in unterschiedlichen Tools zur Verfügung und erläutern Ihnen Workflows mit:
+
+* [Open Refine](open-refine/README.md)
+* [CSV-RDF-Mapper (WIP)](CSV-RDF-Mapper/README.md)
+* [SKOS PLay!](SKOS-Play/README.md) (tbd todo to do)
+<!-- * [tbd](tbd/README.md) -->
+<!-- * [tbd](tbd/README.md) -->
+
+## Terminologieerfassung mit SHACL
+
+tbd todo to do
+
+## Datensammlung und Dokumentation
+
+Zu Beginn der Datensammlung sollte man sich natürlich zunächst die Frage stellen: Was sollte man sammeln?
 Im Abschnitt [Elemente einer Terminologie](terminology-5.md) haben wir bereits einige Bestandteile von Terminologien anhand von Beispielen erläutert.
 Um eine Terminologie maschinenlesbar zu dokumentieren, müssen jedoch ein paar weitere Details erfasst werden.
 
@@ -36,13 +61,6 @@ Relevante Metadaten sind in diesem Zusammenhang zum Beispiel
 * Quellenangaben,
 * eindeutige Referenznummern für die Begriffseinträge.
 
-## Tabellarische Dokumentation
-
-Um möglichst vielen Personen die Mitgestaltung eines Vokabulars ohne größere Einsteigshürden zu erlauben, empfehlen wir, die Datensammlung in tabellarischer Form durchzuführen und dafür zum Beispiel Tabellenkalkulationstools oder Texteditoren zu nutzen.
-Hier bieten sich zum Beispiel Tools wie Microsoft Excel, Open Office Calc, Google Sheets oder NextCloud Tables an, die eine lokale oder cloud-basierte Bearbeitung ermöglichen.
-Tabellen lassen sich zudem auch sehr gut mit Text-Editoren wie VisualStudio Code oder Notepad++ verwalten, wenn sie in nicht-binären Formaten wie [CSV][CSV] oder [TSV][TSV] verwaltet werden.
-Teilweise bieten die genannten Tools auch sehr elaborierte Valididerungsmöglichkeiten an, die bereits bei der Eingabe in eine Tabelle eine rigorose Prüfung und entsprechende Warnungen erlauben.
-Bei der Verwendung solcher Tabellensoftwares sollte die Tabellenstruktur unbedingt eingehalten werden, um spätere Konvertierungsprozesse bestmöglichst zu unterstützen, Fehler zu vermeiden und ein valides Endergebnis zu erstellen.
-
+<!-- Akronyme, Worterklärungen, Literaturverweise -->
 [CSV]: ## "Comma-seperated values/ kommaseparierte Werte"
 [TSV]: ## "Tab-seperated values/ tabulatorseparierte Werte"
