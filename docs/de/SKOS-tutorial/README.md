@@ -6,7 +6,7 @@ Für eine detaillierte Einführung verweisen wir an dieser Stelle zunächst auf 
 
 Im Rahmen des FID-Move-Tutorials konzentrieren wir uns zunächst vor allem auf eine tabellarische Dokumentation von Terminologie und Tools zu ihrer Konvertierung nach RDF unter Verwendung des SKOS-Standards.
 
-Weiterführende Literatur findet sich auch im [Literatuverzeichnis](Literatur.md), hier insbesondere [[22]](Literatur.md#source22), [[23]](Literatur.md#source23) und [[24]](Literatur.md#source24).
+Weiterführende Literatur findet sich auch im [Literatuverzeichnis](../Literatur.md), hier insbesondere [[22]](Literatur.md#source22), [[23]](Literatur.md#source23) und [[24]](Literatur.md#source24).
 
 [22]: ## "Isaac, A. & Summers, E. (2009); SKOS Simple Knowledge Organization System Primer. URL: <https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/> (Abrufdatum: 11.03.2025)."
 [23]: ## "Miles, A. & Bechhofer, S. (2009): SKOS Simple Knowledge Organization System Reference. URL: https://www.w3.org/TR/2009/REC-skos-reference-20090818/ (Abrufdatum: 11.03.2025)."
