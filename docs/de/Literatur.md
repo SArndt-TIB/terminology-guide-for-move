@@ -91,5 +91,5 @@ der TU Braunschweig. Studiengänge. Allgemeine Begriffe aus Wissenschaft und Hoc
 
 ### Icons
 
-* [graduate.png](https://www.flaticon.com/free-icon/graduate_17364841?term=graduate&page=7&position=4&origin=search&related_id=17364841) created by [Fathema Khanom](https://www.flaticon.com/authors/fathema-khanom) - [Flaticon](https://www.flaticon.com/)
-* [monument.png](https://www.flaticon.com/free-icon/monument_14221132?term=babel&page=1&position=39&origin=search&related_id=14221132) created by [edt.im](https://www.flaticon.com/authors/edtim) - [Flaticon](https://www.flaticon.com/)
+* [graduate.png ↗](https://www.flaticon.com/free-icon/graduate_17364841?term=graduate&page=7&position=4&origin=search&related_id=17364841) created by [Fathema Khanom ↗](https://www.flaticon.com/authors/fathema-khanom) - [Flaticon ↗](https://www.flaticon.com/)
+* [monument.png ↗](https://www.flaticon.com/free-icon/monument_14221132?term=babel&page=1&position=39&origin=search&related_id=14221132) created by [edt.im ↗](https://www.flaticon.com/authors/edtim) - [Flaticon ↗](https://www.flaticon.com/)

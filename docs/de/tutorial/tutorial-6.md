@@ -1,7 +1,7 @@
 # Metadaten ergänzen
 
 Die im [Workflow mit OPenRefine](step-4/open-refine/README.md) erzeugte RDF-Datei sollte jetzt noch um weitere Statements angereichert werden, u.a. mit Metadaten zur gesamten Terminologie und nicht nur zu den einzelnen Einträgen.
-Warum auch Vokabulare Metadaten haben sollten, erläutern wir [hier](https://github.com/TIBHannover/terminology-metadata/blob/main/MetadataGuide.md#12-why-ontology-metadata).
+Warum auch Vokabulare Metadaten haben sollten, erläutern wir [hier ↗](https://github.com/TIBHannover/terminology-metadata/blob/main/MetadataGuide.md#12-why-ontology-metadata).
 
 <!-- Hierzu muss das Vokabular als Entität explizit hinzugefügt werden, um darüber Aussagen machen zu können. -->
 <!-- Es braucht nun selbst einen Identifier. -->
@@ -67,8 +67,8 @@ Zeige mir die bei der Konvertierung angelegte Entität
 
 Um diese neuen Statements zu erzeugen, verwenden wir ein Tool der [Universitäts- und Landesbibliothek Darmstadt](https://www.ulb.tu-darmstadt.de/die_bibliothek/index.de.jsp) und eine Spezfikation der [TIB – Leibniz-Informationszentrum Technik und Naturwissenschaften und Universitätsbibliothek](https://www.tib.eu).
 Die TIB hat eine Empfehlung für Metadaten für RDF-basierte Terminologien herausgegeben, die Sie bei der Angabe von minimalen bis sehr umfassenden Metadaten unterstützt.
-Sie finden diese Empfehlung ebenfalls auf [GitHub](https://github.com/TIBHannover/terminology-metadata).
-Insbesondere der dort beschriebene Use Case [Metadata recommendations in SHACL - For metadata form generators](https://github.com/TIBHannover/terminology-metadata?tab=readme-ov-file#for-metadata-form-generators) erlaubt Ihnen die schnellste Erfassung von empfohlenen Metadaten für Ihre Terminologie.
+Sie finden diese Empfehlung ebenfalls auf [GitHub ↗](https://github.com/TIBHannover/terminology-metadata).
+Insbesondere der dort beschriebene Use Case [Metadata recommendations in SHACL - For metadata form generators ↗](https://github.com/TIBHannover/terminology-metadata?tab=readme-ov-file#for-metadata-form-generators) erlaubt Ihnen die schnellste Erfassung von empfohlenen Metadaten für Ihre Terminologie.
 Sie finden dort auch ein kurzes Einführungsvideo zur Nutzung.
 
 <details>
@@ -93,7 +93,7 @@ Im Wesentlichen müssen Sie folgende Schritte durchführen:
 
   ![Screenshot des Metadaten-Repositoriums der TIB auf GitHub, der zeigt, wo man den Quellcode der Datei kopieren kann](images/GitHub-OntoMetadataShape4Forms.png)
   </details>
-2. Gehen Sie zur Live-Demo des Dienstes [SHACL Form Generator](https://ulb-darmstadt.github.io/shacl-form/) der ULB Darmstadt, in den Menü-Punkt [Try your own](https://ulb-darmstadt.github.io/shacl-form/#try-your-own).
+2. Gehen Sie zur Live-Demo des Dienstes [SHACL Form Generator ↗](https://ulb-darmstadt.github.io/shacl-form/) der [ULB Darmstadt ↗](https://www.ulb.tu-darmstadt.de/die_bibliothek/index.de.jsp), in den Menü-Punkt [Try your own ↗](https://ulb-darmstadt.github.io/shacl-form/#try-your-own).
   
   <details>
   <summary>
@@ -160,14 +160,14 @@ Die Beispieldaten zeigen Metadaten für das Testvokabular dieses Tutorials.
   ```
   </details>
 
-  Sollten Sie Schwierigkeiten mit den angefragten Daten haben, können Sie weitere Hilfestellungen in unserem [Metadaten-Guide](https://github.com/TIBHannover/terminology-metadata/blob/main/MetadataGuide.md) bekommen.
-  Bei Fragen zur Metadaten-Empfehlung können Sie diese in unserem zugehörigen [GitHub-Diskussionforum (Abschnitt Q&A)](https://github.com/TIBHannover/terminology-metadata/discussions/categories/q-a) stellen. Vorschläge und Bugs können Sie uns direkt im [Issue-Tracker](https://github.com/TIBHannover/terminology-metadata/issues) mitteilen.
+  Sollten Sie Schwierigkeiten mit den angefragten Daten haben, können Sie weitere Hilfestellungen in unserem [Metadaten-Guide ↗](https://github.com/TIBHannover/terminology-metadata/blob/main/MetadataGuide.md) bekommen.
+  Bei Fragen zur Metadaten-Empfehlung können Sie diese in unserem zugehörigen [GitHub-Diskussionforum (Abschnitt Q&A) ↗](https://github.com/TIBHannover/terminology-metadata/discussions/categories/q-a) stellen. Vorschläge und Bugs können Sie uns direkt im [Issue-Tracker ↗](https://github.com/TIBHannover/terminology-metadata/issues) mitteilen.
 4. Nachdem Sie mindestens die Pflichteingaben in der erwarteten Form gemacht haben, werden die Daten als valide angesehen und Sie können den generierten Code kopieren, um ihn für Ihre eigenen Daten zu nutzen.
   Sie können dazu die Daten exportieren oder einfach kopieren und in einen Text-Editor einfügen.
   Wichtig ist, dass sie die Informationen dieses Codes an die richtigen Stellen der Output-Datei aus dem Konvertierungsschritt integrieren und dort auch eine korrekte Syntax einhalten.
   Zunächst müssen die Präfixe übernommen werden.
   Nur mit ihnen können alle übernommenen Statements weiterhin korrekt interpretiert werden.
-  Zu Demonstrationszwecken haben wir in unseren Beispieldaten eine Kopie von [OpenRefineTemplate_wExampleData_tsv.ttl](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl) angelegt, die wir [OpenRefineTemplate_wExampleData_tsv+metadata.ttl](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl) genannt haben.
+  Zu Demonstrationszwecken haben wir in unseren Beispieldaten eine Kopie von [OpenRefineTemplate_wExampleData_tsv.ttl ↗](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl) angelegt, die wir [OpenRefineTemplate_wExampleData_tsv+metadata.ttl ↗](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl) genannt haben.
   In dieser haben wir alle neuen Elemente ergänzt.
     
   <details>

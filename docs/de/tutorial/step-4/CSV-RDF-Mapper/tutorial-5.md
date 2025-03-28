@@ -1,5 +1,7 @@
 # Umwandlung nach RDF
 
+> :warning: Der CSV-RDF-Mapper Workflow ist noch nicht voll funktionsfähig! Wir arbeiten noch daran!
+
 Graph, der am 2025-03-10 bei CSV-RDF-Mapper rausgekommen ist
 
 ``` turtle

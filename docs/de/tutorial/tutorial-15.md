@@ -1,6 +1,6 @@
 # Terminologieleitfaden
 
-tbd todo to do
+<!-- tbd todo to do -->
 
 * nach welchen Kriterien werden Vorzugsbenennungen ausgewählt?
   * Umgang mit Fremdwörtern?

@@ -82,10 +82,3 @@ Die Zeilenüberschriften und Tabellenstruktur darf nicht verändert werden. Die 
 |**Begriff - Bearbeitungsstatus**|**Beispielwerte:** `draft` `approved` `deprecated` <br><br>**Definition:** In dieser Spalte kann ein Wert angegeben werden, der den Bearbeitungsstatus des Begriffseintrags angibt.<br><br>**Hinweise:** Es sollte vorab ein System von gültigen Werten abgesprochen werden, das den eigenen Arbeitsabläufen entspricht. Wenn der Workflow sehr informell ist, reicht gegebenenfalls ein System aus `offen` - `in Bearbeitung` - `abgeschlossen`. Bei formelleren Abläufen kann es auch Sinn machen, Elemente wie `Freigabe erforderlich` - `freigegeben` - `nicht freigegeben` aufzunehmen.<br><br>**Nutzung:** Empfohlen|
 |**Begriff - Symbol oder Formelzeichen**|**Beispielwerte:** `Ω` `H₂O`<br><br>**Definition:** In dieser Spalte können mathematische Symbole oder andere Formelzeichen für einen Begriff angegeben werden.<br><br>**Hinweise:** Kombinationen aus Symbol und Wort (z.B. `ɣ-Strahlung` sollten eher in die Benenungen aufgenommen werden.)<br><br>**Nutzung:** Optional, wenn Bedarf besteht|
 |**Begriff - Begriffsbeziehung - Oberbegriff**|**Beispielwerte:** `Concept2`<br><br>**Definition:** In dieser Spalte wird auf einen anderen Begriff verwiesen, der als generischer Oberbegriff des aktuellen Begriffs angesehen werden kann. Der Verweis erfolgt über die Angabe des Wertes des passenden Begriffs aus der Spalte `Begriff - ID`.<br><br>**Hinweise:** Ein Beispiel für eine Beziehung eines Begriffs zu seinem Oberbegriff ist zum Beispiel `Couch` `hat Oberbegriff` `Möbel`.<br><br>**Nutzung:** Empfohlen|
-
-## Vorlage zur Verwaltung eigener Daten nutzen
-
-TODO
-* Ablage im eigenen Repo
-* ideal: csv/tsv > branches, mrs, diffs etc.c
-* keine Veränderungen an der Tabellenstruktur und den Headers vornehmen!

@@ -52,9 +52,9 @@ Für das Verfassen einer Norm ist es üblicherweise erforderlich, dass sich das 
 
 Beispiele für eine ausführliche Diskussion von Terminologie und entspreche Terminologieressourcen finden sich in den folgenden Werken und Standards:
 
-* Müller, Jörg R. (2015): Die Formalisierte Terminologie der Verlässlichkeit Technischer Systeme. Berlin, Heidelberg: Springer Vieweg. <https://doi.org/10.1007/978-3-662-46922-4>
-* Schnieder, Eckehard & Lars Schnieder (2013): Verkehrssicherheit: Maße und Modelle, Methoden und Maßnahmen für den Straßen- und Schienenverkehr. Berlin, Heidelberg: Springer Vieweg. <https://doi.org/10.1007/978-3-540-71033-2>
-* Pachl, Jörn (2018): Systemtechnik des Schienenverkehrs: Bahnbetrieb planen, steuern und sichern. Berlin, Heidelberg: Springer Vieweg. <https://doi.org/10.1007/978-3-658-21408-1>
+* Müller, Jörg R. (2015): Die Formalisierte Terminologie der Verlässlichkeit Technischer Systeme. Berlin, Heidelberg: Springer Vieweg. [https://doi.org/10.1007/978-3-662-46922-4 ↗](https://doi.org/10.1007/978-3-662-46922-4)
+* Schnieder, Eckehard & Lars Schnieder (2013): Verkehrssicherheit: Maße und Modelle, Methoden und Maßnahmen für den Straßen- und Schienenverkehr. Berlin, Heidelberg: Springer Vieweg. [https://doi.org/10.1007/978-3-540-71033-2 ↗](https://doi.org/10.1007/978-3-540-71033-2)
+* Pachl, Jörn (2018): Systemtechnik des Schienenverkehrs: Bahnbetrieb planen, steuern und sichern. Berlin, Heidelberg: Springer Vieweg. [https://doi.org/10.1007/978-3-658-21408-1 ↗](https://doi.org/10.1007/978-3-658-21408-1)
 <!-- * TASK OPEN add further examples, e.g. standards -->
 
 #### Institutionelle Harmonisierung

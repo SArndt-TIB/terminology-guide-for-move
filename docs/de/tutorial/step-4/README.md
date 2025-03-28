@@ -1,5 +1,5 @@
 # Schritt 4: Vokabular
-<!-- tbd todo to do -->
+
 In dieser Sektion des Tuturials erläutern wir Ihnen, wie sie Ihr eigenes Vokabular zusammenstellen und es anschließend in eine RDF-Ressource umwandeln können.
 Man kann dies auf verschiedenen Wegen erreichen, von denen wir Ihnen hier einige vorstellen möchten.
 Wir haben uns bemüht, besonders anfängerfreundliche Tools und Methoden zu nutzen, für die wir Ihnen entsprechende Vorlagen und Mappings bereitstellen.
@@ -16,13 +16,33 @@ Wir stellen Ihnen entsprechende Vorlagen für die Nutzung in unterschiedlichen T
 
 * [Open Refine](open-refine/README.md)
 * [CSV-RDF-Mapper (WIP)](CSV-RDF-Mapper/README.md)
-* [SKOS PLay!](SKOS-Play/README.md) (tbd todo to do)
+* [SKOS PLay!](SKOS-Play/README.md)
 <!-- * [tbd](tbd/README.md) -->
 <!-- * [tbd](tbd/README.md) -->
 
 ## Terminologieerfassung mit SHACL
 
-tbd todo to do
+Die Erfassung neuer Begriffe wäre theoretisch auch mit Ausdrücken der [Shapes Constraints Language (SHACL) ↗](https://www.w3.org/TR/2017/REC-shacl-20170720/) möglich.
+Mit solchen Ausdrücken werden Constraints an RDF-Graphen definiert, aus denen man Eingabeformulare generieren kann.
+Wir haben eine entsprechende Shape definiert und zeigen, wie sie genutzt werden kann, um sowohl das Vokabular als auch die einzelnen Begriffe damit anzulegen.
+
+> :warning: Wir empfehlen Anfängern, diesen Workflow nicht mit den tabellenbaiserten Workflows zu kombinieren!
+
+Zur Verfügung stehen hierfür folgende Tools:
+
+* [&#60;shacl-form&#62; demo](SHACL-Formulare/README.md)
+
+## Vorlagen zur Verwaltung eigener Daten nutzen
+
+Die Vorlagen, die wir Ihnen in den eigenen Workflows zur Verfügung stellen, sind gebrauchsfertig - sie könnne damit sofort loslegen und Ihre eigenen Daten sammeln.
+Um sie zu sichern, anderen zur Verfügung zu stellen und die weiteren Schritte unseres Tutorials durchführen zu können, sollten Sie sie in Ihrem eigenen git-basierten Repositorium auf einer Plattform wie GitHub oder GitLab ablegen.
+Dieses sollten Sie bereits eingerichtet haben (siehe [Schritt 3: Arbeitsumgebung](../tutorial-2.md)).
+Wir stellen zwar auch Vorlagen für Google Sheets oder Excel bereit, wir empfehlen aber insbesondere die Verwendung von csv- und tsv-Vorlagen.
+Dateien im Format .xslx sind binär und Änderungen in solchen dateien können nicht im Detail durch git verfolgt werden.
+Bei nicht-binären Dateiformaten ist dies möglich und die Plattformen können die Unterschiede und getätigten Änderungen an den Dateien sehr genau anzeigen.
+Dies ist sehr transparent und erlaubt eine sehr schnelle Durchsicht der Änderungen, die sonst sehr mühselig wäre oder extra dokumentiert werden müsste.
+
+> :warning: Damit die Vorlagen in allen Workflows fehlerfrei funktionieren, sollten keine unüberlegten Änderungen an der Tabellenstruktur und den Headers vorgenommen werden!
 
 ## Datensammlung und Dokumentation
 
@@ -30,7 +50,6 @@ Zu Beginn der Datensammlung sollte man sich natürlich zunächst die Frage stell
 Im Abschnitt [Elemente einer Terminologie](terminology-5.md) haben wir bereits einige Bestandteile von Terminologien anhand von Beispielen erläutert.
 Um eine Terminologie maschinenlesbar zu dokumentieren, müssen jedoch ein paar weitere Details erfasst werden.
 
-<!-- todo: was sammeln? -->
 Neben den Fachausdrücken sollte man auch festhalten, aus welcher _Sprache_ der Fachausdruck stammt.
 Dies ist nicht nur bei mehrsprachiger Terminologiearbeit zu empfehlen, sondern auch bei einsprachiger Terminologiearbeit sollte auf diese explizite Form der Dokumentation von Anfang an geachtet werden.
 Einen Spezialfall bilden hier mathematische Symbole oder Formelzeichen, die in der Regel sprachübergreifend genutzt werden.
@@ -50,7 +69,7 @@ Hierbei spielen insbesondere Abstraktionsbeziehungen eine wichtige Rolle im wiss
 
 Neben den eigentlichen terminologischen Daten und ihren Charakterisierungen ist die Aufnahme von Metadaten pro Begriffseintrag ebenfalls zu empfehlen.
 Durch solche Metadaten können Arbeitsabläufe transparent gemacht, Beweggründe für eine bestimmte Modellierung gegeben oder auch legitimiert werden, sowie Ansprechpersonen angegeben werden.
-Relevante Metadaten sind in diesem Zusammenhang zum Beispiel 
+Relevante Metadaten sind in diesem Zusammenhang zum Beispiel
 
 * der Verfasser des Eintrags
 * das Datum der Erstellung des Eintrags,

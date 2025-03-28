@@ -1,8 +1,6 @@
-[< Zurück zur Übersicht](tools_Recherche-intro.md)
-
 # ISO Open Browsing Platform
 
-Die [ISO Open Browsing Platform](https://www.iso.org/obp/ui) ist nicht registrierungspflichtig und kann von jedem frei genutzt werden.
+Die [ISO Open Browsing Platform ↗](https://www.iso.org/obp/ui) ist nicht registrierungspflichtig und kann von jedem frei genutzt werden.
 Sie ermöglicht die Suche in unterschiedlichen Ressourcen, zum Beispiel in ISO-Standards und -Publikationen, Ländercodes, graphischen Symbolen und auch in den Terminologiefestlegungen des ISO-Normenwerks.
 Die Suche nach Terminologie ist dabei in mehreren Sprachen möglich, und zwar Englisch, Französisch, Russisch, Spanisch und Deutsch oder in allen gleichzeitig.
 
@@ -27,5 +25,3 @@ Darüber hinaus ist es möglich, direkt in eine Vorschau einer Norm zu springen,
 </a>
 </p>
 <!-- ![Vorschau in die Norm ISO 10286:2021 auf der ISO Open Browsing Platform, die ihre Begriffsfestlegung 3.1.1.12 zeigt](images/Vorschau@ISO-OBP.png) -->
-
-[< Zurück zur Übersicht](tools_Recherche-intro.md)

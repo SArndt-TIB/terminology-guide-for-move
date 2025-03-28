@@ -1,5 +1,7 @@
 # Tabellenvorlagen für das Tool CSV-RDF-Mapper
 
+> :warning: Der CSV-RDF-Mapper Workflow ist noch nicht voll funktionsfähig! Wir arbeiten noch daran!
+
 ## Formate und Downloads
 
 Für die Nutzung mit dem Tool [CSV-RDF-Mapper](tools_SKOS-CSV-RDF-Mapper.md) haben wir mehrere Vorlagen erstellt, deren Zweck und Struktur wir im Folgenden erläutern.

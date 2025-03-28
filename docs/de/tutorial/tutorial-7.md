@@ -2,7 +2,7 @@
 
 ## Was ist ein Identifier?
 
-Ein Identifier im Kontext der Terminologiearbeit für das Semantic Web ist eine eindeutige Web-Adresse ([Uniform Resource Identifier (URI)](https://de.wikipedia.org/wiki/Uniform_Resource_Identifier) oder [Internationalized Resource Identifier (IRI)](https://de.wikipedia.org/wiki/Internationalized_Resource_Identifier)), mit der eine terminologische Ressource oder auch ihre einzelnen Elemente oder auch Versionen davon **dauerhaft** erreichbar sind.
+Ein Identifier im Kontext der Terminologiearbeit für das Semantic Web ist eine eindeutige Web-Adresse ([Uniform Resource Identifier (URI) ↗](https://de.wikipedia.org/wiki/Uniform_Resource_Identifier) oder [Internationalized Resource Identifier (IRI) ↗](https://de.wikipedia.org/wiki/Internationalized_Resource_Identifier)), mit der eine terminologische Ressource oder auch ihre einzelnen Elemente oder auch Versionen davon **dauerhaft** erreichbar sind.
 Man spricht in diesem Kontext auch von persistenten Identifikatoren oder PIDs.
 Für die dauerhafte Erreichbarkeit einer Ressource braucht es zuverlässige und langfristig agierende Dienstleister, die die Ressource in allen Varianten langfristig und ohne Unterbrechung zur Verfügung stellen können.
 Mit der [Einrichtung eines GitHub- oder GitLab-basierten Repositoriums](tutorial-2.md) haben wir bereits eine gute Grundlage gelegt, um die zu unserem Vokabular gehörigen Dateien zu verwalten, dauerhaft verfügbar zu halten und auch offizielle Releases herauszugeben.
@@ -46,11 +46,11 @@ Hierbei können auch Identifier erstellt werden, die klar auf eine bestimmte Ver
 
 ### PURL.org
 
-Ein kostenfrei nutzbarer Dienst zur Registrierung und Konfiguration von Identifiern ist der [PURL-Service](https://purl.archive.org/) des [Internet Archive](https://archive.org/about/), einer amerikanischen non-profit Organisation. 
+Ein kostenfrei nutzbarer Dienst zur Registrierung und Konfiguration von Identifiern ist der [PURL-Service ↗](https://purl.archive.org/) des [Internet Archive ↗](https://archive.org/about/), einer amerikanischen non-profit Organisation. 
 Registrierte Nutzer können hier relativ einfach Domains im Namensraum <https://purl.org> registrieren und weitere Subdomains für unterschiedliche Ressourcen erstellen.
 Die PURLs werden dabei nach dem folgenden Muster gebildet:
 
-![Bildliche Darstellung der Zusammensetzung einer PURL von der Seite https://purl.lib.fsu.edu/docs/images/purlparts.png](https://purl.lib.fsu.edu/docs/images/purlparts.png)
+![Bildliche Darstellung der Zusammensetzung einer PURL von der Seite https://purl.lib.fsu.edu/docs/images/purlparts.png ↗](https://purl.lib.fsu.edu/docs/images/purlparts.png)
 <!-- Switch to this version if image ever goes offline -->
 <!-- ![Lokale Kopie einer bildlichen Darstellung der Zusammensetzung einer PURL, ursprünglich von der Seite https://purl.lib.fsu.edu/docs/images/purlparts.png (Abrufdatum: 18.03.2025)](images/purlparts.png) -->
 
@@ -103,7 +103,7 @@ Für das mit OpenRefine erzeugte Beispieldatenvokabular (vgl. [Konvertierung nac
 Auch diese wurde über den PURL-Dienst als Subdomain von <http://purl.org/terminology-guide-for-move> als <http://purl.org/terminology-guide-for-move/testvocab> registriert.
 Sie leitet mit HTTP-Status-Code `303 See Other` zur Rohdatei auf GitHub, die unter <https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl> erreichbar ist.
 Auch für die Version des Vokabulars mit Metadaten sollten wir eine PURL einrichten.
-Diese kann man unter [http://purl.org/terminology-guide-for-move/testvocab+metadata](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl) erreichen.
+Diese kann man unter [http://purl.org/terminology-guide-for-move/testvocab+metadata ↗](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl) erreichen.
 
 Die Identifier der einzelnen Entitäten des Vokabulars beinhalten die PURL des Vokabulars (ohne Metadaten) <http://purl.org/terminology-guide-for-move/testvocab/> als Bestandteil, da sie als Basis-IRI für das Vokabular bei dessen Erzeugung verwendet wurde.
 Wir hatten zum Beispiel Entitäten wie <http://purl.org/terminology-guide-for-move/testvocab/Concept5> angelegt.
@@ -113,7 +113,7 @@ Mit einer neuen partiellen Weiterleitung von <http://purl.org//terminology-guide
 In einem Tool wie Protégé wird dann mit dem Aufrufen des Identifiers des Begriffs das gesamte Vokabular geladen.
 
 Diese Identifier lösen nicht auf die Version mit Metadaten auf.
-Um dies zu erreichen, haben wir eine weitere Umleitung eingerichtet von [http://purl.org/terminology-guide-for-move/testvocab+metadata](http://purl.org/terminology-guide-for-move/testvocab+metadata) auf die Location [https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl#](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl#).
+Um dies zu erreichen, haben wir eine weitere Umleitung eingerichtet von [http://purl.org/terminology-guide-for-move/testvocab+metadata ↗](http://purl.org/terminology-guide-for-move/testvocab+metadata) auf die Location [https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl# ↗](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl#).
 Mit dieser erneut partiellen Umleitung können die Identifier der einzelnen Begriffe angepasst (<http://purl.org/terminology-guide-for-move/testvocab+metadata/Concept5>) werden und rufen dann das Vokabular mit Metadaten ab.
 Diese Identifier werden durch das Vokabular allerdings nicht verwendet.
 Für ein eigenes Vokabular ist es empfehlenswert, die Metadaten gleich in die richtige Datei einzufügen und die PURL für das Gesamtvokabular inkl. Metadaten zu vergeben - anders als es hier zu Demonstrationszwecken erfolgt ist.
@@ -131,15 +131,15 @@ Die gesamten Konfigurationen sind im folgeden Screenshot aufgelistet.
 
 ### w3id
 
-Der Dienst [W3ID](https://w3id.org/) wird von einem [Zusammenschluss verschiedener Organisationen](https://w3id.org/#management) im Rahmen der [W3C Permanent Identifier Community Group](https://www.w3.org/community/perma-id/) betrieben.
+Der Dienst [W3ID ↗](https://w3id.org/) wird von einem [Zusammenschluss verschiedener Organisationen ↗](https://w3id.org/#management) im Rahmen der [W3C Permanent Identifier Community Group ↗](https://www.w3.org/community/perma-id/) betrieben.
 Sein Zweck besteht in der Bereitstellung eines sicheren, permanenten URL-Weiterleitungsdienstes für Webanwendungen.
 Seine - und die Funktionsweise anderer PURL-Dienste - wird hier besonders einprägsam beschrieben:
 
 > Web applications that deal with Linked Data often need to specify and use URLs that are very stable. They utilize services such as this one to ensure that applications using their URLs will always be re-directed to a working website. This website operates like a switchboard, connecting requests for information with the true location of the information on the Web. The switchboard can be reconfigured to point to a new location if the old location stops working.
 
 Der Dienst ist zunächst einmal etwas gewöhnungsbedürftig, sofern man noch nicht viel Kontakt mit git und GitHub hatte.
-Um einen Identifier zu registrieren, muss eine sogenannte [.htaccess](https://de.wikipedia.org/wiki/.htaccess)-Datei erstellt werden, mit der die Weiterleitungsregeln definiert werden.
-Auf der Homepage wird jedoch eine Anleitung gegeben, wie ein [neuer Identifier erstellt](https://w3id.org/#new) werden kann.
+Um einen Identifier zu registrieren, muss eine sogenannte [.htaccess ↗](https://de.wikipedia.org/wiki/.htaccess)-Datei erstellt werden, mit der die Weiterleitungsregeln definiert werden.
+Auf der Homepage wird jedoch eine Anleitung gegeben, wie ein [neuer Identifier erstellt ↗](https://w3id.org/#new) werden kann.
 Hier finden Sie auch weitere Hilfestellungen zur Arbeit mit GitHub.
 Darüber hinaus gibt es sehr viele gute Beispiele bereits registrierter Identifier, von denen man für seine eigene Konfiguration Inspiration holen kann.
 
@@ -152,7 +152,7 @@ Es verwendet den Identifier <https://w3id.org/mobilitydcat-ap/mobility-theme> - 
 Bei Verwendung dieser ID in einem Webbrowser wird die folgende Webresource <https://mobilitydcat-ap.github.io/controlled-vocabularies/mobility-theme/latest/index.html#/> aufgerufen.
 Es handelt sich hierbei um eine generierte, um wenige erläuternde Texte ergänzte Dokumentationsseite, die eher für die Durchsicht des Vokabulars durch Menschen gedacht ist.
 Für eine Maschine, die mit semantischen Daten arbeiten kann, wird jedoch auch eine Ressource über den Identifier <https://w3id.org/mobilitydcat-ap/mobility-theme> bereitgestellt.
-Bei einer Anfrage über [curl](https://de.wikipedia.org/wiki/CURL) wird der Anfragende weiterverwiesen an die richtige Ressource.
+Bei einer Anfrage über [curl ↗](https://de.wikipedia.org/wiki/CURL) wird der Anfragende weiterverwiesen an die richtige Ressource.
 
 ```bash
 curl -H "Accept: application/rdf+xml" https://w3id.org/mobilitydcat-ap/mobility-theme -v
@@ -202,6 +202,7 @@ ularies/mobility-theme/latest/mobility-theme.rdf">here</a>.</p>
 * Connection #0 to host w3id.org left intact
 
 ```
+
 </details>
 
 Um die Ressource im angefragten RDF/XML-Format zu erreichen, wird der Anfragende an die Adresse <https://mobilitydcat-ap.github.io/controlled-vocabularies/mobility-theme/latest/mobility-theme.rdf> weitervermittelt, die ebenfalls über einen Webbrowser angezeigt werden kann, aber auch für auf RDF spezialisierte Tools verarbeitet werden kann.
@@ -342,7 +343,7 @@ Neben dieser Regel wurden auch Regeln für die Weiterleitung von Identifiern mit
 * z.B. verweist <https://w3id.org/mobilitydcat-ap/mobility-theme/1.0.0> auf die versionierte Dokumentationsseite <https://mobilitydcat-ap.github.io/controlled-vocabularies/mobility-theme/1.0.0/index.html#/>.
 
 Darüber hinaus könnte man natürlich auch die Weiterleitungen für die einzelnen Konzepte konfigurieren.
-Eine Beispielkonfiguration findet sich zum Beispiel bei [Voc4Cat](https://github.com/perma-id/w3id.org/blob/master/nfdi4cat/voc4cat/.htaccess):
+Eine Beispielkonfiguration findet sich zum Beispiel bei [Voc4Cat ↗](https://github.com/perma-id/w3id.org/blob/master/nfdi4cat/voc4cat/.htaccess):
 
 ```
 # HTML - documentation individual concept or collection
@@ -371,24 +372,24 @@ Diese verwenden den Namespace `https://purls.helmholtz-metadaten.de/`.
 Der PIDA-Dienst erlaubt wie W3ID eine Konfiguration von .htaccess-Dateien und somit eine sehr viel flexiblere Weiterleitung als der Dienst PURL.org.
 Eine ausführliche [Schritt-für-Schritt-Anleitung](https://purls.helmholtz-metadaten.de/manage_purls.html) finden Sie auf der Homepage des Dienstes.
 Eine Anfrage kann auf drei Wegen gestellt werden:
-* Anfrage per [Mail](https://purls.helmholtz-metadaten.de/manage_purls.html#_3-send-us-an-email),
-* Anfrage über ein [Issue im GitHub-Repositorium des Dienstes](https://purls.helmholtz-metadaten.de/manage_purls.html#_1-submit-an-issue), oder
-* durch [Forken des Repositoriums und Pull Request](https://purls.helmholtz-metadaten.de/manage_purls.html#_2-fork-the-repository-and-push-your-htaccess-file).
+* Anfrage per [Mail ↗](https://purls.helmholtz-metadaten.de/manage_purls.html#_3-send-us-an-email),
+* Anfrage über ein [Issue im GitHub-Repositorium des Dienstes ↗](https://purls.helmholtz-metadaten.de/manage_purls.html#_1-submit-an-issue), oder
+* durch [Forken des Repositoriums und Pull Request ↗](https://purls.helmholtz-metadaten.de/manage_purls.html#_2-fork-the-repository-and-push-your-htaccess-file).
 
 Wir empfehlen die Anfrage via Issue, da hier ein gut strukturiertes Issue-Template verwendet wird, das Sie bei der Angabe notwendiger Informationen unterstützt.
 Der PIDA-Dienst ist auch deshalb zu empfehlen, weil er weiterführende Features anbietet, wie zum Beispiel Zugriffsstatistiken für die registrierten Identifier, Erreichbarkeitschecks für die Ziele der registrierten Identifier sowie automatische Benachrichtigungen über nicht-erreichbare Ziele.
 
 ## Weiterführende Links
 
-* [Wikipedia-Artikel "Internationalized Resource Identifier" (de)](https://de.wikipedia.org/wiki/Internationalized_Resource_Identifier)
-* [Wikipedia-Artikel "Uniform Resource Identifier" (de)](https://de.wikipedia.org/wiki/Uniform_Resource_Identifier)
-* [Wikipedia-Artikel "Persistent Uniform Resource Locator" (de)](https://de.wikipedia.org/wiki/Persistent_Uniform_Resource_Locator)
-* [Wikipedia-Artikel "Link rot" (en)](https://en.wikipedia.org/wiki/Link_rot)
-* [Hilfeseite bei PURL.org](https://purl.archive.org/help)
-* [PURL Frequently Asked Questions](https://www.opengis.net/docs/faq.html) von OCLC (Online Computer Library Center)
-* [How to (properly) publish a vocabulary or ontology in the web (1 of 6)](https://linkingresearch.wordpress.com/2013/05/27/how-to-properly-publish-a-vocabulary-or-ontology-in-the-web-1-of-6/) - ein Tutorial von [Daniel Garijo](https://orcid.org/0000-0003-0454-7145) (insbesondere [Teil 2](https://linkingresearch.wordpress.com/2013/06/10/how-to-properly-publish-a-vocabulary-or-ontology-in-the-web-part-2-of-6/) und [Teil 4](https://linkingresearch.wordpress.com/2013/10/07/how-to-properly-publish-a-vocabulary-or-ontology-in-the-web-part-4-of-6/))
-* [Permanent identifiers and vocabulary publication: purl.org and w3id](https://linkingresearch.wordpress.com/2016/01/17/permanent-identifiers-and-vocabulary-publication-purl-org-and-w3id/) - ein Tutorial von [Daniel Garijo](https://orcid.org/0000-0003-0454-7145)
+* [Wikipedia-Artikel "Internationalized Resource Identifier" (de) ↗](https://de.wikipedia.org/wiki/Internationalized_Resource_Identifier)
+* [Wikipedia-Artikel "Uniform Resource Identifier" (de) ↗](https://de.wikipedia.org/wiki/Uniform_Resource_Identifier)
+* [Wikipedia-Artikel "Persistent Uniform Resource Locator" (de) ↗](https://de.wikipedia.org/wiki/Persistent_Uniform_Resource_Locator)
+* [Wikipedia-Artikel "Link rot" (en) ↗](https://en.wikipedia.org/wiki/Link_rot)
+* [Hilfeseite bei PURL.org ↗](https://purl.archive.org/help)
+* [PURL Frequently Asked Questions ↗](https://www.opengis.net/docs/faq.html) von OCLC (Online Computer Library Center)
+* [How to (properly) publish a vocabulary or ontology in the web (1 of 6) ↗](https://linkingresearch.wordpress.com/2013/05/27/how-to-properly-publish-a-vocabulary-or-ontology-in-the-web-1-of-6/) - ein Tutorial von [Daniel Garijo ↗](https://orcid.org/0000-0003-0454-7145) (insbesondere [Teil 2 ↗](https://linkingresearch.wordpress.com/2013/06/10/how-to-properly-publish-a-vocabulary-or-ontology-in-the-web-part-2-of-6/) und [Teil 4 ↗](https://linkingresearch.wordpress.com/2013/10/07/how-to-properly-publish-a-vocabulary-or-ontology-in-the-web-part-4-of-6/))
+* [Permanent identifiers and vocabulary publication: purl.org and w3id ↗](https://linkingresearch.wordpress.com/2016/01/17/permanent-identifiers-and-vocabulary-publication-purl-org-and-w3id/) - ein Tutorial von [Daniel Garijo ↗](https://orcid.org/0000-0003-0454-7145)
 * [PID-Network Deutschland - Netzwerk für die Förderung von persistenten Identifikatoren in Wissenschaft und Kultur](https://www.pid-network.de/) (DFG-Projekt)
-* [The PID Forum](https://pidforum.org/) - ein internationales Forum zum Austausch über PIDs
+* [The PID Forum ↗](https://pidforum.org/) - ein internationales Forum zum Austausch über PIDs
 
 <!-- [URI]: ## "Uniform Resource Identifier" -->

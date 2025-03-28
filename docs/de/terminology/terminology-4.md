@@ -1,7 +1,6 @@
 # Formen der Terminologiedokumentation
 
-<!-- HIER WEITER  -->
-tbd todo to do
+<!-- tbd todo to do -->
 
 Ontologien
 Terminologiedatenbanken

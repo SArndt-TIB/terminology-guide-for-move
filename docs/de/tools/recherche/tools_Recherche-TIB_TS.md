@@ -1,8 +1,6 @@
-[< Zurück zur Übersicht](tools_Recherche-intro.md)
-
 # TIB Terminology Service
 
-Der [TIB Terminology Service](https://terminology.tib.eu/ts) bietet seinen NutzerInnen einen zentralen Zugang zu Ontologien und kontrollierten Vokabularen aus Technik und Naturwissenschaften. Über die graphische Benutzeroberfläche können NutzerInnen einzelne Ontologien und kontrollierte Vokabulare explorativ erkunden oder gezielt durchsuchen. 
+Der [TIB Terminology Service ↗](https://terminology.tib.eu/ts) bietet seinen NutzerInnen einen zentralen Zugang zu Ontologien und kontrollierten Vokabularen aus Technik und Naturwissenschaften. Über die graphische Benutzeroberfläche können NutzerInnen einzelne Ontologien und kontrollierte Vokabulare explorativ erkunden oder gezielt durchsuchen. 
 
 <p align="center">
 <img src="de/images/tib-ts-search.png" alt="Screenshort des TIB Terminology Service, der die Suche nach dem Suchstring &quot;battery-electric ve&quot; zeigt" width="1200" />
@@ -19,6 +17,4 @@ Die verschiedenen indexierten Vokabulare sind relativ heterogen, da sie nach unt
 * Recherche nach formalen semantischen Definitionen
 * Recherche nach persistenten Identifiern für fachliche Konzepte
 
-Darüber hinaus stellt der Service die Informationen der Vokabulare auch über eine API bereit, sodass sie in anderen Services nachgenutzt werden können. Die API ist unter <https://api.terminology.tib.eu/api/> erreichbar. Eine interaktive Dokumentation ist als [Swagger UI Instanz](https://api.terminology.tib.eu/swagger-ui/index.html) implementiert.
-
-[< Zurück zur Übersicht](tools_Recherche-intro.md)
+Darüber hinaus stellt der Service die Informationen der Vokabulare auch über eine API bereit, sodass sie in anderen Services nachgenutzt werden können. Die API ist unter <https://api.terminology.tib.eu/api/> erreichbar. Eine interaktive Dokumentation ist als [Swagger UI Instanz ↗](https://api.terminology.tib.eu/swagger-ui/index.html) implementiert.
