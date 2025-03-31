@@ -6,10 +6,12 @@ Mit unserer Anleitung richten Sie bereits sehr früh eine Arbeitsumgebubg ein, a
 Über diese öffentliche Bereitstellung hinaus, haben Sie quch weitere Möglichkeiten, Ihre Terminologie zu verbreiten und zu archivieren.
 
 Wir empfehlen zum Beiapiel die Archivierung auf [Zenodo](URL einfügen).
-Dadurch erhalten Sie zusätzlich zu den von Ihnen eingerichteten Identifiern für das Vokabular eine DOI.
+Dadurch erhalten Sie zusätzlich zu den von Ihnen eingerichteten Identifiern für das Vokabular DOIs, mit denen einerseits das Vokabular unabhängig von seinen Releases referenziert werden kann, aber auch auf einzelne Releases verwiesen werden kann.
 
-* Bartoc
-* Terminology Services
-* FAIRSharing.org
-* LOV
-* DBpedia Archivo?
+Darüber hinaus macht es auch Sinn, die Terminologie in verschiedenen Diensten zu registrieren, um so ihre Auffindbarkeit und ihren Bekanntheitsgrad zu erhöhen.
+Hier sind zum Beispiel die folgenden Dienste zu nennen:
+* [Bartoc](URL einfügen)
+* [TIB Terminology Services](URL einfügen)
+* [FAIRSharing](URL einfügen)
+* [Linked Open Vocabularies](URL einfügen)
+* [DBpedia Archivo](URL einfügen)???
