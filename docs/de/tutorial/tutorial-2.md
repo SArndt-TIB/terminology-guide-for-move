@@ -59,9 +59,8 @@ Arbeiten einmal zwei Bearbeiter an derselben Datei bzw. an derselben Stelle eine
 5. Fügen Sie die Mitglieder hinzu und geben Sie Ihnen die notwendigen Berechtigungen.
 6. Erarbeiten Sie mit unserem Tutorial die ersten Dateien für das Projekt.
 7. Fügen Sie sie dem Projekt hinzu.
-8. Geben Sie ein Release heraus, wenn Sie denken, dass das Vokabular so weit ist. Wir empfehlen mindestend die Erledigung der folgenden Tutorial-Teile: [Schritt 4: Vokabular](step-4/README.md), [Schritt 5 - Metadaten](tutorial-6), [Schritt 6 - Identifier](tutorial-7.md), [Schritt 7 - Prüfung](tutorial-9.md) und ggf. [Schritt X - Dokumentation](tutorial-1.md).
+8. Geben Sie ein Release heraus, wenn Sie denken, dass das Vokabular so weit ist. Wir empfehlen mindestend die Erledigung der folgenden Tutorial-Teile: [Schritt 5: Vokabular](step-5/README.md), [Schritt 6 - Metadaten](tutorial-6), [Schritt 7 - Identifier](tutorial-7.md), [Schritt 8 - Prüfung](tutorial-9.md) und ggf. [Schritt X - Dokumentation](tutorial-1.md).
 9. Führen Sie das Projekt fort.
-
 
 ## Weiterführende Links
 
@@ -76,3 +75,4 @@ Arbeiten einmal zwei Bearbeiter an derselben Datei bzw. an derselben Stelle eine
   * ["Let's Git - Versionsverwaltung und OpenSource" - Kurs bei openHPI ↗](https://open.hpi.de/courses/git2020): Der Kurs ist ursprünglich als mehrwöchiger Kurs angelegt und braucht etwas Zeit. Dafür enthält er aber auch viele Praxisübungen, sodass man am Ende wirklich mit Git gearbeitet hat. Zudem kann man hier immer wieder zu den Grundlagen zurückkehren, bis man sie verinnerlicht hat.
 * Leitfäden
   * [Konfliktmanagement ↗](https://www.nnscript.de/wie-man-merge-konflikte-in-git-loest-ein-umfassender-leitfaden/): Falls einmal ein Merge-Konflikt auftritt, hilft dieser Leitfaden weiter.
+  

@@ -30,21 +30,21 @@ Die Zeilenüberschriften und Tabellenstruktur darf nicht verändert werden. Die 
 
 ### Tabelle mit Beispieldaten
 
-|Type|Verfasser - ID|Verfasser  - Nachname|Verfasser - Vorname|Verfasser - ORCiD|Quellennachweis - ID|Quellennachweis - Titel|Quellennachweis - Verfasser|Quellennachweis - Herausgeber|Quellennachweis - Erscheinungsdatum|Quellennachweis - Zugangslink|Begriff - ID|Begriff - bevorzugte Benennung (de)|Begriff - bevorzugte Benennung (en)|Begriff - alternative Benennung (de)|Begriff - alternative Benennung (en)|Begriff - Definition (de)|Begriff - Definition (en)|Begriff - Quellenangabe|Begriff - Bearbeitungsdatum|Begriff - Fachzuordnung|Begriff - Erstellungsdatum|Begriff - redaktionelle Anmerkung (de)|Begriff - redaktionelle Anmerkung (en)|Begriff - Änderungsvermerk (de)|Begriff - Änderungsvermerk (en)|Begriff - Verfasser des Eintrags|Begriff - Kontextsatz (de)|Begriff - Kontextsatz (en)|Begriff - Bearbeitungsstatus|Begriff - Symbol oder Formelzeichen|Begriff - Begriffsbeziehung - Oberbegriff|
-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|Author|Author1|Doe|Jane|https://orcid.org/0000-0002-0871-8994||||||||||||||||||||||||||||
-|Source|||||Source1|Wörterbuch der Verkehrswissenschaften|Author1|Fiktiver Verlag|2026|https://example.com/verlagsseite/buchseite||||||||||||||||||||||
-|Source|||||Source1||Author4|||||||||||||||||||||||||
-|Concept|||||||||||Concept1|Parkraumsuchverkehr|parking traffic|Parksuchverkehr||Anteil des Straßenverkehrs, der bei der Suche nach einem Parkplatz anfällt|portion of street traffic resulting from the search for parking space|Source1|08.11.2025|http://uri.gbv.de/terminology/bk/55.84|03.06.2025|Bitte weitere Synonyme aus dem Englischen suchen!|Please search further synoynms in English|Die Definition wurde geändert, weil ...|The definition has been changed due to the fact that ...|Author1|Der Parkraumsuchverkehr ist in Ballungsgebieten am höchsten.|Parking traffic is highest in densely populated metropolitan areas.|draft||Concept2|
-|Concept|||||||||||Concept1|||Parkplatzsuche||||Source2||||||||||||||
-|Concept|||||||||||Concept1|||Parkverkehr||||||||||||||||||
-|Concept|||||||||||Concept2|Straßenverkehr|street traffic||||||08.11.2025|http://uri.gbv.de/terminology/bk/55.84|03.06.2025|Definitionen ergänzen|add definitions|||Author1|||draft|||
-|Concept|||||||||||Concept2|||||||||||Kontextsatz ergänzen|add context sentence|||||||||
-|Concept|||||||||||Concept2|||||||||||Begriff von Projektleitung absegnen lassen|get approval for concept by project lead|||||||||
-|Author|Author2|Doe|Jane|https://orcid.org/0000-0002-0871-8994||||||||||||||||||||||||||||
-|Author|Author4|Maier|Harro|https://orcid.org/0000-0002-0871-8993||||||||||||||||||||||||||||
-|Source|||||Source2|parking search traffic||Wikidata||||||||||||||||||||||||
-|Concept|||||||||||Concept5|Schiffsverkehr||||||Source2||https://purl.org/linsearch/ver||||||Author2||||||
+|Type|Verfasser - ID|Verfasser  - Nachname|Verfasser - Vorname|Verfasser - ORCiD|Quellennachweis - ID|Quellennachweis - Titel|Quellennachweis - Verfasser|Quellennachweis - Herausgeber|Quellennachweis - Erscheinungsdatum|Quellennachweis - Zugangslink|Begriff - ID|Begriff - bevorzugte Benennung (de)|Begriff - bevorzugte Benennung (en)|Begriff - alternative Benennung (de)|Begriff - alternative Benennung (en)|Begriff - Definition (de)|Begriff - Definition (en)|Begriff - Quellenangabe|Begriff - Bearbeitungsdatum|Begriff - Fachzuordnung|Begriff - Erstellungsdatum|Begriff - redaktionelle Anmerkung (de)|Begriff - redaktionelle Anmerkung (en)|Begriff - Änderungsvermerk (de)|Begriff - Änderungsvermerk (en)|Begriff - Verfasser des Eintrags|Begriff - Kontextsatz (de)|Begriff - Kontextsatz (en)|Begriff - Bearbeitungsstatus|Begriff - Symbol oder Formelzeichen|Begriff - Begriffsbeziehung - Oberbegriff|Begriff - ist Top Concept|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|Author|Author1|Doe|Jane|https://orcid.org/0000-0002-0871-8994|||||||||||||||||||||||||||||
+|Source|||||Source1|Wörterbuch der Verkehrswissenschaften|Author1|Fiktiver Verlag|2026|https://example.com/verlagsseite/buchseite|||||||||||||||||||||||
+|Source|||||Source1||Author4||||||||||||||||||||||||||
+|Concept|||||||||||Concept1|Parkraumsuchverkehr|parking traffic|Parksuchverkehr||Anteil des Straßenverkehrs, der bei der Suche nach einem Parkplatz anfällt|portion of street traffic resulting from the search for parking space|Source1|08.11.2025|http://uri.gbv.de/terminology/bk/55.84|03.06.2025|Bitte weitere Synonyme aus dem Englischen suchen!|Please search further synoynms in English|Die Definition wurde geändert, weil ...|The definition has been changed due to the fact that ...|Author1|Der Parkraumsuchverkehr ist in Ballungsgebieten am höchsten.|Parking traffic is highest in densely populated metropolitan areas.|draft||Concept2|false|
+|Concept|||||||||||Concept1|||Parkplatzsuche||||Source2|||||||||||||||
+|Concept|||||||||||Concept1|||Parkverkehr|||||||||||||||||||
+|Concept|||||||||||Concept2|Straßenverkehr|street traffic||||||08.11.2025|http://uri.gbv.de/terminology/bk/55.84|03.06.2025|Definitionen ergänzen|add definitions|||Author1|||draft|||true|
+|Concept|||||||||||Concept2|||||||||||Kontextsatz ergänzen|add context sentence||||||||||
+|Concept|||||||||||Concept2|||||||||||Begriff von Projektleitung absegnen lassen|get approval for concept by project lead||||||||||
+|Author|Author2|Doe|Jane|https://orcid.org/0000-0002-0871-8994|||||||||||||||||||||||||||||
+|Author|Author4|Maier|Harro|https://orcid.org/0000-0002-0871-8993|||||||||||||||||||||||||||||
+|Source|||||Source2|parking search traffic||Wikidata|||||||||||||||||||||||||
+|Concept|||||||||||Concept5|Schiffsverkehr||||||Source2||https://purl.org/linsearch/ver||||||Author2||||||true|
 
 ### Erläuterung der Spalten
 
@@ -82,3 +82,4 @@ Die Zeilenüberschriften und Tabellenstruktur darf nicht verändert werden. Die 
 |**Begriff - Bearbeitungsstatus**|**Beispielwerte:** `draft` `approved` `deprecated` <br><br>**Definition:** In dieser Spalte kann ein Wert angegeben werden, der den Bearbeitungsstatus des Begriffseintrags angibt.<br><br>**Hinweise:** Es sollte vorab ein System von gültigen Werten abgesprochen werden, das den eigenen Arbeitsabläufen entspricht. Wenn der Workflow sehr informell ist, reicht gegebenenfalls ein System aus `offen` - `in Bearbeitung` - `abgeschlossen`. Bei formelleren Abläufen kann es auch Sinn machen, Elemente wie `Freigabe erforderlich` - `freigegeben` - `nicht freigegeben` aufzunehmen.<br><br>**Nutzung:** Empfohlen|
 |**Begriff - Symbol oder Formelzeichen**|**Beispielwerte:** `Ω` `H₂O`<br><br>**Definition:** In dieser Spalte können mathematische Symbole oder andere Formelzeichen für einen Begriff angegeben werden.<br><br>**Hinweise:** Kombinationen aus Symbol und Wort (z.B. `ɣ-Strahlung` sollten eher in die Benenungen aufgenommen werden.)<br><br>**Nutzung:** Optional, wenn Bedarf besteht|
 |**Begriff - Begriffsbeziehung - Oberbegriff**|**Beispielwerte:** `Concept2`<br><br>**Definition:** In dieser Spalte wird auf einen anderen Begriff verwiesen, der als generischer Oberbegriff des aktuellen Begriffs angesehen werden kann. Der Verweis erfolgt über die Angabe des Wertes des passenden Begriffs aus der Spalte `Begriff - ID`.<br><br>**Hinweise:** Ein Beispiel für eine Beziehung eines Begriffs zu seinem Oberbegriff ist zum Beispiel `Couch` `hat Oberbegriff` `Möbel`.<br><br>**Nutzung:** Empfohlen|
+|**Begriff - ist Top Concept**|**Beispielwerte:** `true` `false`<br><br>**Definition:** In dieser Spalte wird angegeben, ob der Begriff auf der obersten Hierarchiestufe der Begriffshierarchie ist, also ein sogenanntes _top concept_ ist.<br><br>**Hinweise:** --<br><br>**Nutzung:** Notwendig|

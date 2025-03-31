@@ -77,7 +77,8 @@
         ex:id               "Concept2" .
 
 <http://purl.org/terminology-guide-for-move/testvocab>
-        rdf:type  skos:ConceptScheme , owl:Ontology .
+        rdf:type            skos:ConceptScheme , owl:Ontology;
+        skos:hasTopConcept  :Concept5 , :Concept2 , :Concept1 .
 
 :Source1  rdf:type         ex:Source;
         dcterms:creator    :Author4 , :Author1;

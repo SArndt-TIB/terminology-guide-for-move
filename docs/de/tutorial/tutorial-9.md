@@ -65,7 +65,7 @@ Die FAIR-Prinzipien legen eine Reihe von Kriterien fest, die erfüllt sein müss
 Inzwischen wurden diese Kriterien auch schon im Sinne "semantischer Artefakte" (z.B. SKOS-Vokabulare, wie wir es hier erstellt haben) interpretiert und in entsprechenden Prüftools implementiert.
 Ein solches Tool ist der [FOOPS Validator](https://foops.linkeddata.es/FAIR_validator.html), in den man einfach nur den Link einer Ressource eingeben muss, um eine Einschätzung ihrer FAIRness gegeliedert nach den einzelnen FAIR-Prinzipien zu bekommen.
 
-Versuchen wir dies einmal mit einem im GitHub-Repositorium abgelegten Test-Vokabular, das wir im [Schritt 4](step-4/README.md) erstellt haben und für das wir in [Identifier erstellen](tutorial-7.md#purlorg) die PURL <http://purl.org/terminology-guide-for-move/testvocab> eingerichtet hatten.
+Versuchen wir dies einmal mit einem im GitHub-Repositorium abgelegten Test-Vokabular, das wir im [Schritt 4](step-5/README.md) erstellt haben und für das wir in [Identifier erstellen](tutorial-7.md#purlorg) die PURL <http://purl.org/terminology-guide-for-move/testvocab> eingerichtet hatten.
 
 <details>
 <summary>Zeige Ergebnis des FOOPS-Validators für &#60;http://purl.org/terminology-guide-for-move/testvocab&#62;</summary>

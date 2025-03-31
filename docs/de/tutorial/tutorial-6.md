@@ -1,6 +1,6 @@
 # Metadaten ergänzen
 
-Die im [Workflow mit OPenRefine](step-4/open-refine/README.md) erzeugte RDF-Datei sollte jetzt noch um weitere Statements angereichert werden, u.a. mit Metadaten zur gesamten Terminologie und nicht nur zu den einzelnen Einträgen.
+Die im [Workflow mit OPenRefine](step-5/open-refine/README.md) erzeugte RDF-Datei sollte jetzt noch um weitere Statements angereichert werden, u.a. mit Metadaten zur gesamten Terminologie und nicht nur zu den einzelnen Einträgen.
 Warum auch Vokabulare Metadaten haben sollten, erläutern wir [hier ↗](https://github.com/TIBHannover/terminology-metadata/blob/main/MetadataGuide.md#12-why-ontology-metadata).
 
 <!-- Hierzu muss das Vokabular als Entität explizit hinzugefügt werden, um darüber Aussagen machen zu können. -->
