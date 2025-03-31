@@ -1,0 +1,1 @@
+# Schritt X - Die Wahl einer Lizenz
