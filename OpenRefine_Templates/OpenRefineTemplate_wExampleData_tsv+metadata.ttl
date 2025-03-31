@@ -40,6 +40,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 :Concept1  rdf:type         rdfs:Class , skos:Concept;
+        rdfs:isDefinedBy    <http://purl.org/terminology-guide-for-move/testvocab>;
         rdfs:label          "parking traffic"@en , "Parkraumsuchverkehr"@de;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
@@ -73,11 +74,13 @@
         ex:id           "Author4" .
 
 :Concept5  rdf:type      rdfs:Class , skos:Concept;
+        rdfs:isDefinedBy   <http://purl.org/terminology-guide-for-move/testvocab>;
         rdfs:label       "Schiffsverkehr"@de;
         dcterms:creator  :Author2;
         dcterms:source   :Source2;
         dcterms:subject  <https://purl.org/linsearch/ver>;
         skos:prefLabel   "Schiffsverkehr"@de;
+        skos:topConceptOf  <http://purl.org/terminology-guide-for-move/testvocab>;
         ex:id            "Concept5" .
 
 :Source2  rdf:type         ex:Source;
@@ -93,18 +96,22 @@
         ex:id           "Author1" .
 
 :Concept2  rdf:type         skos:Concept , rdfs:Class;
+        rdfs:isDefinedBy    <http://purl.org/terminology-guide-for-move/testvocab>;
         rdfs:label          "Straßenverkehr"@de , "street traffic"@en;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
         dcterms:modified    "08.11.2025"^^xsd:date;
         dcterms:subject     <http://uri.gbv.de/terminology/bk/55.84>;
         skos:editorialNote  "add definitions"@en , "add context sentence"@en , "Definitionen ergänzen"@de , "get approval for concept by project lead"@en , "Begriff von Projektleitung absegnen lassen"@de , "Kontextsatz ergänzen"@de;
+        skos:narrower       :Concept1;
         skos:prefLabel      "street traffic"@en , "Straßenverkehr"@de;
+        skos:topConceptOf   <http://purl.org/terminology-guide-for-move/testvocab>;
         ex:editorialStatus  "draft";
         ex:id               "Concept2" .
 
 <http://purl.org/terminology-guide-for-move/testvocab>
-        rdf:type  skos:ConceptScheme , owl:Ontology ;
+        rdf:type skos:ConceptScheme , owl:Ontology ;
+        skos:hasTopConcept  :Concept5 , :Concept2 ;
          # ab hier finden Sie die mit dem Tool der ULB-Darmstadt erzeugten Statments
         dcterms:title "Demo-Vokabular für den Terminology Guide for Move"@de;
         dcterms:creator <https://orcid.org/0000-0002-1019-9151>;

@@ -4,6 +4,20 @@
     "rdf-transform": {
       "extension": "RDFTransform",
       "version": "2.2.4",
+      "namespaces": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "ex": "https://www.example.com/",
+        "m4i": "http://w3id.org/nfdi4ing/metadata4ing#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "skosxl": "http://www.w3.org/2008/05/skos-xl#"
+      },
       "baseIRI": "http://purl.org/terminology-guide-for-move/testvocab/",
       "subjectMappings": [
         {
@@ -597,7 +611,28 @@
                       }
                     }
                   ],
-                  "propertyMappings": []
+                  "propertyMappings": [
+                    {
+                      "prefix": "skos",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "narrower"
+                      },
+                      "objectMappings": [
+                        {
+                          "valueSource": {
+                            "source": "column",
+                            "columnName": "Begriff - ID"
+                          },
+                          "valueType": {
+                            "type": "iri"
+                          },
+                          "typeMappings": [],
+                          "propertyMappings": []
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -752,6 +787,80 @@
                   }
                 }
               ]
+            },
+            {
+              "prefix": "skos",
+              "valueSource": {
+                "source": "constant",
+                "constant": "topConceptOf"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - ist Top Concept"
+                  },
+                  "expression": {
+                    "language": "grel",
+                    "code": "value.replace(\"true\", \"http://purl.org/terminology-guide-for-move/testvocab\")"
+                  },
+                  "valueType": {
+                    "type": "iri"
+                  },
+                  "typeMappings": [
+                    {
+                      "prefix": "skos",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "ConceptScheme"
+                      }
+                    }
+                  ],
+                  "propertyMappings": [
+                    {
+                      "prefix": "skos",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "hasTopConcept"
+                      },
+                      "objectMappings": [
+                        {
+                          "prefix": "",
+                          "valueSource": {
+                            "source": "column",
+                            "columnName": "Begriff - ID"
+                          },
+                          "valueType": {
+                            "type": "iri"
+                          },
+                          "typeMappings": [],
+                          "propertyMappings": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "prefix": "rdfs",
+              "valueSource": {
+                "source": "constant",
+                "constant": "isDefinedBy"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "http://purl.org/terminology-guide-for-move/testvocab"
+                  },
+                  "valueType": {
+                    "type": "iri"
+                  },
+                  "typeMappings": [],
+                  "propertyMappings": []
+                }
+              ]
             }
           ]
         },
@@ -776,53 +885,9 @@
               }
             }
           ],
-          "propertyMappings": [
-            {
-              "prefix": "skos",
-              "valueSource": {
-                "source": "constant",
-                "constant": "hasTopConcept"
-              },
-              "objectMappings": [
-                {
-                  "prefix": "",
-                  "valueSource": {
-                    "source": "column",
-                    "columnName": "Begriff - ID"
-                  },
-                  "valueType": {
-                    "type": "iri"
-                  },
-                  "typeMappings": [
-                    {
-                      "prefix": "skos",
-                      "valueSource": {
-                        "source": "constant",
-                        "constant": "Concept"
-                      }
-                    }
-                  ],
-                  "propertyMappings": []
-                }
-              ]
-            }
-          ]
+          "propertyMappings": []
         }
-      ],
-      "namespaces": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "vcard": "http://www.w3.org/2006/vcard/ns#",
-        "foaf": "http://xmlns.com/foaf/0.1/",
-        "ex": "https://www.example.com/",
-        "m4i": "http://w3id.org/nfdi4ing/metadata4ing#",
-        "dcterms": "http://purl.org/dc/terms/",
-        "dcat": "http://www.w3.org/ns/dcat#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "skosxl": "http://www.w3.org/2008/05/skos-xl#"
-      }
+      ]
     }
   }
 ]
