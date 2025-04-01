@@ -1,7 +1,6 @@
     @prefix :        <http://purl.org/terminology-guide-for-move/testvocab/> . # ggf. ändern, wenn Sie nicht mit den Beispieldaten unseres Tutorials arbeiten
     @prefix dcat:    <http://www.w3.org/ns/dcat#> .
     @prefix dcterms: <http://purl.org/dc/terms/> .
-    @prefix ex:      <https://www.example.com/> .
     @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
     @prefix m4i:     <http://w3id.org/nfdi4ing/metadata4ing#> .
     @prefix owl:     <http://www.w3.org/2002/07/owl#> .

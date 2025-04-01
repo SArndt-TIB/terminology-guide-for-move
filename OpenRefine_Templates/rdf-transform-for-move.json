@@ -16,7 +16,8 @@
         "dcterms": "http://purl.org/dc/terms/",
         "dcat": "http://www.w3.org/ns/dcat#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
-        "skosxl": "http://www.w3.org/2008/05/skos-xl#"
+        "skosxl": "http://www.w3.org/2008/05/skos-xl#",
+        "schema": "http://schema.org/"
       },
       "baseIRI": "http://purl.org/terminology-guide-for-move/testvocab/",
       "subjectMappings": [
@@ -36,10 +37,10 @@
           ],
           "propertyMappings": [
             {
-              "prefix": "ex",
+              "prefix": "dcterms",
               "valueSource": {
                 "source": "constant",
-                "constant": "id"
+                "constant": "identifier"
               },
               "objectMappings": [
                 {
@@ -122,19 +123,19 @@
           },
           "typeMappings": [
             {
-              "prefix": "ex",
+              "prefix": "dcterms",
               "valueSource": {
                 "source": "constant",
-                "constant": "Source"
+                "constant": "BibliographicRecord"
               }
             }
           ],
           "propertyMappings": [
             {
-              "prefix": "ex",
+              "prefix": "dcterms",
               "valueSource": {
                 "source": "constant",
-                "constant": "id"
+                "constant": "identifier"
               },
               "objectMappings": [
                 {
@@ -286,10 +287,10 @@
           ],
           "propertyMappings": [
             {
-              "prefix": "ex",
+              "prefix": "dcterms",
               "valueSource": {
                 "source": "constant",
-                "constant": "id"
+                "constant": "identifier"
               },
               "objectMappings": [
                 {
@@ -533,10 +534,10 @@
               ]
             },
             {
-              "prefix": "ex",
+              "prefix": "skos",
               "valueSource": {
                 "source": "constant",
-                "constant": "exampleSentence"
+                "constant": "example"
               },
               "objectMappings": [
                 {
@@ -552,10 +553,10 @@
               ]
             },
             {
-              "prefix": "ex",
+              "prefix": "dcterms",
               "valueSource": {
                 "source": "constant",
-                "constant": "editorialStatus"
+                "constant": "BibliographicRecord"
               },
               "objectMappings": [
                 {
@@ -570,10 +571,10 @@
               ]
             },
             {
-              "prefix": "ex",
+              "prefix": "schema",
               "valueSource": {
                 "source": "constant",
-                "constant": "mathSymbol"
+                "constant": "mathExpression"
               },
               "objectMappings": [
                 {
@@ -732,10 +733,10 @@
               ]
             },
             {
-              "prefix": "ex",
+              "prefix": "skos",
               "valueSource": {
                 "source": "constant",
-                "constant": "contextSentence"
+                "constant": "example"
               },
               "objectMappings": [
                 {
