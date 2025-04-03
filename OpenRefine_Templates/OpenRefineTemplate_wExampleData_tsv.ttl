@@ -1,4 +1,5 @@
 @prefix :        <http://purl.org/terminology-guide-for-move/testvocab/> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ex:      <https://www.example.com/> .
@@ -7,6 +8,7 @@
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosxl:  <http://www.w3.org/2008/05/skos-xl#> .
 @prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
@@ -17,6 +19,7 @@
         rdfs:label          "parking traffic"@en , "Parkraumsuchverkehr"@de;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
+        dcterms:identifier  "Concept1";
         dcterms:modified    "08.11.2025"^^xsd:date;
         dcterms:source      :Source2 , :Source1;
         dcterms:subject     <http://uri.gbv.de/terminology/bk/55.84>;
@@ -25,11 +28,10 @@
         skos:changeNote     "The definition has been changed due to the fact that ..."@en , "Die Definition wurde geändert, weil ..."@de;
         skos:definition     "Anteil des Straßenverkehrs, der bei der Suche nach einem Parkplatz anfällt"@de , "portion of street traffic resulting from the search for parking space"@en;
         skos:editorialNote  "Bitte weitere Synonyme aus dem Englischen suchen!"@de , "Please search further synoynms in English"@en;
+        skos:example        "Parking traffic is highest in densely populated metropolitan areas."@en , "Der Parkraumsuchverkehr ist in Ballungsgebieten am höchsten."@de;
         skos:prefLabel      "Parkraumsuchverkehr"@de , "parking traffic"@en;
-        ex:contextSentence  "Parking traffic is highest in densely populated metropolitan areas."@en;
-        ex:editorialStatus  "draft";
-        ex:exampleSentence  "Der Parkraumsuchverkehr ist in Ballungsgebieten am höchsten."@de;
-        ex:id               "Concept1" .
+        bibo:status  "draft";
+        .
 
 <https://purl.org/linsearch/ver>
         rdf:type  skos:Concept .
@@ -38,13 +40,13 @@
         m4i:orcidId     "https://orcid.org/0000-0002-0871-8994"^^xsd:anyURI;
         foaf:firstName  "Jane";
         foaf:lastName   "Doe";
-        ex:id           "Author2" .
+        dcterms:identifier  "Author2".
 
 :Author4  rdf:type      foaf:Person;
         m4i:orcidId     "https://orcid.org/0000-0002-0871-8993"^^xsd:anyURI;
         foaf:firstName  "Harro";
         foaf:lastName   "Maier";
-        ex:id           "Author4" .
+        dcterms:identifier  "Author4" .
 
 :Concept5  rdf:type        skos:Concept , rdfs:Class;
         rdfs:isDefinedBy   <http://purl.org/terminology-guide-for-move/testvocab>;
@@ -54,19 +56,19 @@
         dcterms:subject    <https://purl.org/linsearch/ver>;
         skos:prefLabel     "Schiffsverkehr"@de;
         skos:topConceptOf  <http://purl.org/terminology-guide-for-move/testvocab>;
-        ex:id              "Concept5" .
+        dcterms:identifier              "Concept5" .
 
-:Source2  rdf:type         ex:Source;
+:Source2  rdf:type         dcterms:BibliographicRecord;
         dcterms:publisher  "Wikidata";
         dcterms:title      "parking search traffic";
         dcat:accessURL     "https://www.wikidata.org/w/index.php?title=Q97379970&oldid=1936875884"^^xsd:anyURI;
-        ex:id              "Source2" .
+        dcterms:identifier              "Source2" .
 
 :Author1  rdf:type      foaf:Person;
         m4i:orcidId     "https://orcid.org/0000-0002-0871-8994"^^xsd:anyURI;
         foaf:firstName  "Jane";
         foaf:lastName   "Doe";
-        ex:id           "Author1" .
+        dcterms:identifier           "Author1" .
 
 :Concept2  rdf:type         skos:Concept , rdfs:Class;
         rdfs:isDefinedBy    <http://purl.org/terminology-guide-for-move/testvocab>;
@@ -79,20 +81,20 @@
         skos:narrower       :Concept1;
         skos:prefLabel      "street traffic"@en , "Straßenverkehr"@de;
         skos:topConceptOf   <http://purl.org/terminology-guide-for-move/testvocab>;
-        ex:editorialStatus  "draft";
-        ex:id               "Concept2" .
+        bibo:status  "draft";
+        dcterms:identifier               "Concept2" .
 
 <http://purl.org/terminology-guide-for-move/testvocab>
         rdf:type            skos:ConceptScheme , owl:Ontology;
         skos:hasTopConcept  :Concept5 , :Concept2 .
 
-:Source1  rdf:type         ex:Source;
+:Source1  rdf:type         dcterms:BibliographicRecord;
         dcterms:creator    :Author4 , :Author1;
         dcterms:issued     "2026"^^xsd:gYear;
         dcterms:publisher  "Fiktiver Verlag";
         dcterms:title      "Wörterbuch der Verkehrswissenschaften";
         dcat:accessURL     "https://example.com/verlagsseite/buchseite"^^xsd:anyURI;
-        ex:id              "Source1" .
+        dcterms:identifier              "Source1" .
 
 <http://uri.gbv.de/terminology/bk/55.84>
         rdf:type  skos:Concept .

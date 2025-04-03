@@ -235,7 +235,7 @@ skos:Concept a rdfs:Class, sh:NodeShape ;
     ] ;
     sh:property [
         # a sh:PropertyShape ;
-        sh:path ex:editorialStatus ;
+        sh:path bibo:status ;
         sh:in ("draft" "approved" "deprecated");
         sh:group ex:TermStatusGroup;
         sh:name "Begriff - Bearbeitungsstatus"@de ;

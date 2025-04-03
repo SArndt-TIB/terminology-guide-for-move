@@ -57,7 +57,7 @@ ex:TermRelation1
     rdf:subject skos:Concept3 .
 skos:Concept1
     a skos:Concept;
-    ex:editorialStatus "draft";
+    bibo:status "draft";
     ex:exampleSentence "Satz als Benutzungsbeispiel"^^rdf:langString;
     ex:id "1";
     ex:mathSymbol "Bsp.";
@@ -75,7 +75,7 @@ skos:Concept1
     skos:semanticRelation ex:TermRelation3 .
 skos:Concept2
     a skos:Concept;
-    ex:editorialStatus "draft";
+    bibo:status "draft";
     ex:exampleSentence "Montag nervt"^^rdf:langString;
     ex:id "2";
     ex:mathSymbol "null";
@@ -92,7 +92,7 @@ skos:Concept2
     skos:semanticRelation ex:TermRelation3 .
 skos:Concept3
     a skos:Concept;
-    ex:editorialStatus "null";
+    bibo:status "null";
     ex:exampleSentence
         "Der Parkraumsuchverkehr ist in Ballungsr\u00e4umen besonders hoch."^^rdf:langString,
         "null"^^rdf:langString;
@@ -116,7 +116,7 @@ skos:Concept3
     skos:semanticRelation ex:TermRelation4, ex:TermRelationnone.
 skos:Concept4
     a skos:Concept;
-    ex:editorialStatus "null";
+    bibo:status "null";
     ex:exampleSentence "null"^^rdf:langString;
     ex:id "4";
     ex:mathSymbol "null";
@@ -208,7 +208,7 @@ ex:TermRelation1
     rdf:subject skos:Concept3 .
 skos:Concept1
     a skos:Concept;
-    ex:editorialStatus "draft";
+    bibo:status "draft";
     ex:exampleSentence "Satz als Benutzungsbeispiel"^^rdf:langString;
     ex:id "1";
     ex:mathSymbol "Bsp.";
@@ -228,7 +228,7 @@ skos:Concept1
     sko:prefLabel ex:PrefLabel1 .
 skos:Concept2
     a skos:Concept;
-    ex:editorialStatus "draft";
+    bibo:status "draft";
     ex:exampleSentence "Montag nervt"^^rdf:langString;
     ex:id "2";
     ex:mathSymbol "null";
@@ -247,7 +247,7 @@ skos:Concept2
     sko:prefLabel ex:PrefLabel3 .
 skos:Concept3
     a skos:Concept;
-    ex:editorialStatus "null";
+    bibo:status "null";
     ex:exampleSentence
         "Der Parkraumsuchverkehr ist in Ballungsr\u00e4umen besonders hoch."^^rdf:langString,
         "null"^^rdf:langString;
@@ -273,7 +273,7 @@ skos:Concept3
     sko:prefLabel ex:PrefLabel6, ex:PrefLabelnull.
 skos:Concept4
     a skos:Concept;
-    ex:editorialStatus "null";
+    bibo:status "null";
     ex:exampleSentence "null"^^rdf:langString;
     ex:id "4";
     ex:mathSymbol "null";
@@ -292,7 +292,7 @@ skos:Concept4
     sko:prefLabel ex:PrefLabel8 .
 skos:Concept5
     a skos:Concept;
-    ex:editorialStatus "null";
+    bibo:status "null";
     ex:exampleSentence "null"^^rdf:langString;
     ex:id "5";
     ex:mathSymbol "null";

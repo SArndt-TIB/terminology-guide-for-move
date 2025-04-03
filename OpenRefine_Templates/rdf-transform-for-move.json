@@ -17,7 +17,8 @@
         "dcat": "http://www.w3.org/ns/dcat#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "skosxl": "http://www.w3.org/2008/05/skos-xl#",
-        "schema": "http://schema.org/"
+        "schema": "http://schema.org/",
+        "bibo": "http://purl.org/ontology/bibo/"
       },
       "baseIRI": "http://purl.org/terminology-guide-for-move/testvocab/",
       "subjectMappings": [
@@ -378,10 +379,10 @@
                   },
                   "typeMappings": [
                     {
-                      "prefix": "ex",
+                      "prefix": "dcterms",
                       "valueSource": {
                         "source": "constant",
-                        "constant": "Source"
+                        "constant": "BibliographicRecord"
                       }
                     }
                   ],
@@ -553,10 +554,10 @@
               ]
             },
             {
-              "prefix": "dcterms",
+              "prefix": "bibo",
               "valueSource": {
                 "source": "constant",
-                "constant": "BibliographicRecord"
+                "constant": "status"
               },
               "objectMappings": [
                 {

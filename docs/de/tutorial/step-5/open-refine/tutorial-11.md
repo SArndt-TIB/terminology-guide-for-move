@@ -165,6 +165,7 @@ Zeige den Code der Output-Datei
 @prefix skosxl:  <http://www.w3.org/2008/05/skos-xl#> .
 @prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/>.
 
 :Concept1  rdf:type         rdfs:Class , skos:Concept;
         rdfs:label          "parking traffic"@en , "Parkraumsuchverkehr"@de;
@@ -180,7 +181,7 @@ Zeige den Code der Output-Datei
         skos:editorialNote  "Bitte weitere Synonyme aus dem Englischen suchen!"@de , "Please search further synoynms in English"@en;
         skos:prefLabel      "Parkraumsuchverkehr"@de , "parking traffic"@en;
         ex:contextSentence  "Parking traffic is highest in densely populated metropolitan areas."@en;
-        ex:editorialStatus  "draft";
+        bibo:status  "draft";
         ex:exampleSentence  "Der Parkraumsuchverkehr ist in Ballungsgebieten am höchsten."@de;
         ex:id               "Concept1" .
 
@@ -227,7 +228,7 @@ Zeige den Code der Output-Datei
         dcterms:subject     <http://uri.gbv.de/terminology/bk/55.84>;
         skos:editorialNote  "add definitions"@en , "add context sentence"@en , "Definitionen ergänzen"@de , "get approval for concept by project lead"@en , "Begriff von Projektleitung absegnen lassen"@de , "Kontextsatz ergänzen"@de;
         skos:prefLabel      "street traffic"@en , "Straßenverkehr"@de;
-        ex:editorialStatus  "draft";
+        bibo:status  "draft";
         ex:id               "Concept2" .
 
 <http://purl.org/terminology-guide-for-move/testvocab>
