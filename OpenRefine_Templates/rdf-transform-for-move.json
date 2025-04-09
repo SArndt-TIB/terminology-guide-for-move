@@ -863,6 +863,95 @@
                   "propertyMappings": []
                 }
               ]
+            },
+            {
+              "prefix": "owl",
+              "valueSource": {
+                "source": "constant",
+                "constant": "deprecated"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - ist veraltet?"
+                  },
+                  "valueType": {
+                    "type": "datatype_literal",
+                    "datatype": {
+                      "prefix": "xsd",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "boolean"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "valueSource": {
+                "source": "constant",
+                "constant": "http://purl.obolibrary.org/obo/IAO_0100001"
+              },
+              "objectMappings": [
+                {
+                  "prefix": "",
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - hat Nachfolger"
+                  },
+                  "valueType": {
+                    "type": "iri"
+                  },
+                  "typeMappings": [
+                    {
+                      "prefix": "skos",
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "Concept"
+                      }
+                    }
+                  ],
+                  "propertyMappings": []
+                }
+              ]
+            },
+            {
+              "valueSource": {
+                "source": "constant",
+                "constant": "http://purl.obolibrary.org/obo/IAO_0000116"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Grund der Markierung als veraltet (de)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "de"
+                  }
+                }
+              ]
+            },
+            {
+              "valueSource": {
+                "source": "constant",
+                "constant": "http://purl.obolibrary.org/obo/IAO_0000116"
+              },
+              "objectMappings": [
+                {
+                  "valueSource": {
+                    "source": "column",
+                    "columnName": "Begriff - Grund der Markierung als veraltet (en)"
+                  },
+                  "valueType": {
+                    "type": "language_literal",
+                    "language": "en"
+                  }
+                }
+              ]
             }
           ]
         },

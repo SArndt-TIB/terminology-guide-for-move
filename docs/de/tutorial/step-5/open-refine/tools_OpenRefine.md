@@ -34,15 +34,15 @@ Neben OpenRefine benötigen wir zudem die OpenRefine-Erweiterung [RDF Transform 
 Nach der Installation sollten Sie OpenRefine so wie für Ihr Betriebssystem angegeben starten können. Nähere Informationen zum Starten und Beenden der Anwendung finden Sie [hier ↗](https://openrefine.org/docs/manual/running). Beim Start sollte sich bereits ein Webbrowser öffnen oder ein neuer Tab in einem laufenden Webbrowser öffnen, der die Adresse [http://127.0.0.1:3333 ↗](http://127.0.0.1:3333) aufruft.
 Hier sollte dann der folgende Startbildschirm zu sehen sein:
 
-![Screenshot des OpenRefine-Startbildschirms](images/openrefine-startscree.png)
+![Screenshot des OpenRefine-Startbildschirms](../../../images/openrefine-startscree.png)
 
 Standardmäßig ist die Sprache der Benutzeroberfläche auf Englisch eingestellt. Unter `Language Settings` kann die Sprache auch geändert werden:
 
-![Screenshot: Änderung der Spracheinstellungen für OpenRefine](images/openrefine-language_settings.PNG)
+![Screenshot: Änderung der Spracheinstellungen für OpenRefine](../../../images/openrefine-language_settings.PNG)
 
 Ob die Erweiterung installiert wurde, lässt sich in der Liste der Erweiterungen sehen:
 
-![Screenshot von OpenRefine, der eine Liste installierter Erweiterungen zeigt.](images/openrefine-list_of_extensions.png)
+![Screenshot von OpenRefine, der eine Liste installierter Erweiterungen zeigt.](../../../images/openrefine-list_of_extensions.png)
 
 Im Abschnitt [Nützliche Links](#nützliche-links) finden Sie zudem weitere Links und nützliche Ressourcen zur Einführung in OpenRefine.
 

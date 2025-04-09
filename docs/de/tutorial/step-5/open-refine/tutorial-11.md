@@ -16,7 +16,7 @@ Hier sollte dann der folgende Startbildschirm zu sehen sein:
 Zeige den Start-Screen
 </summary>
 
-![Screenshot des OpenRefine-Startbildschirms](images/openrefine-startscree.png)
+![Screenshot des OpenRefine-Startbildschirms](../../../images/openrefine-startscree.png)
 </details>
 
 ## Legen Sie ein neues Projekt an
@@ -31,7 +31,7 @@ Um fortzufahren, bestätigen Sie den Vorgang mit dem Button `Nächste`.
 Zeige die Ansicht zum Anlegen eines neuen Projekts
 </summary>
 
-![Screenshot von OpenRefine mit der Ansicht zum Anlegen eines neuen Projekts](images/openrefine-create_new_project.png)
+![Screenshot von OpenRefine mit der Ansicht zum Anlegen eines neuen Projekts](../../../images/openrefine-create_new_project.png)
 
 </details>
 
@@ -55,7 +55,7 @@ Der folgende Screenshot zeigt den Vorschaubildschirm mit den eben vorgestellten,
 Zeige den Vorschaubildschirm
 </summary>
 
-![Screenshot des Vorschaubildschirms von OpenRefine sowie der Parsing-Optionen für den Import einer Quelle](images/openrefine-preview_dataload.png)
+![Screenshot des Vorschaubildschirms von OpenRefine sowie der Parsing-Optionen für den Import einer Quelle](../../../images/openrefine-preview_dataload.png)
 
 </details>
 
@@ -67,7 +67,7 @@ Man sieht dann in der Startansicht diverse Elemente.
 Zeige die Startansicht des Projekts
 </summary>
 
-![Screenshot von OpenRefine mit geladenen Daten und Annotationen, die die Elemente des graphischen User Interfaces erläutern](images/openrefine-data_loaded.png)
+![Screenshot von OpenRefine mit geladenen Daten und Annotationen, die die Elemente des graphischen User Interfaces erläutern](../../../images/openrefine-data_loaded.png)
 </details>
 
 1 Die Daten werden auch in OpenRefine tabellarisch angezeigt. Standardmäßig werden 10 Zeilen angezeigt.<br>
@@ -87,7 +87,7 @@ Hier müssen jetzt zwei Buttons - `Extrahieren...` und `Anwenden...` verfügbar 
 Zeige die Bearbeitungshistorie
 </summary>
 
-![Screenshot von Open Refine, der die Bearbeitungshistorie zeigt](images/openrefine_history.png)
+![Screenshot von Open Refine, der die Bearbeitungshistorie zeigt](../../../images/openrefine_history.png)
 </details>
 
 
@@ -102,7 +102,7 @@ Im Anschluss wenden Sie ihn durch Klick auf den Button `Operationen durchführen
 Zeige Fenster zur Eingabe des Vorgangsverlaufes
 </summary>
 
-![Schreenshot von OpenRefine, der das geöffnete Fenster für die Eingabe eines Vorgangsverlaufes zeigt](images/openrefine-vorgangsverlauf-anwenden.png)
+![Schreenshot von OpenRefine, der das geöffnete Fenster für die Eingabe eines Vorgangsverlaufes zeigt](../../../images/openrefine-vorgangsverlauf-anwenden.png)
 </details>
 
 Im Anschluss sehen Sie im Verlauf des Projekts dann zwei Bearbeitungsschritte:
@@ -118,7 +118,7 @@ Dieses kann nur angewendet werden, wenn die Tabellenvorlagen bei der Bearbeitung
 Zeige Vorgangsverlauf mit den zwei Arbeitsschritten
 </summary>
 
-![Screenshot von OpenRefine, das die zwei Bearbeitungsschritte aus dem geladenen Vorgangsverlauf zeigt](images/openrefine_history_is_applied.png)
+![Screenshot von OpenRefine, das die zwei Bearbeitungsschritte aus dem geladenen Vorgangsverlauf zeigt](../../../images/openrefine_history_is_applied.png)
 </details>
 
 - [ ] TODO: Noch ergänzen: Wie updated man das RDF-Transform-Schema um den eigenen Identifier?
@@ -134,7 +134,7 @@ Wir wählen hier unter `RDF Transform` den `Pretty Export` und dort - wegen bess
 Zeige das Export-Menü
 </summary>
 
-![Screenshot von OpenRefine, der das Menü zum Exportieren von RDF-Dateien zeigt](images/openrefine-rdf_export.png)
+![Screenshot von OpenRefine, der das Menü zum Exportieren von RDF-Dateien zeigt](../../../images/openrefine-rdf_export.png)
 </details>
 
 OpenRefine erstellt dabei eine Datei mit dem Namen [OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl) (sofern das Projekt beim Datenimport nicht anders benannt wurde!).
@@ -153,6 +153,7 @@ Zeige den Code der Output-Datei
 
 ``` turtle
 @prefix :        <http://purl.org/terminology-guide-for-move/testvocab/> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ex:      <https://www.example.com/> .
@@ -161,86 +162,97 @@ Zeige den Code der Output-Datei
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosxl:  <http://www.w3.org/2008/05/skos-xl#> .
 @prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix bibo: <http://purl.org/ontology/bibo/>.
 
 :Concept1  rdf:type         rdfs:Class , skos:Concept;
+        rdfs:isDefinedBy    <http://purl.org/terminology-guide-for-move/testvocab>;
         rdfs:label          "parking traffic"@en , "Parkraumsuchverkehr"@de;
+        <http://purl.obolibrary.org/obo/IAO_0000116>
+                "With the introduction of Park+Ride systems, the expansion of public transport and intelligent parking search assistants, the concept of searching for a parking space has virtually disappeared."@en , "Das Konzept des Parksuchverkehrs hat sich mit der Einführung von Park+Ride-Systemen, dem Ausbau des ÖPNV und intelligenten Parksuchassistenten quasi erledigt."@de;
+        <http://purl.obolibrary.org/obo/IAO_0100001>
+                :Concept2;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
+        dcterms:identifier  "Concept1";
         dcterms:modified    "08.11.2025"^^xsd:date;
         dcterms:source      :Source2 , :Source1;
         dcterms:subject     <http://uri.gbv.de/terminology/bk/55.84>;
+        bibo:status         "draft";
+        owl:deprecated      true;
         skos:altLabel       "Parkplatzsuche"@de , "Parksuchverkehr"@de , "Parkverkehr"@de;
         skos:broader        :Concept2;
         skos:changeNote     "The definition has been changed due to the fact that ..."@en , "Die Definition wurde geändert, weil ..."@de;
         skos:definition     "Anteil des Straßenverkehrs, der bei der Suche nach einem Parkplatz anfällt"@de , "portion of street traffic resulting from the search for parking space"@en;
         skos:editorialNote  "Bitte weitere Synonyme aus dem Englischen suchen!"@de , "Please search further synoynms in English"@en;
-        skos:prefLabel      "Parkraumsuchverkehr"@de , "parking traffic"@en;
-        ex:contextSentence  "Parking traffic is highest in densely populated metropolitan areas."@en;
-        bibo:status  "draft";
-        ex:exampleSentence  "Der Parkraumsuchverkehr ist in Ballungsgebieten am höchsten."@de;
-        ex:id               "Concept1" .
+        skos:example        "Parking traffic is highest in densely populated metropolitan areas."@en , "Der Parkraumsuchverkehr ist in Ballungsgebieten am höchsten."@de;
+        skos:prefLabel      "Parkraumsuchverkehr"@de , "parking traffic"@en .
 
 <https://purl.org/linsearch/ver>
         rdf:type  skos:Concept .
 
-:Author2  rdf:type      foaf:Person;
-        m4i:orcidId     "https://orcid.org/0000-0002-0871-8994"^^xsd:anyURI;
-        foaf:firstName  "Jane";
-        foaf:lastName   "Doe";
-        ex:id           "Author2" .
+:Author2  rdf:type          foaf:Person;
+        dcterms:identifier  "Author2";
+        m4i:orcidId         "https://orcid.org/0000-0002-0871-8994"^^xsd:anyURI;
+        foaf:firstName      "Jane";
+        foaf:lastName       "Doe" .
 
-:Author4  rdf:type      foaf:Person;
-        m4i:orcidId     "https://orcid.org/0000-0002-0871-8993"^^xsd:anyURI;
-        foaf:firstName  "Harro";
-        foaf:lastName   "Maier";
-        ex:id           "Author4" .
+:Author4  rdf:type          foaf:Person;
+        dcterms:identifier  "Author4";
+        m4i:orcidId         "https://orcid.org/0000-0002-0871-8993"^^xsd:anyURI;
+        foaf:firstName      "Harro";
+        foaf:lastName       "Maier" .
 
-:Concept5  rdf:type      rdfs:Class , skos:Concept;
-        rdfs:label       "Schiffsverkehr"@de;
-        dcterms:creator  :Author2;
-        dcterms:source   :Source2;
-        dcterms:subject  <https://purl.org/linsearch/ver>;
-        skos:prefLabel   "Schiffsverkehr"@de;
-        ex:id            "Concept5" .
+:Concept5  rdf:type         skos:Concept , rdfs:Class;
+        rdfs:isDefinedBy    <http://purl.org/terminology-guide-for-move/testvocab>;
+        rdfs:label          "Schiffsverkehr"@de;
+        dcterms:creator     :Author2;
+        dcterms:identifier  "Concept5";
+        dcterms:source      :Source2;
+        dcterms:subject     <https://purl.org/linsearch/ver>;
+        skos:prefLabel      "Schiffsverkehr"@de;
+        skos:topConceptOf   <http://purl.org/terminology-guide-for-move/testvocab> .
 
-:Source2  rdf:type         ex:Source;
-        dcterms:publisher  "Wikidata";
-        dcterms:title      "parking search traffic";
-        dcat:accessURL     "https://www.wikidata.org/w/index.php?title=Q97379970&oldid=1936875884"^^xsd:anyURI;
-        ex:id              "Source2" .
+:Source2  rdf:type          dcterms:BibliographicRecord;
+        dcterms:identifier  "Source2";
+        dcterms:publisher   "Wikidata";
+        dcterms:title       "parking search traffic";
+        dcat:accessURL      "https://www.wikidata.org/w/index.php?title=Q97379970&oldid=1936875884"^^xsd:anyURI .
 
-:Author1  rdf:type      foaf:Person;
-        m4i:orcidId     "https://orcid.org/0000-0002-0871-8994"^^xsd:anyURI;
-        foaf:firstName  "Jane";
-        foaf:lastName   "Doe";
-        ex:id           "Author1" .
+:Author1  rdf:type          foaf:Person;
+        dcterms:identifier  "Author1";
+        m4i:orcidId         "https://orcid.org/0000-0002-0871-8994"^^xsd:anyURI;
+        foaf:firstName      "Jane";
+        foaf:lastName       "Doe" .
 
 :Concept2  rdf:type         skos:Concept , rdfs:Class;
+        rdfs:isDefinedBy    <http://purl.org/terminology-guide-for-move/testvocab>;
         rdfs:label          "Straßenverkehr"@de , "street traffic"@en;
         dcterms:created     "03.06.2025"^^xsd:date;
         dcterms:creator     :Author1;
+        dcterms:identifier  "Concept2";
         dcterms:modified    "08.11.2025"^^xsd:date;
         dcterms:subject     <http://uri.gbv.de/terminology/bk/55.84>;
+        bibo:status         "draft";
         skos:editorialNote  "add definitions"@en , "add context sentence"@en , "Definitionen ergänzen"@de , "get approval for concept by project lead"@en , "Begriff von Projektleitung absegnen lassen"@de , "Kontextsatz ergänzen"@de;
+        skos:narrower       :Concept1;
         skos:prefLabel      "street traffic"@en , "Straßenverkehr"@de;
-        bibo:status  "draft";
-        ex:id               "Concept2" .
+        skos:topConceptOf   <http://purl.org/terminology-guide-for-move/testvocab> .
 
 <http://purl.org/terminology-guide-for-move/testvocab>
-        rdf:type  skos:ConceptScheme , owl:Ontology .
+        rdf:type            skos:ConceptScheme , owl:Ontology;
+        skos:hasTopConcept  :Concept5 , :Concept2 .
 
-:Source1  rdf:type         ex:Source;
-        dcterms:creator    :Author4 , :Author1;
-        dcterms:issued     "2026"^^xsd:gYear;
-        dcterms:publisher  "Fiktiver Verlag";
-        dcterms:title      "Wörterbuch der Verkehrswissenschaften";
-        dcat:accessURL     "https://example.com/verlagsseite/buchseite"^^xsd:anyURI;
-        ex:id              "Source1" .
+:Source1  rdf:type          dcterms:BibliographicRecord;
+        dcterms:creator     :Author4 , :Author1;
+        dcterms:identifier  "Source1";
+        dcterms:issued      "2026"^^xsd:gYear;
+        dcterms:publisher   "Fiktiver Verlag";
+        dcterms:title       "Wörterbuch der Verkehrswissenschaften";
+        dcat:accessURL      "https://example.com/verlagsseite/buchseite"^^xsd:anyURI .
 
 <http://uri.gbv.de/terminology/bk/55.84>
         rdf:type  skos:Concept .

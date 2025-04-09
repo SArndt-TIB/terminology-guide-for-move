@@ -44,15 +44,14 @@ Hierdurch soll dann erreicht werden, dass der Identifier eines solchen Konzeptes
 Dabei ist es wichtig zu beachten, dass dieses Konzept nicht einfach nur entfernt werden darf.
 Im Gegenteil: es muss weiterhin Teil der terminologischen Ressource bleiben und muss sogar noch weiter kommentiert werden.
 Wenn ein Konzept in einem externen Datenbestand verwendet wird, ist es notwendig, dass dieser Datenbestand irgendwann von der Veraltung des Konzepts erfährt und auf potentielle Nachfolger umsteigt.
-Ein deprecatetes (todo deutschsprachigen Ausdruck finden!) Konzept könnte dabei folgendermaßen annotiert sein:
+Ein als veraltet deklariertes Konzept könnte dabei folgendermaßen annotiert sein:
 
 ``` turtle
 
-:Concept5 rdf:type skos:Concept ;
-    owl:deprecated true ;
-    # reason
-    # follow-up term
-    # more?
-    # check with obo
-
+:Concept5 rdf:type skos:Concept ; # Konzept, das nicht mehr genutzt werden soll
+    owl:deprecated true ; # dieses Statement markiert das Konzept als veraltet
+    <http://purl.obolibrary.org/obo/IAO_0000116> "Das Konzept des Parksuchverkehrs hat sich mit der Einführung von Park+Ride-Systemen, dem Ausbau des ÖPNV und intelligenten Parksuchassistenten quasi erledigt."@de # Grund für die Ablehnung des Konzepts
+    <http://purl.obolibrary.org/obo/IAO_0100001> :Concept2 . # Konzept das stattdessen verwendet werden sollte
 ```
+
+tb todo to do: add reference https://oboacademy.github.io/obook/howto/obsolete-term/
