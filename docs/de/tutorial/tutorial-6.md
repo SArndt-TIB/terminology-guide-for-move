@@ -1,10 +1,7 @@
 # Metadaten ergänzen
 
-Die im [Workflow mit OPenRefine](step-5/open-refine/README.md) erzeugte RDF-Datei sollte jetzt noch um weitere Statements angereichert werden, u.a. mit Metadaten zur gesamten Terminologie und nicht nur zu den einzelnen Einträgen.
+Die im [Workflow mit OpenRefine](step-5/open-refine/README.md) erzeugte RDF-Datei sollte jetzt noch um weitere Statements angereichert werden, u.a. mit Metadaten zur gesamten Terminologie und nicht nur zu den einzelnen Einträgen.
 Warum auch Vokabulare Metadaten haben sollten, erläutern wir [hier ↗](https://github.com/TIBHannover/terminology-metadata/blob/main/MetadataGuide.md#12-why-ontology-metadata).
-
-<!-- Hierzu muss das Vokabular als Entität explizit hinzugefügt werden, um darüber Aussagen machen zu können. -->
-<!-- Es braucht nun selbst einen Identifier. -->
 
 Im [Konvertierungsprozess mit OpenRefine](tutorial-11.md#wechseln-sie-zur-bearbeitungshistorie) wurde durch die Datei [https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/rdf-transform-for-move.json](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/main/OpenRefine_Templates/rdf-transform-for-move.json) bereits eine Festlegung getroffen, wie die Identifier der einzelnen Quellen, Autoren und Begriffe aussehen sollen.
 
@@ -21,8 +18,8 @@ Dabei verwenden wir ihn ohne das abschließende `/`, also `http://purl.org/termi
   {
     "op": "rdf-transform/save-rdf-transform",
     "rdf-transform": {
-      "version": "2.2.4",
       "extension": "RDFTransform",
+      "version": "2.2.4",
       "namespaces": {
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -35,7 +32,9 @@ Dabei verwenden wir ihn ohne das abschließende `/`, also `http://purl.org/termi
         "dcterms": "http://purl.org/dc/terms/",
         "dcat": "http://www.w3.org/ns/dcat#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
-        "skosxl": "http://www.w3.org/2008/05/skos-xl#"
+        "skosxl": "http://www.w3.org/2008/05/skos-xl#",
+        "schema": "http://schema.org/",
+        "bibo": "http://purl.org/ontology/bibo/"
       },
       "baseIRI": "http://purl.org/terminology-guide-for-move/testvocab/",
       "subjectMappings": [
@@ -53,7 +52,7 @@ Diese wollen wir um neue Statements erweitern.
 
 <details>
 <summary>
-Zeige mir die bei der Konvertierung angelegte Entität
+Zeige die bei der Konvertierung angelegte Entität
 </summary>
 
 ``` turtle
@@ -88,7 +87,7 @@ Im Wesentlichen müssen Sie folgende Schritte durchführen:
 1. Gehen Sie zur Datei <https://github.com/TIBHannover/terminology-metadata/blob/main/OntoMetadataShape4Forms.ttl> und kopieren Sie den Quellcode dieser Datei:
   <details>
   <summary>
-  Zeig mir wie es geht
+  Zeige wie man den Quellcode der Datei kopiert
   </summary>
 
   ![Screenshot des Metadaten-Repositoriums der TIB auf GitHub, der zeigt, wo man den Quellcode der Datei kopieren kann](images/GitHub-OntoMetadataShape4Forms.png)
@@ -111,7 +110,7 @@ Die Beispieldaten zeigen Metadaten für das Testvokabular dieses Tutorials.
   Zeige den Screenshot des Tools
   </summary>
 
-  ![](images/ULB_Darmstadt-SHACL_Form_Generator-WithData-All_Valid.png)
+  ![Screenshot des Tools SHACL Form Generator mit genriertem Metadaten-Formular und eingegebenen Werten](images/ULB_Darmstadt-SHACL_Form_Generator-WithData-All_Valid.png)
   </details>
 
     <details>
@@ -167,9 +166,9 @@ Die Beispieldaten zeigen Metadaten für das Testvokabular dieses Tutorials.
   Wichtig ist, dass sie die Informationen dieses Codes an die richtigen Stellen der Output-Datei aus dem Konvertierungsschritt integrieren und dort auch eine korrekte Syntax einhalten.
   Zunächst müssen die Präfixe übernommen werden.
   Nur mit ihnen können alle übernommenen Statements weiterhin korrekt interpretiert werden.
-  Zu Demonstrationszwecken haben wir in unseren Beispieldaten eine Kopie von [OpenRefineTemplate_wExampleData_tsv.ttl ↗](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl) angelegt, die wir [OpenRefineTemplate_wExampleData_tsv+metadata.ttl ↗](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl) genannt haben.
-  In dieser haben wir alle neuen Elemente ergänzt.
-    
+  Sie können ein Beispiel für die Übernahme aller mit dem Formular erzeugten Daten in einer Kopie von [OpenRefineTemplate_wExampleData_tsv.ttl ↗](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv.ttl)finden. Diese finden Sie unter [OpenRefineTemplate_wExampleData_tsv+metadata.ttl ↗](https://raw.githubusercontent.com/SArndt-TIB/terminology-guide-for-move/refs/heads/develop/OpenRefine_Templates/OpenRefineTemplate_wExampleData_tsv+metadata.ttl).
+  Die erweitere Präfix-Sektion können Sie auch im nächsten Aufklappelement anschauen,
+
   <details>
   <summary>
   Zeige die erweiterte Präfix-Sektion
@@ -179,12 +178,9 @@ Die Beispieldaten zeigen Metadaten für das Testvokabular dieses Tutorials.
   @prefix : <http://purl.org/terminology-guide-for-move/testvocab/> . # diese URI muss am Ende durch Ihren eigene gewünschte ID ersetzt werden
   @prefix dcat: <http://www.w3.org/ns/dcat#> .
   @prefix dcterms: <http://purl.org/dc/terms/> .
-  @prefix ex: <https://www.example.com/> .
   @prefix foaf: <http://xmlns.com/foaf/0.1/> .
   @prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> .
   @prefix owl: <http://www.w3.org/2002/07/owl#> .
-  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
   @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
   @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
   @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
@@ -254,5 +250,7 @@ Zeige den Vergleich
 
 </details> -->
 
-Man sollte sehr genau darauf achten, dass die Metadaten bei einer neuen Erzeugung des Vokabulars geprüft und ggf. aktualisiert werden.
-Um nicht alle Metadaten jedesmal wieder erzeugen zu müssen, kann man die Metadaten auch in einer eigenen Datei verwalten und ebenfalls auf dem eigenen Repositorium verfügbar halten.
+Bei einer Aktualisierung des Vokabulars sollte man darauf achten, dass die Metadaten des Vokabulars geprüft und ggf. aktualisiert werden.
+Hierzu müssen sie nicht vollständig neu erzeugt werden, sondern können einfach um neue Statements erweitert werden, während der vorhandene Metadatensatz einfach überarbeitet werden kann.
+Hierbei sollte man darauf achten, dass die syntaktische Korrektheit geprüft wird und ggf. Präfixe neuer Properties in die Präfix-Deklarationen des Vokabulars aufgenommen werden müssen.
+Idealerweise test man die syntaktische Korrektheit schnell und einfach, indem man das Vokabular lokal mit Protégé lädt.
